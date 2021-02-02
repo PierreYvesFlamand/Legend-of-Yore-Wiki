@@ -1,4 +1,5 @@
 {
+    "last": ["Dungeons quick menu", "Start of the World Map", "Fixed an issue with the ' of S'Thel Oasis"],
     "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data", "Simple grid layout"],
     "planned": [
         "More CSS",
@@ -6,8 +7,8 @@
         "Finish all items/monsters description",
         "Add overworld data",
         "Other game data (quest, set, treasure map, craft, shop, and more...",
-        "Minimap",
+        "Finish map base work",
         "Mobile friendly"
     ],
-    "issues": ["Some undefined value"]
+    "issues": ["Some undefined value", "Static dungeon floor (Hydra, ...)"]
 }

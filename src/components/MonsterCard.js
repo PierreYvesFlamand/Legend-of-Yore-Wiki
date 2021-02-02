@@ -31,7 +31,7 @@ export default function MonsterCard({ monster }) {
                         {monster.foundIn.map((foundIn) => {
                             return (
                                 <li key={foundIn}>
-                                    <Link to={`/dungeons#${foundIn.split(' ').join('_')}`}>{foundIn}</Link>
+                                    <Link to={`/dungeons#${foundIn.split(' ').join('_').replace("'", '_')}`}>{foundIn}</Link>
                                 </li>
                             );
                         })}

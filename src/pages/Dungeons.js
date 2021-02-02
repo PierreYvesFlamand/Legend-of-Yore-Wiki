@@ -19,11 +19,19 @@ export default function Items() {
     return (
         <div className='content'>
             <h2>Dungeons</h2>
+
+            <div className='dungeons-nav'>
+                {DungeonsFilters.map((filter) => (
+                    <a key={filter.name} href={`#${filter.name.split(' ').join('_').replace("'", '_')}`}>
+                        {filter.name}
+                    </a>
+                ))}
+            </div>
             {levels
                 ? DungeonsFilters.map((filter, id) => {
                       const dungeons = levels[filter.name];
                       return (
-                          <div key={id}>
+                          <div key={id} id={filter.name.split(' ').join('_').replace("'", '_')}>
                               <h3>{filter.name}</h3>
                               <div className='dungeon'>
                                   <div className='cell'>
@@ -58,7 +66,11 @@ export default function Items() {
                                       if (floor.ref) {
                                       } else {
                                           card = (
-                                              <div key={floor.id} id={`${filter.name}_F${id + 1}`} className='dungeon-card'>
+                                              <div
+                                                  key={floor.id}
+                                                  id={`${filter.name.split(' ').join('_').replace("'", '_')}_F${id + 1}`}
+                                                  className='dungeon-card'
+                                              >
                                                   <div className='cell'>
                                                       {' '}
                                                       <p>{`F${id + 1}`}</p>

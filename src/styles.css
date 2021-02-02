@@ -126,12 +126,14 @@ button {
     margin-bottom: 0.5em;
 }
 
-.items-nav {
+.items-nav,
+.dungeons-nav {
     display: flex;
     flex-wrap: wrap;
 }
 
-.items-nav a {
+.items-nav a,
+.dungeons-nav a {
     background-color: var(--clr-yellow);
     border-radius: 1em;
     color: black;
@@ -143,7 +145,8 @@ button {
     text-decoration: none;
 }
 
-.items-nav a:hover {
+.items-nav a:hover,
+.dungeons-nav a:hover {
     color: var(--clr-orange);
 }
 

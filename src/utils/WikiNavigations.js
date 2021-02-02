@@ -2,7 +2,8 @@
 const NavigationLinks = [
     'items',
     'monsters',
-    'dungeons'
+    'dungeons',
+    'world map'
 ]
 
 export default NavigationLinks;

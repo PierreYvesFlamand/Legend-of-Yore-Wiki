@@ -66,7 +66,7 @@ export default function ItemCard(items, type) {
                                     {item.foundIn.map((foundIn) => {
                                         return (
                                             <li key={foundIn.name}>
-                                                <Link to={`/dungeons#${foundIn.name.split(' ').join('_')}`}>{foundIn.name}</Link>{' '}
+                                                <Link to={`/dungeons#${foundIn.name.split(' ').join('_').replace("'", '_')}`}>{foundIn.name}</Link>{' '}
                                                 {`${foundIn.chance === '100/100' ? '' : ``} ${(
                                                     (~~foundIn.chance.split('/')[0] / ~~foundIn.chance.split('/')[1]) *
                                                     100
@@ -133,7 +133,7 @@ export default function ItemCard(items, type) {
                                 {item.foundIn.map((foundIn) => {
                                     return (
                                         <li key={foundIn.name}>
-                                            <Link to={`/dungeons#${foundIn.name.split(' ').join('_')}`}>{foundIn.name}</Link>{' '}
+                                            <Link to={`/dungeons#${foundIn.name.split(' ').join('_').replace("'", '_')}`}>{foundIn.name}</Link>{' '}
                                             {`${foundIn.chance === '100/100' ? '' : ``} ${(
                                                 (~~foundIn.chance.split('/')[0] / ~~foundIn.chance.split('/')[1]) *
                                                 100

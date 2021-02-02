@@ -22,7 +22,7 @@ export default function Navigation() {
                 {NavigationLinks.map((link) => {
                     return (
                         <li key={link}>
-                            <Link to={`/${link}`} className={path === link ? 'active' : ''}>
+                            <Link to={`/${link.split(' ').join('_')}`} className={path === link ? 'active' : ''}>
                                 {link.substring(0, 1).toUpperCase() + link.substring(1)}
                             </Link>
                         </li>

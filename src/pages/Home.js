@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { DataContext } from './context/dataContext';
+import { DataContext } from '../context/dataContext';
 
 function Home() {
     const homeData = useContext(DataContext).home;
@@ -21,6 +21,10 @@ function Home() {
                     Legends of Yore Discord
                 </a>
             </p>
+            <br />
+            <br />
+            <p>Last update :</p>
+            <ul>{homeData ? homeData.last.map((txt, id) => <li key={id}>🟡 {txt}</li>) : null}</ul>
             <p>Already Done :</p>
             <ul>{homeData ? homeData.done.map((txt, id) => <li key={id}>✅ {txt}</li>) : null}</ul>
             <p>Planned :</p>

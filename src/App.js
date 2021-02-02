@@ -3,10 +3,11 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 
-import Home from './Home';
+import Home from './pages/Home';
 import Items from './pages/Items';
 import Monsters from './pages/Monsters';
 import Dungeons from './pages/Dungeons';
+import Map from './pages/Map';
 
 function App() {
     return (
@@ -24,6 +25,9 @@ function App() {
                 </Route>
                 <Route exact path='/dungeons'>
                     <Dungeons />
+                </Route>
+                <Route exact path='/world_map'>
+                    <Map />
                 </Route>
                 <Route exact path='*'>
                     <Redirect to={{ pathname: '/' }} />

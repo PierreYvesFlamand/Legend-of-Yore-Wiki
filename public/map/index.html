@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Legends of Yore Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Icon -->
+        <!-- Leaflet API -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""
+        />
+        <script
+            src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""
+        ></script>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!-- Css sheets -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <!-- Js -->
+        <script src="./data/popup/Island-1.js"></script>
+        <script src="./data/popup/Island-2.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="custom-popup" id="map"></div>
+
+        <input class="menuButton" type="checkbox" />
+        <div class="menu">
+            <item class="zoneName"></item>
+            <item id="monstersButton"></item>
+            <item id="dungeonsButton"></item>
+            <item class="emptyLine0"></item>
+
+            <item class="Maps"></item>
+            <item id="Island-1"></item>
+            <item id="Island-2"></item>
+        </div>
+        <div class="attribution"></div>
+    </body>
+</html>
