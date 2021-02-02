@@ -23,8 +23,8 @@ function Home() {
             </p>
             <p>Already Done :</p>
             <ul>{homeData ? homeData.done.map((txt, id) => <li key={id}>✅ {txt}</li>) : null}</ul>
-            <p>Planed :</p>
-            <ul>{homeData ? homeData.planed.map((txt, id) => <li key={id}>⏩ {txt}</li>) : null}</ul>
+            <p>Planned :</p>
+            <ul>{homeData ? homeData.planned.map((txt, id) => <li key={id}>⏩ {txt}</li>) : null}</ul>
             <p>Known issues :</p>
             <ul>{homeData ? homeData.issues.map((txt, id) => <li key={id}>❗ {txt}</li>) : null}</ul>
         </div>

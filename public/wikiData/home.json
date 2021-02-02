@@ -1,6 +1,6 @@
 {
     "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data", "Simple grid layout"],
-    "planed": [
+    "planned": [
         "More CSS",
         "Item filter ?",
         "Finish all items/monsters description",
