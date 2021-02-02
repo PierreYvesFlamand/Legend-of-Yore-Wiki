@@ -12,7 +12,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-install all npm dependencies
+Install all npm dependencies
 
 ### `npm start`
 
