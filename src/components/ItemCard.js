@@ -36,7 +36,7 @@ export default function ItemCard(items, type) {
                             <ItemModifier modifiers={item.modifier} />
                         </div>
                         <div className='cell'>
-                            <p>{~~(item.cost * 0.05)}</p>
+                            <p>{~~(item.cost * 0.05) + 1}</p>
                         </div>
 
                         <div className='cell maxScroll'>
@@ -168,7 +168,8 @@ function ItemModifier({ modifiers }) {
             case 'tick':
                 return (
                     <p key={id} className='gear-info'>
-                        + {modif.value} {modif.attribute} / turn
+                        {modif.value.substring(0, 1) === '-' ? `- ${modif.value.substring(1)}` : `+ ${modif.value}`} {modif.attribute} /{' '}
+                        {modif.attribute === 'hp' ? 'attack' : 'turn'}
                     </p>
                 );
 
@@ -190,7 +191,7 @@ function ItemModifier({ modifiers }) {
             default:
                 return (
                     <p key={id} className='gear-info'>
-                        + {modif.value} {modif.attribute} vs {modif.type}
+                        {modif.value.substring(0, 1) === '-' ? `- ${modif.value.substring(1)}` : `+ ${modif.value}`} {modif.attribute} vs {modif.type}
                     </p>
                 );
         }

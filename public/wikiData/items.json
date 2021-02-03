@@ -2553,7 +2553,7 @@
                 {
                     "type": "tick",
                     "attribute": "hp",
-                    "value": "2"
+                    "value": "-2"
                 }
             ],
             "dropedBy": [],
@@ -2792,7 +2792,7 @@
                 {
                     "type": "tick",
                     "attribute": "charge",
-                    "value": "2"
+                    "value": "-2"
                 },
                 {
                     "type": "tick",
@@ -3507,7 +3507,7 @@
                 {
                     "type": "undead",
                     "attribute": "atk",
-                    "value": "1"
+                    "value": "-1"
                 },
                 {
                     "type": "magic",
@@ -5296,7 +5296,7 @@
                 {
                     "type": "tick",
                     "attribute": "rage",
-                    "value": "1"
+                    "value": "-1"
                 }
             ],
             "dropedBy": [
@@ -6407,7 +6407,7 @@
                 {
                     "type": "tick",
                     "attribute": "hp",
-                    "value": "1"
+                    "value": "-1"
                 },
                 {
                     "type": "human",
@@ -7380,7 +7380,7 @@
                 {
                     "type": "tick",
                     "attribute": "hp",
-                    "value": "2"
+                    "value": "-2"
                 }
             ],
             "dropedBy": [
@@ -7827,7 +7827,7 @@
                 {
                     "type": "tick",
                     "attribute": "hp",
-                    "value": "3"
+                    "value": "-3"
                 },
                 {
                     "type": "orc",
@@ -9076,7 +9076,7 @@
                 {
                     "type": "undead",
                     "attribute": "atk",
-                    "value": "1"
+                    "value": "-1"
                 },
                 {
                     "type": "human",

@@ -23,8 +23,6 @@ function Home() {
             </p>
             <br />
             <br />
-            <p>Last update :</p>
-            <ul>{homeData ? homeData.last.map((txt, id) => <li key={id}>🟡 {txt}</li>) : null}</ul>
             <p>Already Done :</p>
             <ul>{homeData ? homeData.done.map((txt, id) => <li key={id}>✅ {txt}</li>) : null}</ul>
             <p>Planned :</p>

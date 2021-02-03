@@ -1,0 +1,33 @@
+{
+    "dungeon": {
+        "Sthel1": {
+            "chests": "0",
+            "maxMonsters": "2",
+            "monsterChance": [
+                {
+                    "type": "Liche",
+                    "chance": "1"
+                },
+                {
+                    "type": "Ghoul",
+                    "chance": "1"
+                }
+            ]
+        },
+        "Drt-8": {
+            "chests": "0",
+            "legend": "Hydra",
+            "maxMonsters": "4",
+            "monsterChance": [
+                {
+                    "type": "Ogre Mage",
+                    "chance": "1"
+                },
+                {
+                    "type": "Ogre",
+                    "chance": "1"
+                }
+            ]
+        }
+    }
+}

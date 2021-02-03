@@ -8,6 +8,7 @@ function DataContextProvider({ children }) {
     const [items, setItems] = useState(null);
     const [monsters, setMonsters] = useState(null);
     const [levels, setLevels] = useState(null);
+    const [customData, setCustomData] = useState(null);
 
     useEffect(() => {
         fetch(process.env.PUBLIC_URL + '/wikiData/home.json')
@@ -41,6 +42,12 @@ function DataContextProvider({ children }) {
                 });
                 setLevels(sortedLevels);
             });
+
+        fetch(process.env.PUBLIC_URL + '/wikiData/customData.json')
+            .then((res) => res.json())
+            .then((data) => {
+                setCustomData(data);
+            });
     }, []);
 
     // // PRE SORT PURPOSE
@@ -54,7 +61,7 @@ function DataContextProvider({ children }) {
     //     console.log(JSON.stringify(editMonsters(monsters, levels), ' ', 4));
     // }
 
-    return <DataContext.Provider value={{ home, items, monsters, levels }}>{children}</DataContext.Provider>;
+    return <DataContext.Provider value={{ home, items, monsters, levels, customData }}>{children}</DataContext.Provider>;
 }
 
 export { DataContextProvider, DataContext };

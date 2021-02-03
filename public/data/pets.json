@@ -1,0 +1,281 @@
+{
+    "pets": {
+        "pet": [
+            {
+                "id": "1",
+                "type": "Chicken",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "30",
+                "ownerLevel": "15",
+                "cost": "25000",
+                "recover": "0.1",
+                "chargeGain": "1",
+                "hpGain": "1",
+                "attackGain": "0.5",
+                "defenseGain": "0.5",
+                "attack": "1",
+                "defense": "2",
+                "hp": "10",
+                "charge": "0",
+                "possible": [
+                    { "name": "Arnold" },
+                    { "name": "Cluckles" },
+                    { "name": "Kentucy" },
+                    { "name": "Fluffy" },
+                    { "name": "Boris" },
+                    { "name": "Drumstick" }
+                ],
+                "ability": [
+                    {
+                        "level": "10",
+                        "name": "fire",
+                        "desc": "Fire Breathing"
+                    },
+                    {
+                        "level": "25",
+                        "name": "poison",
+                        "desc": "Poison Peck"
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "type": "Wild Dog",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "35",
+                "ownerLevel": "45",
+                "cost": "50000",
+                "recover": "0.1",
+                "chargeGain": "0",
+                "hpGain": "2",
+                "attackGain": "1",
+                "defenseGain": "0.5",
+                "attack": "2",
+                "defense": "3",
+                "hp": "15",
+                "charge": "0",
+                "possible": [
+                    { "name": "Barker" },
+                    { "name": "Bingo" },
+                    { "name": "Fido" },
+                    { "name": "Butch" },
+                    { "name": "Hobbo" },
+                    { "name": "Defer" }
+                ],
+                "ability": [
+                    {
+                        "level": "12",
+                        "name": "poison",
+                        "desc": "Poison Bite"
+                    },
+                    {
+                        "level": "25",
+                        "name": "poison2",
+                        "desc": "Poison Mawl"
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "type": "Blue Slime",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "40",
+                "ownerLevel": "75",
+                "cost": "100000",
+                "recover": "0.1",
+                "chargeGain": "0",
+                "hpGain": "3",
+                "attackGain": "1.5",
+                "defenseGain": "1",
+                "attack": "4",
+                "defense": "5",
+                "hp": "25",
+                "charge": "0",
+                "possible": [
+                    { "name": "Goop" },
+                    { "name": "Fry" },
+                    { "name": "Gish" },
+                    { "name": "Mookie" },
+                    { "name": "Slim" },
+                    { "name": "Mauve" }
+                ],
+                "evolve": {
+                    "level": "30",
+                    "name": "Bluholder"
+                },
+                "ability": [
+                    {
+                        "level": "12",
+                        "name": "poison",
+                        "desc": "Poison Touch"
+                    },
+                    {
+                        "level": "23",
+                        "name": "poison2",
+                        "desc": "Poison Slime"
+                    },
+                    {
+                        "level": "33",
+                        "name": "poison3",
+                        "desc": "Poison Grab"
+                    }
+                ]
+            },
+            {
+                "id": "4",
+                "type": "Drake",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "40",
+                "ownerLevel": "105",
+                "cost": "250000",
+                "recover": "0.1",
+                "chargeGain": "5",
+                "hpGain": "5",
+                "attackGain": "2",
+                "defenseGain": "2",
+                "attack": "12",
+                "defense": "13",
+                "hp": "40",
+                "charge": "25",
+                "possible": [
+                    { "name": "Drako" },
+                    { "name": "Mavis" },
+                    { "name": "Smorg" },
+                    { "name": "Bathos" },
+                    { "name": "Isdare" },
+                    { "name": "Gorin" }
+                ],
+                "evolve": {
+                    "level": "25",
+                    "name": "Dragoon"
+                },
+                "ability": [
+                    {
+                        "level": "8",
+                        "name": "fire",
+                        "desc": "Fire Breathing"
+                    },
+                    {
+                        "level": "12",
+                        "name": "poison",
+                        "desc": "Poison Bite"
+                    },
+                    {
+                        "level": "19",
+                        "name": "frost",
+                        "desc": "Frost Breath"
+                    },
+                    {
+                        "level": "29",
+                        "name": "explosion",
+                        "desc": "Fire Blast"
+                    }
+                ]
+            },
+            {
+                "id": "5",
+                "type": "Monkey",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "30",
+                "ownerLevel": "15",
+                "cost": "25000",
+                "recover": "0.1",
+                "chargeGain": "1",
+                "hpGain": "1",
+                "attackGain": "0.6",
+                "defenseGain": "0.4",
+                "attack": "1",
+                "defense": "2",
+                "hp": "10",
+                "charge": "0",
+                "possible": [
+                    { "name": "Bubbles" },
+                    { "name": "MrTeeny" },
+                    { "name": "Nibbler" },
+                    { "name": "Shakes" },
+                    { "name": "Moo" },
+                    { "name": "Scooter" }
+                ],
+                "ability": {
+                    "level": "10",
+                    "name": "poison",
+                    "desc": "Poison Bite"
+                }
+            },
+            {
+                "id": "6",
+                "type": "Gorilla",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "50",
+                "ownerLevel": "125",
+                "cost": "35000",
+                "recover": "0.1",
+                "chargeGain": "1",
+                "hpGain": "1",
+                "attackGain": "2.5",
+                "defenseGain": "2.5",
+                "attack": "15",
+                "defense": "13",
+                "hp": "55",
+                "charge": "0",
+                "possible": [
+                    { "name": "Alfie" },
+                    { "name": "Patrick" },
+                    { "name": "Rupert" },
+                    { "name": "Caeser" },
+                    { "name": "Frank" },
+                    { "name": "Kong" }
+                ]
+            },
+            {
+                "id": "7",
+                "type": "Croc",
+                "searchDistance": "10",
+                "wanderDistance": "8",
+                "maxLevel": "55",
+                "ownerLevel": "130",
+                "cost": "35000",
+                "recover": "0.1",
+                "chargeGain": "1",
+                "hpGain": "1",
+                "attackGain": "2.6",
+                "defenseGain": "2.8",
+                "attack": "14",
+                "defense": "15",
+                "hp": "60",
+                "charge": "0",
+                "possible": [
+                    { "name": "Snapper" },
+                    { "name": "Chomp" },
+                    { "name": "Munch" },
+                    { "name": "Smiler" },
+                    { "name": "TickTock" },
+                    { "name": "Ali" }
+                ],
+                "ability": [
+                    {
+                        "level": "15",
+                        "name": "poison",
+                        "desc": "Poison Tear"
+                    },
+                    {
+                        "level": "30",
+                        "name": "fire",
+                        "desc": "Fire Breathing"
+                    },
+                    {
+                        "level": "45",
+                        "name": "poison3",
+                        "desc": "Clamp of Poisons"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,6 +1,5 @@
 {
-    "last": ["Dungeons quick menu", "Start of the World Map", "Fixed an issue with the ' of S'Thel Oasis"],
-    "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data", "Simple grid layout"],
+    "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data"],
     "planned": [
         "More CSS",
         "Item filter ?",
