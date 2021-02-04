@@ -11,9 +11,9 @@ const DungeonsFilters = [
         floors: [7, 8, 9],
     },
     {
-        codeName: "Mnt-Dungeons",
-        name: "Mountains",
-        floors: [10, 11, 12, 13, 14],
+        codeName: "Farm-base",
+        name: "Caws Mawr",
+        floors: [75, 76, 77, 78, 79, 80],
     },
     {
         codeName: "Wild-Dungeons",
@@ -21,14 +21,24 @@ const DungeonsFilters = [
         floors: [15, 16, 17, 18, 19],
     },
     {
+        codeName: "Vly-Dungeons",
+        name: "Valley",
+        floors: [30, 31, 32, 33, 34],
+    },
+    {
         codeName: "Sthel-Dungeons",
         name: "S'Thel Oasis",
         floors: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
     },
     {
-        codeName: "Vly-Dungeons",
-        name: "Valley",
-        floors: [30, 31, 32, 33, 34],
+        codeName: "Shrine-base",
+        name: "Shrine",
+        floors: [106, 107, 108, 109, 110, 111, 112, 113],
+    },
+    {
+        codeName: "Mnt-Dungeons",
+        name: "Mountains",
+        floors: [10, 11, 12, 13, 14],
     },
     {
         codeName: "Drt-Dungeons",
@@ -46,39 +56,14 @@ const DungeonsFilters = [
         floors: [49, 50, 51, 52, 53],
     },
     {
-        codeName: "Forest-Dungeons",
-        name: "Hidden Forest",
-        floors: [54, 55, 56, 57, 58, 59, 60],
-    },
-    {
         codeName: "Nord-Dungeons",
         name: "Nordolk Settlement",
         floors: [61, 62, 63, 64, 65, 66],
     },
     {
-        codeName: "Bad-Dungeons",
-        name: "Badlands Gate",
-        floors: [67, 68, 69, 70, 71, 72, 73, 74],
-    },
-    {
-        codeName: "Farm-base",
-        name: "Caws Mawr",
-        floors: [75, 76, 77, 78, 79, 80],
-    },
-    {
-        codeName: "Vale-dung",
-        name: "The Vale",
-        floors: [81, 82, 83, 84, 85, 86],
-    },
-    {
-        codeName: "Jungle-Dungeons",
-        name: "Outback",
-        floors: [87, 88, 89, 90, 91, 92, 93, 94],
-    },
-    {
-        codeName: "Frozen-base",
-        name: "Frozen Wastes",
-        floors: [95, 96, 97, 98, 99, 100, 101, 102],
+        codeName: "Forest-Dungeons",
+        name: "Hidden Forest",
+        floors: [54, 55, 56, 57, 58, 59, 60],
     },
     {
         codeName: "Gomb-base",
@@ -86,9 +71,19 @@ const DungeonsFilters = [
         floors: [103, 104, 105],
     },
     {
-        codeName: "Shrine-base",
-        name: "Shrine",
-        floors: [106, 107, 108, 109, 110, 111, 112, 113],
+        codeName: "Bad-Dungeons",
+        name: "Badlands Gate",
+        floors: [67, 68, 69, 70, 71, 72, 73, 74],
+    },
+    {
+        codeName: "Jungle-Dungeons",
+        name: "Outback",
+        floors: [87, 88, 89, 90, 91, 92, 93, 94],
+    },
+    {
+        codeName: "Vale-dung",
+        name: "The Vale",
+        floors: [81, 82, 83, 84, 85, 86],
     },
     {
         codeName: "Cennyn-base",
@@ -97,13 +92,18 @@ const DungeonsFilters = [
     },
     {
         codeName: "chidden1",
-        name: "chidden1",
+        name: "Cennyn City Hidden 1",
         floors: [121, 122, 123],
     },
     {
         codeName: "chidden2",
-        name: "chidden2",
+        name: "Cennyn City Hidden 2",
         floors: [124, 125, 126],
+    },
+    {
+        codeName: "Frozen-base",
+        name: "Frozen Wastes",
+        floors: [95, 96, 97, 98, 99, 100, 101, 102],
     },
     {
         codeName: "Plains-Base",
@@ -117,12 +117,12 @@ const DungeonsFilters = [
     },
     {
         codeName: "Naleg-Base",
-        name: "naleg",
+        name: "Naleg",
         floors: [138, 139, 140, 141, 142],
     },
     {
         codeName: "nhidden1",
-        name: "nhidden1",
+        name: "Naleg Hidden 1",
         floors: [143, 144, 145],
     },
     {

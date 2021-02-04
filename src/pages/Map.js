@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 import H2 from '../components/H2';
 
 export default function Map() {
     const [mapHeight, setMapHeight] = useState(window.innerHeight * 0.8);
+    const hash = useLocation().hash;
 
     useEffect(() => {
         window.addEventListener('resize', () => {
@@ -19,16 +22,14 @@ export default function Map() {
                 <div>
                     <p className='bold underline'>Work in progress</p>
                     <ul className='no-list-style'>
-                        <li>❗ Island-2 isn't finish yet</li>
-                        <br />
-                        <li>⏩ Monsters still not added</li>
+                        <li>❗ Only Island 1 is made</li>
                         <br />
                         <li>🟡 If you have any feedback or want to contribute to add markers, contact me on discord</li>
                     </ul>
                     <div>
                         <object
                             type='text/html'
-                            data={process.env.PUBLIC_URL + '/map'}
+                            data={process.env.PUBLIC_URL + '/map' + hash}
                             width='100%'
                             height={`${mapHeight}px`}
                             style={{ overflow: 'auto', border: '2px solid lightblue' }}

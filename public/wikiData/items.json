@@ -2699,7 +2699,7 @@
             ],
             "foundIn": [
                 {
-                    "name": "chidden1 F2",
+                    "name": "Cennyn City Hidden 1 F2",
                     "chance": "1/201"
                 }
             ]
@@ -5545,7 +5545,7 @@
             ],
             "foundIn": [
                 {
-                    "name": "chidden2 F2",
+                    "name": "Cennyn City Hidden 2 F2",
                     "chance": "1/201"
                 }
             ]
@@ -7674,7 +7674,7 @@
             ],
             "foundIn": [
                 {
-                    "name": "chidden1 F1",
+                    "name": "Cennyn City Hidden 1 F1",
                     "chance": "1/201"
                 }
             ]
@@ -10921,6 +10921,10 @@
                 {
                     "name": "S'Thel Oasis F3",
                     "chance": "5/56"
+                },
+                {
+                    "name": "Hidden Cove",
+                    "chance": "1709/10000"
                 }
             ]
         },
@@ -11493,6 +11497,10 @@
                 {
                     "name": "Gombard Town F3",
                     "chance": "5/21"
+                },
+                {
+                    "name": "Hidden Cove",
+                    "chance": "1709/10000"
                 }
             ]
         },
@@ -11819,6 +11827,10 @@
                 {
                     "name": "Cennyn City F5",
                     "chance": "1/2"
+                },
+                {
+                    "name": "Hidden Cove",
+                    "chance": "1709/10000"
                 }
             ]
         },
@@ -11951,27 +11963,27 @@
                     "chance": "1/2"
                 },
                 {
-                    "name": "chidden1 F1",
+                    "name": "Cennyn City Hidden 1 F1",
                     "chance": "100/201"
                 },
                 {
-                    "name": "chidden1 F2",
+                    "name": "Cennyn City Hidden 1 F2",
                     "chance": "100/201"
                 },
                 {
-                    "name": "chidden1 F3",
+                    "name": "Cennyn City Hidden 1 F3",
                     "chance": "1/2"
                 },
                 {
-                    "name": "chidden2 F1",
+                    "name": "Cennyn City Hidden 2 F1",
                     "chance": "1/2"
                 },
                 {
-                    "name": "chidden2 F2",
+                    "name": "Cennyn City Hidden 2 F2",
                     "chance": "100/201"
                 },
                 {
-                    "name": "chidden2 F3",
+                    "name": "Cennyn City Hidden 2 F3",
                     "chance": "1/2"
                 },
                 {
@@ -12019,35 +12031,35 @@
                     "chance": "1/2"
                 },
                 {
-                    "name": "naleg F1",
+                    "name": "Naleg F1",
                     "chance": "1/2"
                 },
                 {
-                    "name": "naleg F2",
+                    "name": "Naleg F2",
                     "chance": "1/2"
                 },
                 {
-                    "name": "naleg F3",
+                    "name": "Naleg F3",
                     "chance": "1/2"
                 },
                 {
-                    "name": "naleg F4",
+                    "name": "Naleg F4",
                     "chance": "1/2"
                 },
                 {
-                    "name": "naleg F5",
+                    "name": "Naleg F5",
                     "chance": "1/2"
                 },
                 {
-                    "name": "nhidden1 F1",
+                    "name": "Naleg Hidden 1 F1",
                     "chance": "1/2"
                 },
                 {
-                    "name": "nhidden1 F2",
+                    "name": "Naleg Hidden 1 F2",
                     "chance": "1/2"
                 },
                 {
-                    "name": "nhidden1 F3",
+                    "name": "Naleg Hidden 1 F3",
                     "chance": "1/2"
                 },
                 {
@@ -12241,6 +12253,10 @@
                 {
                     "name": "Gates of Hell F10",
                     "chance": "1/2"
+                },
+                {
+                    "name": "Hidden Cove",
+                    "chance": "1709/10000"
                 }
             ]
         },
@@ -14578,1108 +14594,1112 @@
             ],
             "foundIn": [
                 {
-                    "name": "Aria-3",
+                    "name": "Aria Town F3",
                     "chance": "5/14",
                     "min": "5",
                     "max": "10"
                 },
                 {
-                    "name": "Aria-6",
+                    "name": "Aria Town F6",
                     "chance": "1/3",
                     "min": "20",
                     "max": "50"
                 },
                 {
-                    "name": "Aria-Crypt",
+                    "name": "Graveyard F",
                     "chance": "5/6",
                     "min": "10",
                     "max": "30"
                 },
                 {
-                    "name": "Aria-Crypt-2",
+                    "name": "Graveyard F2",
                     "chance": "5/16",
                     "min": "20",
                     "max": "30"
                 },
                 {
-                    "name": "Mnt-Dungeons",
+                    "name": "Mountains ",
                     "chance": "20/31",
                     "min": "50",
                     "max": "100"
                 },
                 {
-                    "name": "Mnt-2",
+                    "name": "Mountains F2",
                     "chance": "20/33",
                     "min": "50",
                     "max": "100"
                 },
                 {
-                    "name": "Mnt-3",
+                    "name": "Mountains F3",
                     "chance": "20/33",
                     "min": "50",
                     "max": "100"
                 },
                 {
-                    "name": "Mnt-4",
+                    "name": "Mountains F4",
                     "chance": "20/34",
                     "min": "50",
                     "max": "100"
                 },
                 {
-                    "name": "Mnt-5",
+                    "name": "Mountains F5",
                     "chance": "20/34",
                     "min": "50",
                     "max": "100"
                 },
                 {
-                    "name": "Wild-Dungeons",
+                    "name": "Wilderness F1",
                     "chance": "50/156",
                     "min": "10",
                     "max": "30"
                 },
                 {
-                    "name": "Wild-2",
+                    "name": "Wilderness F2",
                     "chance": "50/155",
                     "min": "10",
                     "max": "30"
                 },
                 {
-                    "name": "Wild-3",
+                    "name": "Wilderness F3",
                     "chance": "50/155",
                     "min": "10",
                     "max": "30"
                 },
                 {
-                    "name": "Wild-4",
+                    "name": "Wilderness F4",
                     "chance": "50/156",
                     "min": "10",
                     "max": "30"
                 },
                 {
-                    "name": "Wild-5",
+                    "name": "Wilderness F5",
                     "chance": "50/156",
                     "min": "10",
                     "max": "30"
                 },
                 {
-                    "name": "Sthel-Dungeons",
+                    "name": "S'Thel Oasis F1",
                     "chance": "50/56",
                     "min": "40",
                     "max": "90"
                 },
                 {
-                    "name": "Sthel2",
+                    "name": "S'Thel Oasis F2",
                     "chance": "50/56",
                     "min": "50",
                     "max": "80"
                 },
                 {
-                    "name": "Sthel3",
+                    "name": "S'Thel Oasis F3",
                     "chance": "50/101",
                     "min": "110",
                     "max": "200"
                 },
                 {
-                    "name": "Sthel4",
+                    "name": "S'Thel Oasis F4",
                     "chance": "50/51",
                     "min": "120",
                     "max": "250"
                 },
                 {
-                    "name": "Sthel5",
+                    "name": "S'Thel Oasis F5",
                     "chance": "50/50",
                     "min": "70",
                     "max": "90"
                 },
                 {
-                    "name": "Sthel6",
+                    "name": "S'Thel Oasis F6",
                     "chance": "50/102",
                     "min": "90",
                     "max": "160"
                 },
                 {
-                    "name": "Sthel8",
+                    "name": "S'Thel Oasis F8",
                     "chance": "50/53",
                     "min": "150",
                     "max": "200"
                 },
                 {
-                    "name": "Sthel9",
+                    "name": "S'Thel Oasis F9",
                     "chance": "50/52",
                     "min": "180",
                     "max": "280"
                 },
                 {
-                    "name": "Vly-Dungeons",
+                    "name": "Valley F1",
                     "chance": "50/52",
                     "min": "2",
                     "max": "20"
                 },
                 {
-                    "name": "Vly-2",
+                    "name": "Valley F2",
                     "chance": "50/52",
                     "min": "20",
                     "max": "50"
                 },
                 {
-                    "name": "Vly-3",
+                    "name": "Valley F3",
                     "chance": "50/52",
                     "min": "20",
                     "max": "50"
                 },
                 {
-                    "name": "Vly-4",
+                    "name": "Valley F4",
                     "chance": "50/71",
                     "min": "20",
                     "max": "50"
                 },
                 {
-                    "name": "Vly-5",
+                    "name": "Valley F5",
                     "chance": "50/71",
                     "min": "20",
                     "max": "40"
                 },
                 {
-                    "name": "Drt-Dungeons",
+                    "name": "Cyclops Valley F1",
                     "chance": "4/6",
                     "min": "10",
                     "max": "100"
                 },
                 {
-                    "name": "Drt-2",
+                    "name": "Cyclops Valley F2",
                     "chance": "4/6",
                     "min": "10",
                     "max": "100"
                 },
                 {
-                    "name": "Drt-3",
+                    "name": "Cyclops Valley F3",
                     "chance": "3/5",
                     "min": "10",
                     "max": "100"
                 },
                 {
-                    "name": "Drt-4",
+                    "name": "Cyclops Valley F4",
                     "chance": "3/5",
                     "min": "40",
                     "max": "120"
                 },
                 {
-                    "name": "Drt-5",
+                    "name": "Cyclops Valley F5",
                     "chance": "4/6",
                     "min": "20",
                     "max": "150"
                 },
                 {
-                    "name": "Drt-6",
+                    "name": "Cyclops Valley F6",
                     "chance": "15/17",
                     "min": "20",
                     "max": "90"
                 },
                 {
-                    "name": "Drt-7",
+                    "name": "Cyclops Valley F7",
                     "chance": "30/71",
                     "min": "10",
                     "max": "90"
                 },
                 {
-                    "name": "Heim-Dungeons",
+                    "name": "Dondheim City F1",
                     "chance": "3/5",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Heim-2",
+                    "name": "Dondheim City F2",
                     "chance": "3/5",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Heim-3",
+                    "name": "Dondheim City F3",
                     "chance": "30/71",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Heim-4",
+                    "name": "Dondheim City F4",
                     "chance": "3/5",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Heim-5",
+                    "name": "Dondheim City F5",
                     "chance": "10/21",
                     "min": "20",
                     "max": "70"
                 },
                 {
-                    "name": "Heim-6",
+                    "name": "Dondheim City F6",
                     "chance": "15/36",
                     "min": "20",
                     "max": "50"
                 },
                 {
-                    "name": "Komb-Tower",
+                    "name": "Tower Courtyard F1",
                     "chance": "4/6",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Komb-2",
+                    "name": "Tower Courtyard F2",
                     "chance": "3/5",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Komb-3",
+                    "name": "Tower Courtyard F3",
                     "chance": "40/62",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Komb-4",
+                    "name": "Tower Courtyard F4",
                     "chance": "4/6",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Komb-5",
+                    "name": "Tower Courtyard F5",
                     "chance": "100/201",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-Dungeons",
+                    "name": "Hidden Forest F1",
                     "chance": "10/21",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-2",
+                    "name": "Hidden Forest F2",
                     "chance": "12/23",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-3",
+                    "name": "Hidden Forest F3",
                     "chance": "4/6",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-4",
+                    "name": "Hidden Forest F4",
                     "chance": "40/61",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-5",
+                    "name": "Hidden Forest F5",
                     "chance": "4/6",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-6",
+                    "name": "Hidden Forest F6",
                     "chance": "4/6",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Forest-7",
+                    "name": "Hidden Forest F7",
                     "chance": "4/6",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Nord-Dungeons",
+                    "name": "Nordolk Settlement F1",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Nord-2",
+                    "name": "Nordolk Settlement F2",
                     "chance": "10/23",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Nord-3",
+                    "name": "Nordolk Settlement F3",
                     "chance": "10/21",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Nord-4",
+                    "name": "Nordolk Settlement F4",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Nord-5",
+                    "name": "Nordolk Settlement F5",
                     "chance": "10/23",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Nord-6",
+                    "name": "Nordolk Settlement F6",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-Dungeons",
+                    "name": "Badlands Gate F1",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-2",
+                    "name": "Badlands Gate F2",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-3",
+                    "name": "Badlands Gate F3",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-4",
+                    "name": "Badlands Gate F4",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-5",
+                    "name": "Badlands Gate F5",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-6",
+                    "name": "Badlands Gate F6",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-7",
+                    "name": "Badlands Gate F7",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Bad-8",
+                    "name": "Badlands Gate F8",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Vale-dung",
+                    "name": "The Vale F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Vale-2",
+                    "name": "The Vale F2",
                     "chance": "10/21",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Vale-3",
+                    "name": "The Vale F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Vale-4",
+                    "name": "The Vale F4",
                     "chance": "10/21",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Vale-5",
+                    "name": "The Vale F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Vale-6",
+                    "name": "The Vale F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-Dungeons",
+                    "name": "Outback F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-2",
+                    "name": "Outback F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-3",
+                    "name": "Outback F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-4",
+                    "name": "Outback F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-5",
+                    "name": "Outback F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-6",
+                    "name": "Outback F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-7",
+                    "name": "Outback F7",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Jungle-8",
+                    "name": "Outback F8",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-base",
+                    "name": "Frozen Wastes F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-2",
+                    "name": "Frozen Wastes F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-3",
+                    "name": "Frozen Wastes F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-4",
+                    "name": "Frozen Wastes F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-5",
+                    "name": "Frozen Wastes F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-6",
+                    "name": "Frozen Wastes F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-7",
+                    "name": "Frozen Wastes F7",
                     "chance": "15/31",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Frozen-8",
+                    "name": "Frozen Wastes F8",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Gomb-base",
+                    "name": "Gombard Town F1",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Gomb-2",
+                    "name": "Gombard Town F2",
                     "chance": "10/20",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Gomb-3",
+                    "name": "Gombard Town F3",
                     "chance": "10/21",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-base",
+                    "name": "Shrine F1",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-2",
+                    "name": "Shrine F2",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-3",
+                    "name": "Shrine F3",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-4",
+                    "name": "Shrine F4",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-5",
+                    "name": "Shrine F5",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-6",
+                    "name": "Shrine F6",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-7",
+                    "name": "Shrine F7",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Shrine-8",
+                    "name": "Shrine F8",
                     "chance": "10/15",
                     "min": "10",
                     "max": "50"
                 },
                 {
-                    "name": "Cennyn-base",
+                    "name": "Cennyn City F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Cennyn-2",
+                    "name": "Cennyn City F2",
                     "chance": "200/600",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Cennyn-3",
+                    "name": "Cennyn City F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Cennyn-4",
+                    "name": "Cennyn City F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Cennyn-5",
+                    "name": "Cennyn City F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Cennyn-6",
+                    "name": "Cennyn City F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Cennyn-7",
+                    "name": "Cennyn City F7",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "chidden1",
+                    "name": "Cennyn City Hidden 1 F1",
                     "chance": "100/201",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "chidden1-2",
+                    "name": "Cennyn City Hidden 1 F2",
                     "chance": "100/201",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "chidden1-3",
+                    "name": "Cennyn City Hidden 1 F3",
                     "chance": "1/2",
                     "min": "200",
                     "max": "350"
                 },
                 {
-                    "name": "chidden2",
+                    "name": "Cennyn City Hidden 2 F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "chidden2-2",
+                    "name": "Cennyn City Hidden 2 F2",
                     "chance": "100/201",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "chidden2-3",
+                    "name": "Cennyn City Hidden 2 F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Plains-Base",
+                    "name": "Milain Plains F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Plains-2",
+                    "name": "Milain Plains F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Plains-3",
+                    "name": "Milain Plains F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Plains-4",
+                    "name": "Milain Plains F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Plains-5",
+                    "name": "Milain Plains F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Peaks-Base",
+                    "name": "The Mighty Peaks F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Peaks-2",
+                    "name": "The Mighty Peaks F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Peaks-3",
+                    "name": "The Mighty Peaks F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Peaks-4",
+                    "name": "The Mighty Peaks F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Peaks-5",
+                    "name": "The Mighty Peaks F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Peaks-6",
+                    "name": "The Mighty Peaks F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Naleg-Base",
+                    "name": "Naleg F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Naleg-2",
+                    "name": "Naleg F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Naleg-3",
+                    "name": "Naleg F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Naleg-4",
+                    "name": "Naleg F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Naleg-5",
+                    "name": "Naleg F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "nhidden1",
+                    "name": "Naleg Hidden 1 F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "nhidden1-2",
+                    "name": "Naleg Hidden 1 F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "nhidden1-3",
+                    "name": "Naleg Hidden 1 F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Kor-Base",
+                    "name": "Kor F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Kor-2",
+                    "name": "Kor F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Kor-3",
+                    "name": "Kor F3",
                     "chance": "500/501",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Kor-4",
+                    "name": "Kor F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Kor-5",
+                    "name": "Kor F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-Base",
+                    "name": "Tal Mita Settlment F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-2",
+                    "name": "Tal Mita Settlment F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-3",
+                    "name": "Tal Mita Settlment F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-4",
+                    "name": "Tal Mita Settlment F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-5",
+                    "name": "Tal Mita Settlment F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-6",
+                    "name": "Tal Mita Settlment F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-7",
+                    "name": "Tal Mita Settlment F7",
                     "chance": "200/301",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-8",
+                    "name": "Tal Mita Settlment F8",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-9",
+                    "name": "Tal Mita Settlment F9",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "TalMita-10",
+                    "name": "Tal Mita Settlment F10",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Ynys-Base",
+                    "name": "Port Ynys F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Ynys-2",
+                    "name": "Port Ynys F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Ynys-3",
+                    "name": "Port Ynys F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Ynys-4",
+                    "name": "Port Ynys F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Ynys-5",
+                    "name": "Port Ynys F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Nivek-Base",
+                    "name": "Tal Nivek F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Nivek-2",
+                    "name": "Tal Nivek D2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Nivek-3",
+                    "name": "Tal Nivek D3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Nivek-4",
+                    "name": "Tal Nivek D4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Nivek-5",
+                    "name": "Tal Nivek D5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Nivek-6",
+                    "name": "Tal Nivek D6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Airlon-Base",
+                    "name": "Airlon Settlement F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Airlon-2",
+                    "name": "Airlon Settlement F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Airlon-3",
+                    "name": "Airlon Settlement F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Airlon-4",
+                    "name": "Airlon Settlement F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Airlon-5",
+                    "name": "Airlon Settlement F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Thicket-Base",
+                    "name": "Thicket F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Thicket-2",
+                    "name": "Thicket F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Thicket-3",
+                    "name": "Thicket F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Thicket-4",
+                    "name": "Thicket F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Thicket-5",
+                    "name": "Thicket F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-Base",
+                    "name": "The Island F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-2",
+                    "name": "The Island F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-3",
+                    "name": "The Island F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-4",
+                    "name": "The Island F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-5",
+                    "name": "The Island F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-6",
+                    "name": "The Island F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "Island-7",
+                    "name": "The Island F7",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-Base",
+                    "name": "Gates of Hell F1",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-2",
+                    "name": "Gates of Hell F2",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-3",
+                    "name": "Gates of Hell F3",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-4",
+                    "name": "Gates of Hell F4",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-5",
+                    "name": "Gates of Hell F5",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-6",
+                    "name": "Gates of Hell F6",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-7",
+                    "name": "Gates of Hell F7",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-8",
+                    "name": "Gates of Hell F8",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-9",
+                    "name": "Gates of Hell F9",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
                 },
                 {
-                    "name": "End-10",
+                    "name": "Gates of Hell F10",
                     "chance": "1/2",
                     "min": "100",
                     "max": "250"
+                },
+                {
+                    "name": "Hidden Cove",
+                    "chance": "3164/10000"
                 }
             ]
         },

@@ -23,6 +23,26 @@ export default function DungeonRows(dungeons, customData, id) {
                 data: [
                     `F${idx + 1}`,
                     `${floor.minMonsters} / ${floor.maxMonsters}`,
+                    <div className='maxScroll'>
+                        <ul>
+                            {floor.monsterChance
+                                ? floor.monsterChance.map((monster) => {
+                                      if (monster.type && monster.type !== 'none') {
+                                          return (
+                                              <li key={monster.type}>
+                                                  <Link key={monster.type} to={`/monsters#${monster.type.split(' ').join('_')}`}>
+                                                      {monster.type}
+                                                  </Link>{' '}
+                                                  {`${((monster.chance / totalMonsterChance) * 100).toFixed(2).replace(/\.0+$/, '')}%`}
+                                              </li>
+                                          );
+                                      } else {
+                                          return null;
+                                      }
+                                  })
+                                : null}
+                        </ul>
+                    </div>,
                     floor.chest ? floor.chests : '–',
                     <div className='maxScroll'>
                         <ul>
@@ -42,26 +62,6 @@ export default function DungeonRows(dungeons, customData, id) {
                                       }
                                   })
                                 : '–'}
-                        </ul>
-                    </div>,
-                    <div className='maxScroll'>
-                        <ul>
-                            {floor.monsterChance
-                                ? floor.monsterChance.map((monster) => {
-                                      if (monster.type && monster.type !== 'none') {
-                                          return (
-                                              <li key={monster.type}>
-                                                  <Link key={monster.type} to={`/monsters#${monster.type.split(' ').join('_')}`}>
-                                                      {monster.type}
-                                                  </Link>{' '}
-                                                  {`${((monster.chance / totalMonsterChance) * 100).toFixed(2).replace(/\.0+$/, '')}%`}
-                                              </li>
-                                          );
-                                      } else {
-                                          return null;
-                                      }
-                                  })
-                                : null}
                         </ul>
                     </div>,
                     floor.legend ? <Link to={`/monsters#${floor.legend.split(' ').join('_')}`}>{floor.legend}</Link> : '–',

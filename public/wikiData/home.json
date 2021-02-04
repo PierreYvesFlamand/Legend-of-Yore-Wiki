@@ -1,10 +1,17 @@
 {
-    "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data (+ static level)", "New theme"],
+    "done": [
+        "Monsters / Dungeons finish",
+        "Island 1 Map done",
+        "Hidden Cove in-depth info",
+        "New theme",
+        "Imported all raw Items data",
+        "Imported all raw Monsters data",
+        "Imported all raw Dungeons data (+ static level)"
+    ],
     "planned": [
         "Item filter ?",
-        "Finish all items/monsters description",
+        "Finish all items description",
         "Finish all items OTHER section",
-        "Add overworld data",
         "Other game data (quest, set, treasure map, craft, shop, and more...)",
         "Finish map base work",
         "More Mobile friendly"

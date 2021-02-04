@@ -4736,7 +4736,7 @@
         "options": {
             "poisonBlood": "true"
         },
-        "foundIn": ["Outback F4", "chidden2 F3"]
+        "foundIn": ["Outback F4", "Cennyn City Hidden 2 F3"]
     },
     {
         "name": "Witch Doctor",
@@ -5530,7 +5530,7 @@
                 "onein": "30"
             }
         ],
-        "foundIn": ["chidden1 F1"]
+        "foundIn": ["Cennyn City Hidden 1 F1"]
     },
     {
         "name": "Green Dragoon",
@@ -5565,7 +5565,7 @@
                 "onein": "30"
             }
         ],
-        "foundIn": ["chidden1 F2"]
+        "foundIn": ["Cennyn City Hidden 1 F2"]
     },
     {
         "name": "Blue Dragoon",
@@ -5600,7 +5600,7 @@
                 "onein": "30"
             }
         ],
-        "foundIn": ["chidden1 F3"]
+        "foundIn": ["Cennyn City Hidden 1 F3"]
     },
     {
         "name": "Silver Dragoon",
@@ -5679,7 +5679,7 @@
                 "onein": "50"
             }
         ],
-        "foundIn": ["chidden1 F3"]
+        "foundIn": ["Cennyn City Hidden 1 F3"]
     },
     {
         "name": "Holy Knight",
@@ -5813,7 +5813,7 @@
         "options": {
             "ghost": "true"
         },
-        "foundIn": ["chidden2 F1", "chidden2 F2"]
+        "foundIn": ["Cennyn City Hidden 2 F1", "Cennyn City Hidden 2 F2"]
     },
     {
         "name": "Aparasion",
@@ -5848,7 +5848,7 @@
                 "onein": "50"
             }
         ],
-        "foundIn": ["chidden2 F1", "chidden2 F2", "chidden2 F3"]
+        "foundIn": ["Cennyn City Hidden 2 F1", "Cennyn City Hidden 2 F2", "Cennyn City Hidden 2 F3"]
     },
     {
         "name": "Bongian",
@@ -5878,7 +5878,7 @@
             "name": "Valk Guard",
             "onein": "50"
         },
-        "foundIn": ["chidden1 F1", "chidden1 F3"]
+        "foundIn": ["Cennyn City Hidden 1 F1", "Cennyn City Hidden 1 F3"]
     },
     {
         "name": "Flariangan",
@@ -5908,7 +5908,7 @@
             "name": "Epic Robes",
             "onein": "50"
         },
-        "foundIn": ["chidden1 F2", "chidden1 F3"]
+        "foundIn": ["Cennyn City Hidden 1 F2", "Cennyn City Hidden 1 F3"]
     },
     {
         "name": "Evil Guardian",
@@ -6005,7 +6005,7 @@
                 "chance": "50"
             }
         ],
-        "foundIn": ["chidden2 F3"]
+        "foundIn": ["Cennyn City Hidden 2 F3"]
     },
     {
         "name": "Squal Overlord",
@@ -7068,7 +7068,7 @@
             "name": "Double Clawn",
             "onein": "120"
         },
-        "foundIn": ["The Mighty Peaks F5", "The Mighty Peaks F6", "nhidden1 F1"]
+        "foundIn": ["The Mighty Peaks F5", "The Mighty Peaks F6", "Naleg Hidden 1 F1"]
     },
     {
         "name": "Savagine",
@@ -7172,7 +7172,7 @@
         "item": {
             "name": "Bow"
         },
-        "foundIn": ["nhidden1 F2"]
+        "foundIn": ["Naleg Hidden 1 F2"]
     },
     {
         "name": "Savage Archer",
@@ -7201,7 +7201,7 @@
                 "name": "Bow"
             }
         ],
-        "foundIn": ["The Mighty Peaks F6", "nhidden1 F1"]
+        "foundIn": ["The Mighty Peaks F6", "Naleg Hidden 1 F1"]
     },
     {
         "name": "Savage Chief",
@@ -7794,7 +7794,7 @@
             "min": "90",
             "max": "120"
         },
-        "foundIn": ["nhidden1 F3"]
+        "foundIn": ["Naleg Hidden 1 F3"]
     },
     {
         "name": "Savage Warlord",
@@ -7824,7 +7824,7 @@
             "min": "30",
             "max": "90"
         },
-        "foundIn": ["nhidden1 F2", "nhidden1 F3"]
+        "foundIn": ["Naleg Hidden 1 F2", "Naleg Hidden 1 F3"]
     },
     {
         "name": "Red Gelatinous Cube",
@@ -9690,7 +9690,7 @@
                 "name": "Town Portal"
             }
         ],
-        "foundIn": ["nhidden1 F3"]
+        "foundIn": ["Naleg Hidden 1 F3"]
     },
     {
         "name": "Giant Lizard",

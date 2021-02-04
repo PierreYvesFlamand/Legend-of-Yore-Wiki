@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 import Sprite from '../Sprite';
 
-export default function MonsterRow(monsters) {
+export default function MonsterRow(monsters, isRare = false) {
     return monsters.reduce((acc, monster) => {
         const { health, attack, defence, charge, zen, rage } = monster.statistics;
+
         return [
             ...acc,
             {
@@ -22,15 +23,30 @@ export default function MonsterRow(monsters) {
                     <div className='maxScroll'>
                         <ul>{GetDrop(monster)}</ul>
                     </div>,
-                    monster.foundIn.length ? (
+                    isRare ? (
+                        <>
+                            {monster.foundIn}{' '}
+                            <Link to={`/monsters#${monster.name === 'Golden Imp' ? 'Black_Imp' : monster.name.split(' ')[1]}`}>
+                                {monster.name === 'Golden Imp' ? 'Black Imp' : monster.name.split(' ')[1]}
+                            </Link>
+                        </>
+                    ) : monster.foundIn.length ? (
                         <div className='maxScroll'>
                             <ul>
                                 {monster.foundIn.map((foundIn, id) => {
-                                    return (
-                                        <li key={id}>
-                                            <Link to={`/dungeons#${foundIn.split(' ').join('_').replace("'", '_')}`}>{foundIn}</Link>
-                                        </li>
-                                    );
+                                    if (foundIn.split(' ')[0] === 'Island') {
+                                        return (
+                                            <li key={id}>
+                                                <Link to={`/world_map#${foundIn.split(' ').join('_')}`}>{foundIn}</Link>
+                                            </li>
+                                        );
+                                    } else {
+                                        return (
+                                            <li key={id}>
+                                                <Link to={`/dungeons#${foundIn.split(' ').join('_').replace("'", '_')}`}>{foundIn}</Link>
+                                            </li>
+                                        );
+                                    }
                                 })}
                             </ul>
                         </div>
@@ -44,7 +60,7 @@ export default function MonsterRow(monsters) {
 }
 
 function GetDrop(monster) {
-    if (!monster.item && !monster.itemChance && !~~monster.maxItems) {
+    if ((!monster.item && !monster.itemChance && !~~monster.maxItems) || !monster.item) {
         return '–';
     } else {
         return (

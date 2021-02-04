@@ -1,3 +1,20 @@
+let map;
+const [isle, x, y] = window.location.hash.substring(1).split('&');
+let pointer;
+if (x && y) {
+    pointer = {
+        map: isle ? isle.substring(2) : null,
+        x: x ? Number(x.substring(2)) : null,
+        y: y ? Number(y.substring(2)) : null,
+    };
+} else {
+    pointer = {
+        map: null,
+        x: null,
+        y: null,
+    };
+}
+
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
         document.querySelector('.menuButton').addEventListener('click', () => {
@@ -25,9 +42,17 @@ function buildPage(mapToLoad) {
 // Detect if there is an #Hash location
 function firstSelectedMap() {
     let i = 0;
-    if (location.hash === '#Island_1') {
+    let val;
+    console.log(pointer);
+    if (pointer.map) {
+        val = '#' + pointer.map;
+    } else {
+        val = location.hash;
+    }
+
+    if (val === '#Island_1') {
         i = 0;
-    } else if (location.hash === '#Island_2') {
+    } else if (val === '#Island_2') {
         i = 1;
     }
     return i;
@@ -52,9 +77,9 @@ function buildMenu(name) {
 // Build the Leaflet Map
 function buildMap(mapToLoad) {
     // Declare Map Object
-    let map = L.map('map', {
+    map = L.map('map', {
         zoomControl: false,
-    }).setView(mapToLoad.setView, 2);
+    }).setView(pointer.x && pointer.y ? [pointer.x, pointer.y] : [0, 0], pointer.x && pointer.y ? 3 : 2);
     // Relerence the Tiles
     L.tileLayer('./data/tiles/' + mapToLoad.name + '/{z}/{x}/{y}.png', {
         minZoom: 0,
@@ -122,7 +147,7 @@ function buildMap(mapToLoad) {
     const emptyBox = '<img class="menuImg" src="./data/asset/Main/emptyBox.png">';
 
     document.querySelector('.zoneName').textContent = mapToLoad.name;
-    document.querySelector('.zones').textContent = 'Map';
+    document.querySelector('.zones').textContent = 'Maps';
 
     for (let i = 0; i < buttonData.length; i++) {
         document.querySelector(`#${buttonData[i].id}`).innerHTML = okBox + buttonData[i].content;
@@ -157,28 +182,37 @@ function buildMap(mapToLoad) {
     });
 
     function switchMap(i) {
+        pointer = {
+            map: null,
+            x: null,
+            y: null,
+        };
         map.remove();
         buildPage(allMapData[i].data);
     }
 
-    // var devTool = L.marker([0, 0], {
-    //     draggable: true,
-    // }).addTo(map);
-    // devTool.bindPopup(
-    //     '<span style="color: #48edff; font-family: none; font-size: 16px;"><center>Move me to know a position<br>Dev Tool</center></span>'
-    // );
-    // devTool.on('dragend', function (e) {
-    //     devTool
-    //         .getPopup()
-    //         .setContent(
-    //             '<span style="font-family: none; font-size: 16px;"><center>Clicked ' +
-    //                 devTool.getLatLng().toString() +
-    //                 '<br>' +
-    //                 'Pixels ' +
-    //                 map.project(devTool.getLatLng(), map.getMaxZoom().toString()) +
-    //                 '<br><br>' +
-    //                 '<font color="#48edff">Move me to know a position<br>Dev Tool</font></center></span>'
-    //         )
-    //         .openOn(map);
-    // });
+    if (pointer.x && pointer.y) {
+        const HERE = L.marker([pointer.x, pointer.y], {}).addTo(map);
+    }
+
+    let devTool = L.marker([0, 0], {
+        draggable: true,
+    }).addTo(map);
+    devTool.bindPopup(
+        '<span style="color: #48edff; font-family: none; font-size: 16px; user-select: initial;"><center>Move me to know a position<br>Dev Tool</center></span>'
+    );
+    devTool.on('dragend', function (e) {
+        devTool
+            .getPopup()
+            .setContent(
+                '<span style="font-family: none; font-size: 16px;"><center>Clicked ' +
+                    devTool.getLatLng().toString() +
+                    '<br>' +
+                    'Pixels ' +
+                    map.project(devTool.getLatLng(), map.getMaxZoom().toString()) +
+                    '<br><br>' +
+                    '<font color="#48edff">Move me to know a position<br>Dev Tool</font></center></span>'
+            )
+            .openOn(map);
+    });
 }

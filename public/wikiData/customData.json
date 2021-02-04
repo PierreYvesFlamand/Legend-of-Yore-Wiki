@@ -35,13 +35,230 @@
         "Ogre": {
             "foundIn": "Cyclops Valley F8"
         },
-
         "Ogre Mage": {
             "foundIn": "Cyclops Valley F8"
         },
-
         "Hydra": {
             "foundIn": "Cyclops Valley F8"
+        },
+
+        "Golden Skeleton": {
+            "foundIn": "0.2% to replace common"
+        },
+        "Golden Goblin": {
+            "foundIn": "0.18% to replace common"
+        },
+        "Golden Orc": {
+            "foundIn": "0.15% to replace common"
+        },
+        "Golden Scorpion": {
+            "foundIn": "0.13% to replace common"
+        },
+        "Golden Widow": {
+            "foundIn": "0.11% to replace common"
+        },
+        "Golden Imp": {
+            "foundIn": "0.14% to replace common"
+        },
+        "Golden Feegle": {
+            "foundIn": "0.12% to replace common"
+        },
+        "Golden Creeper": {
+            "foundIn": "0.12% to replace common"
+        },
+
+        "Arrow Tower": {
+            "foundIn": "Dungeons"
+        },
+        "Magic Tower": {
+            "foundIn": "Dungeons"
+        },
+
+        "Blob": {
+            "foundIn": "Passageway"
+        },
+        "Faca": {
+            "foundIn": "Passageway"
+        },
+        "Dark Lord": {
+            "foundIn": ["Passageway", "Hidden Cove"]
+        },
+
+        "Feegle": {
+            "foundIn": "Hidden Cove"
+        },
+        "Feegle Archer": {
+            "foundIn": "Hidden Cove"
+        },
+        "Squal": {
+            "foundIn": "Hidden Cove"
+        },
+        "Skeletal Mage": {
+            "foundIn": "Hidden Cove"
+        },
+        "Imp": {
+            "foundIn": "Hidden Cove"
+        },
+        "Imp Mage": {
+            "foundIn": "Hidden Cove"
+        },
+        "Taffyne": {
+            "foundIn": "Hidden Cove"
+        },
+        "Centaur": {
+            "foundIn": "Hidden Cove"
+        },
+        "Minotaur": {
+            "foundIn": "Hidden Cove"
+        },
+        "Bogie Giant": {
+            "foundIn": "Hidden Cove"
+        },
+        "White Imp": {
+            "foundIn": "Hidden Cove"
+        },
+        "Frost Skull": {
+            "foundIn": ["Hidden Cove", "Island 2"]
+        },
+        "Undead Dwarf": {
+            "foundIn": "Hidden Cove"
+        },
+        "Dwarf Zombie": {
+            "foundIn": "Hidden Cove"
+        },
+        "Skeleton King": {
+            "foundIn": "Hidden Cove"
+        },
+        "Goblin Mage": {
+            "foundIn": "Hidden Cove"
+        },
+        "Giant Scorpion": {
+            "foundIn": "Hidden Cove"
+        },
+        "Red Dragon": {
+            "foundIn": "Hidden Cove"
+        },
+        "Frost Demon": {
+            "foundIn": "Hidden Cove"
+        },
+        "Green Dragon": {
+            "foundIn": "Hidden Cove"
+        },
+
+        "Water Elemental": {
+            "foundIn": "Island 1"
+        },
+        "Robber": {
+            "foundIn": "Island 1"
+        },
+        "Creeper": {
+            "foundIn": "Island 1"
+        },
+        "Wild Dog": {
+            "foundIn": "Island 1"
+        },
+        "Thief": {
+            "foundIn": "Island 1"
+        },
+        "Chicken": {
+            "foundIn": "Island 1"
+        },
+        "Cow": {
+            "foundIn": "Island 1"
+        },
+        "Sheep": {
+            "foundIn": "Island 1"
+        },
+        "Skeleton": {
+            "foundIn": "Island 1"
+        },
+        "Scorpion": {
+            "foundIn": "Island 1"
+        },
+        "Dingo": {
+            "foundIn": "Island 1"
+        },
+        "Bandit": {
+            "foundIn": "Island 1"
+        },
+        "Bear": {
+            "foundIn": "Island 1"
+        },
+        "Cyclops": {
+            "foundIn": "Island 1"
+        },
+        "Rock Troll": {
+            "foundIn": "Island 1"
+        },
+        "Polar Bear": {
+            "foundIn": "Island 1"
+        },
+
+        "Cycarrior": {
+            "foundIn": "Island 2"
+        },
+        "Rhino": {
+            "foundIn": "Island 2"
+        },
+        "Lion": {
+            "foundIn": "Island 2"
+        },
+        "Cannibal": {
+            "foundIn": "Island 2"
+        },
+        "Wolf Rider": {
+            "foundIn": "Island 2"
+        },
+        "Tiger": {
+            "foundIn": "Island 2"
+        },
+        "Zombini": {
+            "foundIn": "Island 2"
+        },
+        "Zomboid": {
+            "foundIn": "Island 2"
+        },
+        "Wild Boar": {
+            "foundIn": "Island 2"
+        },
+        "Enderman": {
+            "foundIn": "Island 2"
+        },
+
+        "Whitian Ninja": {
+            "foundIn": "Island 3"
+        },
+        "Whitian Ninja Elite": {
+            "foundIn": "Island 3"
+        },
+        "Nongan Ninja": {
+            "foundIn": "Island 3"
+        },
+        "Nongan Ninja Elite": {
+            "foundIn": "Island 3"
+        },
+
+        "Squib": {
+            "foundIn": "Island 4"
+        },
+        "Night Goblin": {
+            "foundIn": "Island 4"
+        },
+        "Imp Witch": {
+            "foundIn": "Island 4"
+        },
+        "Imp Warrior": {
+            "foundIn": "Island 4"
+        },
+
+        "Frost Ifrit": {
+            "foundIn": "Island 5"
+        },
+        "Fire Ifrit": {
+            "foundIn": "Island 5"
+        },
+        "Silver Ifrit": {
+            "foundIn": "Island 5"
         }
     }
 }

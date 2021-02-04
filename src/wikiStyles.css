@@ -10,3 +10,27 @@
     list-style: none;
     padding-left: 0.5em;
 }
+
+.button-1 {
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+
+    padding: 0.4em;
+    background: var(--clr-l-blue);
+    border: 1px solid black;
+    font-weight: bold;
+    margin: 0.2em 0.5em;
+    cursor: pointer;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+}
+
+.grid-1 > table {
+    width: max-content;
+}

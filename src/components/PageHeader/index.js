@@ -13,7 +13,7 @@ export default function PageHeader({ children, tablaOfContent = false, ...restPr
                     {tablaOfContent.length > 17 ? (
                         <>
                             <ol>
-                                {tablaOfContent.splice(0, 17).map((link, id) => (
+                                {tablaOfContent.splice(0, 18).map((link, id) => (
                                     <li key={id}>
                                         <span className='number'>{id + 1}.</span> {link}
                                     </li>
