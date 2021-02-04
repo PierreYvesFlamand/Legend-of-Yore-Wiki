@@ -43,7 +43,6 @@ function buildPage(mapToLoad) {
 function firstSelectedMap() {
     let i = 0;
     let val;
-    console.log(pointer);
     if (pointer.map) {
         val = '#' + pointer.map;
     } else {

@@ -60,7 +60,7 @@ export default function MonsterRow(monsters, isRare = false) {
 }
 
 function GetDrop(monster) {
-    if ((!monster.item && !monster.itemChance && !~~monster.maxItems) || !monster.item) {
+    if (!monster.item && !monster.itemChance && !~~monster.maxItems) {
         return '–';
     } else {
         return (

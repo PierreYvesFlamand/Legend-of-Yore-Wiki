@@ -16,5 +16,5 @@
         "Finish map base work",
         "More Mobile friendly"
     ],
-    "issues": ["Firefox table scroll"]
+    "issues": ["Firefox table scroll", "Multiple \"Island _\" text in monsters"]
 }
