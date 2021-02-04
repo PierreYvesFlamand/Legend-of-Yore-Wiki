@@ -195,24 +195,24 @@ function buildMap(mapToLoad) {
         const HERE = L.marker([pointer.x, pointer.y], {}).addTo(map);
     }
 
-    let devTool = L.marker([0, 0], {
-        draggable: true,
-    }).addTo(map);
-    devTool.bindPopup(
-        '<span style="color: #48edff; font-family: none; font-size: 16px; user-select: initial;"><center>Move me to know a position<br>Dev Tool</center></span>'
-    );
-    devTool.on('dragend', function (e) {
-        devTool
-            .getPopup()
-            .setContent(
-                '<span style="font-family: none; font-size: 16px;"><center>Clicked ' +
-                    devTool.getLatLng().toString() +
-                    '<br>' +
-                    'Pixels ' +
-                    map.project(devTool.getLatLng(), map.getMaxZoom().toString()) +
-                    '<br><br>' +
-                    '<font color="#48edff">Move me to know a position<br>Dev Tool</font></center></span>'
-            )
-            .openOn(map);
-    });
+    // let devTool = L.marker([0, 0], {
+    //     draggable: true,
+    // }).addTo(map);
+    // devTool.bindPopup(
+    //     '<span style="color: #48edff; font-family: none; font-size: 16px; user-select: initial;"><center>Move me to know a position<br>Dev Tool</center></span>'
+    // );
+    // devTool.on('dragend', function (e) {
+    //     devTool
+    //         .getPopup()
+    //         .setContent(
+    //             '<span style="font-family: none; font-size: 16px;"><center>Clicked ' +
+    //                 devTool.getLatLng().toString() +
+    //                 '<br>' +
+    //                 'Pixels ' +
+    //                 map.project(devTool.getLatLng(), map.getMaxZoom().toString()) +
+    //                 '<br><br>' +
+    //                 '<font color="#48edff">Move me to know a position<br>Dev Tool</font></center></span>'
+    //         )
+    //         .openOn(map);
+    // });
 }
