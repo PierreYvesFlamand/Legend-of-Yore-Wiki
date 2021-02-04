@@ -1,0 +1,65 @@
+.navigation {
+    width: 100%;
+    position: fixed;
+    padding-bottom: 0.5em;
+    background-color: var(--clr-l-blue);
+    border-bottom: 2px solid rgb(63, 127, 148);
+    z-index: 1;
+}
+
+.navigation ul {
+    width: 100%;
+    max-width: var(--w-max);
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation li {
+    font-size: 1.2rem;
+    padding: 0.7em 0.7em 0.5em;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navigation a,
+.navigation a:visited,
+.navigation a:active {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-yellow);
+
+    transition: transform 200ms ease-in;
+}
+
+.navigation a::after,
+.navigation a:visited::after,
+.navigation a:active::after {
+    position: absolute;
+    bottom: -0.2em;
+    left: 50%;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--clr-yellow);
+    border-radius: 0.2em;
+    box-shadow: 1px 1px 1px black;
+
+    transition: all 150ms ease-in;
+}
+
+.navigation a:hover,
+.navigation a:focus,
+.navigation .active {
+    outline: none;
+    transform: scale(1.05);
+    position: relative;
+}
+
+.navigation a:hover::after,
+.navigation a:focus::after,
+.navigation .active::after {
+    width: 100%;
+    left: 0%;
+}

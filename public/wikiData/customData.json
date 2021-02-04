@@ -29,5 +29,19 @@
                 }
             ]
         }
+    },
+
+    "monster": {
+        "Ogre": {
+            "foundIn": "Cyclops Valley F8"
+        },
+
+        "Ogre Mage": {
+            "foundIn": "Cyclops Valley F8"
+        },
+
+        "Hydra": {
+            "foundIn": "Cyclops Valley F8"
+        }
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Navigation from './components/Navigation';
+import Navigation from './components/Navigation/';
+import Footer from './components/Footer/';
 
 import Home from './pages/Home';
 import Items from './pages/Items';
@@ -9,9 +10,11 @@ import Monsters from './pages/Monsters';
 import Dungeons from './pages/Dungeons';
 import Map from './pages/Map';
 
-function App() {
+export default function App() {
+    document.querySelector('body').style.background = `url('${process.env.PUBLIC_URL}/data/bg-m.jpg') repeat-x fixed left bottom var(--clr-l-blue)`;
+
     return (
-        <div className='body'>
+        <>
             <Navigation />
             <Switch>
                 <Route exact path='/'>
@@ -33,8 +36,7 @@ function App() {
                     <Redirect to={{ pathname: '/' }} />
                 </Route>
             </Switch>
-        </div>
+            <Footer />
+        </>
     );
 }
-
-export default App;

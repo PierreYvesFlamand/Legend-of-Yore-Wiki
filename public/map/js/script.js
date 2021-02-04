@@ -1,17 +1,20 @@
-// Fisrt map loaded
-$(document).ready(function () {
-    $('.menuButton').click(function () {
-        $('.menu').toggle();
-    });
-    buildPage(allMapData[firstSelectedMap()].data);
-});
+document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+        document.querySelector('.menuButton').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('hideMenu');
+        });
+        buildPage(allMapData[firstSelectedMap()].data);
+    }
+};
+
 // Divice Check
-var isMobile = 'false';
+let isMobile = 'false';
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
     isMobile = 'true';
 }
+
 // Regroup all map Data
-var allMapData = [{ data: island_1 }, { data: island_2 }];
+const allMapData = [{ data: island_1 }, { data: island_2 }];
 
 function buildPage(mapToLoad) {
     location.hash = mapToLoad.name;
@@ -21,7 +24,7 @@ function buildPage(mapToLoad) {
 
 // Detect if there is an #Hash location
 function firstSelectedMap() {
-    var i = 0;
+    let i = 0;
     if (location.hash === '#Island_1') {
         i = 0;
     } else if (location.hash === '#Island_2') {
@@ -33,23 +36,23 @@ function firstSelectedMap() {
 // Build the user buttons menu
 function buildMenu(name) {
     // Reset all buttons
-    $('.menu item').show();
+
+    document.querySelectorAll('.menu div').forEach((item) => {
+        item.style.display = 'block';
+    });
+
     // Remove useless buttons
-    if (name == 'Fjolarok') {
-        $('#Fjolarok').hide();
-    } else if (name == 'Sewer') {
-        $('#Sewer, #npcsButton, #carpSchoolButton, .events, #fishingButton, #halloweenButton, .emptyLine1').hide();
-    } else if (name == 'Cave') {
-        $('#Cave, #carpSchoolButton, .events, #fishingButton, #halloweenButton, .emptyLine1').hide();
-    } else if (name == 'Temple') {
-        $('#Temple, #npcsButton, #carpSchoolButton, #othersButton, .events, #fishingButton, #halloweenButton, .emptyLine1').hide();
+    if (name === 'Island-1') {
+        document.querySelector('#Island-1').style.display = 'none';
+    } else if (name === 'Island-2') {
+        document.querySelector('#Island-2').style.display = 'none';
     }
 }
 
 // Build the Leaflet Map
 function buildMap(mapToLoad) {
     // Declare Map Object
-    var map = L.map('map', {
+    let map = L.map('map', {
         zoomControl: false,
     }).setView(mapToLoad.setView, 2);
     // Relerence the Tiles
@@ -83,8 +86,7 @@ function buildMap(mapToLoad) {
         }),
     ];
 
-    mapToLoad.popup.forEach(mapDataFunction);
-    function mapDataFunction(mapData) {
+    mapToLoad.popup.forEach((mapData) => {
         for (var i = 0; i < mapData.NumberOfCoord; i++)
             L.marker(mapData.coord[i], { icon: L.icon({ iconUrl: mapData.icon, iconSize: [30, 30], iconAnchor: [15, 18], popupAnchor: [-3, -15] }) })
                 .on(isMobile == 'false' ? 'mouseover' : '', function (e) {
@@ -109,7 +111,8 @@ function buildMap(mapToLoad) {
                         '</a></font></i></b></center>'
                 )
                 .addTo(mapData.layerGroup == 'monsters' ? buttonData[0].layerGroup : buttonData[1].layerGroup);
-    }
+    });
+
     // Enable Monsters/Dungeons Markers by default
     buttonData[0].layerGroup.addTo(map);
     buttonData[1].layerGroup.addTo(map);
@@ -118,38 +121,40 @@ function buildMap(mapToLoad) {
     const okBox = '<img class="menuImg" src="./data/asset/Main/okBox.png">';
     const emptyBox = '<img class="menuImg" src="./data/asset/Main/emptyBox.png">';
 
-    $('.zoneName').html(mapToLoad.name);
-    $('.maps').html('Zones');
+    document.querySelector('.zoneName').textContent = mapToLoad.name;
+    document.querySelector('.zones').textContent = 'Map';
 
-    for (i = 0; i < buttonData.length; i++) {
-        $('#' + buttonData[i].id).html(okBox + buttonData[i].content);
+    for (let i = 0; i < buttonData.length; i++) {
+        document.querySelector(`#${buttonData[i].id}`).innerHTML = okBox + buttonData[i].content;
     }
 
-    var i = 0;
-    document.getElementById(buttonData[i++].id).onclick = function () {
+    let i = 0;
+    document.querySelector('#' + buttonData[i++].id).addEventListener('click', () => {
         toggleButton(buttonData[0]);
-    };
-    document.getElementById(buttonData[i].id).onclick = function () {
+    });
+    document.querySelector('#' + buttonData[i].id).addEventListener('click', () => {
         toggleButton(buttonData[1]);
-    };
+    });
 
     function toggleButton(buttonData) {
-        if ($('#' + buttonData.id).html() == okBox + buttonData.content) {
+        if (document.querySelector(`#${buttonData.id}`).innerHTML === okBox + buttonData.content) {
             map.removeLayer(buttonData.layerGroup);
         } else {
             buttonData.layerGroup.addTo(map);
         }
-        $('#' + buttonData.id).html(($('#' + buttonData.id).html() == okBox + buttonData.content ? emptyBox : okBox) + buttonData.content);
+        document.querySelector(`#${buttonData.id}`).innerHTML =
+            (document.querySelector(`#${buttonData.id}`).innerHTML === okBox + buttonData.content ? emptyBox : okBox) + buttonData.content;
     }
 
-    $('#Island-1').html('<img class="menuImg" src="./data/asset/Main/iconDungeon.png"/>' + 'Island-1');
-    document.getElementById('Island-1').onclick = function () {
+    document.querySelector('#Island-1').innerHTML = '<img class="menuImg" src="./data/asset/Main/iconDungeon.png"/>' + 'Island-1';
+    document.querySelector('#Island-1').addEventListener('click', () => {
         switchMap(0);
-    };
-    $('#Island-2').html('<img class="menuImg" src="./data/asset/Main/iconDungeon.png"/>' + 'Island-2');
-    document.getElementById('Island-2').onclick = function () {
+    });
+
+    document.querySelector('#Island-2').innerHTML = '<img class="menuImg" src="./data/asset/Main/iconDungeon.png"/>' + 'Island-2';
+    document.querySelector('#Island-2').addEventListener('click', () => {
         switchMap(1);
-    };
+    });
 
     function switchMap(i) {
         map.remove();

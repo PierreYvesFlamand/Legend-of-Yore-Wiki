@@ -1,7 +1,12 @@
 import React, { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import ItemCard from '../components/ItemCard';
+import H2 from '../components/H2';
+import H3 from '../components/H3';
+import PageHeader from '../components/PageHeader';
+import Table from '../components/Table';
+import GearRow from '../components/Table/GearRow';
+import NonGearRow from '../components/Table/NonGearRow';
 
 import { DataContext } from '../context/dataContext';
 import ItemsFilters from '../utils/ItemsFilters';
@@ -18,89 +23,54 @@ export default function Items() {
         }
     });
 
-    function expandCollapse(e) {
-        const [target, state] = e.target.parentNode.textContent.split(' ');
-        if (state === '[collapse]') {
-            document.querySelector('#' + target.toLowerCase() + ' .items').style.display = 'none';
-            e.target.textContent = '[expand]';
-        } else {
-            document.querySelector('#' + target.toLowerCase() + ' .items').style.display = 'grid';
-            e.target.textContent = '[collapse]';
-        }
-    }
-
     return (
         <main className='content'>
-            <h2>ITEMS</h2>
-            <div className='items-nav'>
-                {ItemsFilters.map((filter) => (
-                    <a key={filter.name} href={`#${filter.name}`}>
-                        {filter.name}
+            <H2>Items</H2>
+            <PageHeader
+                tablaOfContent={ItemsFilters.map((filter, id) => (
+                    <a key={id} href={`#${filter.name}`}>
+                        {filter.name.substring(0, 1).toUpperCase() + filter.name.substring(1)}
                     </a>
                 ))}
-            </div>
-            {items ? (
-                <>
-                    {ItemsFilters.map((filter, id) => {
-                        let itemsList;
-                        switch (filter.type) {
-                            case 'gear':
-                                itemsList = ItemCard(items[filter.name], 'gear');
-                                break;
+            >
+                <p className='bold underline'>Work in progress</p>
+                <ul className='no-list-style'>
+                    <li>⏩ Missing others way to get items (shop, quest, craft, treasure map, ...)</li>
+                    <li>⏩ Missing information about non-equipment items</li>
+                </ul>
+                <p>Here is the list of all the "items" of the game. The value is the sell value</p>
+            </PageHeader>
+            {items
+                ? ItemsFilters.map((filter, id) => {
+                      let table = null;
+                      switch (filter.type) {
+                          case 'gear':
+                              table = (
+                                  <Table
+                                      header={['Icon', 'Name', 'Level', 'Class', 'Atk', 'Def', 'Modifier', 'Value', 'Drop by', 'Other']}
+                                      rows={GearRow(items[filter.name])}
+                                  />
+                              );
+                              break;
 
-                            default:
-                                itemsList = ItemCard(items[filter.name], 'default');
-                                break;
-                        }
+                          default:
+                              table = (
+                                  <Table
+                                      header={['Icon', 'Name', 'Level', 'Class', 'Value', 'Drop by', 'Other']}
+                                      rows={NonGearRow(items[filter.name])}
+                                  />
+                              );
+                              break;
+                      }
 
-                        return (
-                            <section className='items-section' key={id} id={filter.name}>
-                                <h3>
-                                    {filter.name.toUpperCase()} <button onClick={expandCollapse}>[collapse]</button>
-                                </h3>
-                                <div className='items'>
-                                    <div className='cell'>
-                                        <p>Name</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Level</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Classe</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Atk</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Def</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Modifier</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Value</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Droped by</p>
-                                    </div>
-                                    <div className='cell'>
-                                        {' '}
-                                        <p>Other</p>
-                                    </div>
-                                    {itemsList}
-                                </div>
-                            </section>
-                        );
-                    })}
-                </>
-            ) : null}
+                      return (
+                          <section key={id} id={filter.name} className='anchor-Zone'>
+                              <H3>{filter.name.substring(0, 1).toUpperCase() + filter.name.substring(1)}</H3>
+                              <div>{table}</div>
+                          </section>
+                      );
+                  })
+                : null}
         </main>
     );
 }

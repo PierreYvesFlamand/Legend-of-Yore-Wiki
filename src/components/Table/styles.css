@@ -1,0 +1,65 @@
+.table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.table tr {
+    position: relative;
+}
+
+.table th {
+    font-weight: bold;
+    font-size: 105%;
+    background-color: var(--clr-l-blue);
+    padding: 0.4em 0.5em;
+    border: 2px solid rgb(63, 127, 148);
+    background-clip: padding-box;
+}
+
+.table td {
+    background-color: rgba(var(--clr-l-blue-o), 0.45);
+    background-color: var(--clr-ll-blue-table);
+    padding: 0.4em 0.65em;
+    border: 2px solid rgb(63, 127, 148);
+    background-clip: padding-box;
+}
+
+.table p {
+    margin: 0;
+    padding: 0;
+}
+
+.table .maxScroll {
+    max-height: 80px;
+    overflow: overlay;
+}
+
+.table .maxScroll ul {
+    list-style: none;
+    padding: 0.2em 0;
+    padding-right: 0.4em;
+    margin: 0;
+    width: 100%;
+}
+
+.table .maxScroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.table .maxScroll::-webkit-scrollbar-thumb {
+    background-color: var(--clr-l-blue);
+}
+
+.table .maxScroll li {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+@-moz-document url-prefix() {
+    .table .maxScroll {
+        max-height: unset;
+        overflow: hidden;
+    }
+}

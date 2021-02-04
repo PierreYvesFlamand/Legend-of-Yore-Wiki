@@ -1,0 +1,12 @@
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-transform: underline;
+}
+
+.no-list-style {
+    list-style: none;
+    padding-left: 0.5em;
+}

@@ -1,13 +1,13 @@
 {
-    "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data"],
+    "done": ["Imported all raw Items data", "Imported all raw Monsters data", "Imported all raw Dungeons data (+ static level)", "New theme"],
     "planned": [
-        "More CSS",
         "Item filter ?",
         "Finish all items/monsters description",
+        "Finish all items OTHER section",
         "Add overworld data",
-        "Other game data (quest, set, treasure map, craft, shop, and more...",
+        "Other game data (quest, set, treasure map, craft, shop, and more...)",
         "Finish map base work",
-        "Mobile friendly"
+        "More Mobile friendly"
     ],
-    "issues": ["Some undefined value", "Static dungeon floor (Hydra, ...)"]
+    "issues": []
 }

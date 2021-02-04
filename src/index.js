@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import './normalize.css';
 import './styles.css';
+import './wikiStyles.css';
 
 import { DataContextProvider } from './context/dataContext';
 import App from './App';

@@ -4,7 +4,7 @@ var island_2 = {
     popup: [
         // Monsters
         // Dungeon Entrance
-        (Aria_Town = {
+        {
             NumberOfCoord: 1,
             coord: [[-53.330873, -29.53125]],
             icon: './data/asset/Main/iconObj.png',
@@ -13,8 +13,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Aria_Town'],
             layerGroup: 'map',
-        }),
-        (Graveyard = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-71.357067, -30.410156]],
             icon: './data/asset/Main/iconObj.png',
@@ -23,8 +23,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Graveyard'],
             layerGroup: 'map',
-        }),
-        (Caws_Mawr = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-60.06484, 0.878906]],
             icon: './data/asset/Main/iconObj.png',
@@ -33,8 +33,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Caws_Mawr'],
             layerGroup: 'map',
-        }),
-        (Wilderness = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-11.695273, -17.050781]],
             icon: './data/asset/Main/iconObj.png',
@@ -43,8 +43,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Wilderness'],
             layerGroup: 'map',
-        }),
-        (Valley = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-16.972741, -107.929688]],
             icon: './data/asset/Main/iconObj.png',
@@ -53,8 +53,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Valley'],
             layerGroup: 'map',
-        }),
-        (S_Thel_Oasis = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-17.811456, -134.648438]],
             icon: './data/asset/Main/iconObj.png',
@@ -64,8 +64,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#S_Thel_Oasis'],
             layerGroup: 'map',
-        }),
-        (Shrine = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-6.140555, -177.363281]],
             icon: './data/asset/Main/iconObj.png',
@@ -74,8 +74,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Shrine'],
             layerGroup: 'map',
-        }),
-        (Mountains = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[38.548165, -52.734375]],
             icon: './data/asset/Main/iconObj.png',
@@ -84,8 +84,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Mountains'],
             layerGroup: 'map',
-        }),
-        (Dondheim_City = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[47.872144, 1.054688]],
             icon: './data/asset/Main/iconObj.png',
@@ -94,8 +94,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Dondheim_City'],
             layerGroup: 'map',
-        }),
-        (Tower_Courtyard = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[69.162558, 0.175781]],
             icon: './data/asset/Main/iconObj.png',
@@ -104,8 +104,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Tower_Courtyard'],
             layerGroup: 'map',
-        }),
-        (Cyclops_Valley = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[69.900118, -58.183594]],
             icon: './data/asset/Main/iconObj.png',
@@ -114,8 +114,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Cyclops_Valley'],
             layerGroup: 'map',
-        }),
-        (Nordolk_Settlement = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[68.4638, -136.933594]],
             icon: './data/asset/Main/iconObj.png',
@@ -124,8 +124,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Nordolk_Settlement'],
             layerGroup: 'map',
-        }),
-        (Hidden_Forest = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-28.767659, 1.054688]],
             icon: './data/asset/Main/iconObj.png',
@@ -134,8 +134,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Hidden_Forest'],
             layerGroup: 'map',
-        }),
-        (Gombard_Town = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-24.367114, 114.433594]],
             icon: './data/asset/Main/iconObj.png',
@@ -144,8 +144,8 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Gombard_Town'],
             layerGroup: 'map',
-        }),
-        (Passageway = {
+        },
+        {
             NumberOfCoord: 1,
             coord: [[-39.909736, 161.191406]],
             icon: './data/asset/Main/iconObj.png',
@@ -154,6 +154,6 @@ var island_2 = {
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Passageway'],
             layerGroup: 'map',
-        }),
+        },
     ],
 };

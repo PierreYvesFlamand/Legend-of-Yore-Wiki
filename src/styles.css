@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,275 +10,82 @@ html {
 }
 
 :root {
-    --clr-white: rgb(218, 218, 218);
-    --clr-yellow: rgb(226, 226, 55);
-    --clr-orange: rgb(219, 98, 28);
+    --w-max: 1120px;
+
+    --clr-l-blue: #7bc2e2;
+    --clr-l-blue-o: 123, 194, 226;
+    --clr-ll-blue-table: #b0def0;
+    --clr-ll-blue: #9ad3ea;
+    --clr-ll-blue-o: 154, 211, 234;
+    --clr-yellow: #ffff4a;
+
+    --link-clr-1: #631bcf;
+    --link-clr-2: #a471f1;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-yellow);
+    border: 0;
+    border-radius: 50px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.05rem;
-    background-color: black;
-    color: var(--clr-white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.925rem;
+    font-weight: 400;
+    overflow: overlay;
 }
 
-h1,
-h2 {
-    padding-left: 2em;
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-    color: var(--clr-yellow);
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
+body #root {
+    display: flex;
+    flex-direction: column;
 }
 
 a,
 a:visited,
 a:active {
-    color: var(--clr-orange);
+    color: var(--link-clr-1);
     text-decoration: none;
 }
+
 a:hover,
 a:focus {
-    color: rgb(224, 62, 12);
+    color: var(--link-clr-2);
     text-decoration: underline;
+    outline: none;
 }
 
-button {
-    background-color: inherit;
-    font-size: 70%;
-    color: inherit;
-    border: none;
-    cursor: pointer;
-    outline: 0;
+.anchor-Zone {
+    scroll-margin-top: 65px;
 }
 
-.body {
-    max-width: 1250px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 150px auto;
-    position: relative;
+section {
+    margin-top: 1rem;
+}
+
+section > div {
+    padding: 0.2em 0.7em;
 }
 
 .content {
-    grid-column: 2;
-}
-
-.navigation {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 64px;
-    left: 0;
-
-    transition: top 1ms ease-in;
-}
-
-.navigation ul {
-    padding: 0;
-    margin: 0;
-}
-
-.navigation a,
-.navigation a:visited,
-.navigation a:active {
-    background-color: var(--clr-yellow);
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.4em 0.8em;
-    margin: 0.6em 0.5em 0.6em 0.3em;
-    border-radius: 1em;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    outline: none;
-}
-
-.navigation a:focus,
-.navigation a:hover,
-.navigation a.active {
-    color: var(--clr-orange);
-    outline: none;
-}
-
-/* PAGES */
-/* .bgGap {
-    background-color: white;
-    position: absolute;
     width: 100%;
-    height: 100%;
-    grid-row: 1 / 100;
-    grid-column: 1 / -1;
-    z-index: -1;
-} */
-
-/* ITEMS */
-.items-section {
-    margin-bottom: 0.5em;
+    min-height: 85vh;
+    max-width: var(--w-max);
+    margin: 5rem auto;
+    padding: 1em 1.5em;
+    background-color: rgba(var(--clr-ll-blue-o), 0.9);
+    border-radius: 1.2em;
 }
 
-.items-nav,
-.dungeons-nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.items-nav a,
-.dungeons-nav a {
-    background-color: var(--clr-yellow);
-    border-radius: 1em;
-    color: black;
-    font-weight: bold;
-    margin: 0.5em;
-    padding: 0.4em 0.8em;
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
-.items-nav a:hover,
-.dungeons-nav a:hover {
-    color: var(--clr-orange);
-}
-
-.items {
-    display: grid;
-    grid-template-columns: 195px 75px 85px 55px 55px 155px 75px repeat(2, 1fr);
-    text-align: center;
-}
-
-.item-card {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 195px 75px 85px 55px 55px 155px 75px repeat(2, 1fr);
-    border-top: 1px solid var(--clr-white);
-}
-
-.items > .cell p,
-.monsters > .cell p,
-.dungeon > .cell p {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: var(--clr-yellow);
-}
-
-.cell {
-    width: 100%;
-    height: 100%;
-    padding: 0.9em 0.2em;
-    margin-left: 0.2em;
-    border-left: 1px solid var(--clr-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.items > .cell:first-child,
-.monsters > .cell:first-child,
-.dungeon > .cell:first-child {
-    padding: 0;
-    margin-left: 0;
-    border-left: 0;
-}
-
-.item-img,
-.monster-img {
+.sprite {
     width: 32px;
     height: 32px;
-}
-
-.item-card-name {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.item-card-name p {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.cell ul {
-    margin: 0;
-    padding: 0;
-}
-
-.maxScroll {
-    max-height: 100px;
-    padding-right: 0;
-}
-
-.maxScroll li {
-    cursor: default;
-}
-
-.maxScroll ul {
-    width: 100%;
-    overflow: auto;
-    padding-right: 0.2em;
-    margin-right: 0.2em;
-}
-
-.maxScroll ul::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-.maxScroll ul::-webkit-scrollbar {
-    width: 6px;
-}
-
-.maxScroll ul::-webkit-scrollbar-thumb {
-    background-color: var(--clr-orange);
-    border: 0;
-    border-radius: 50px;
-}
-
-/* MONSTERS */
-.monsters {
-    display: grid;
-    grid-template-columns: 195px 65px 95px 45px 55px 55px 150px repeat(2, 1fr);
-    text-align: center;
-}
-
-.monster-card {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 195px 65px 95px 45px 55px 55px 150px repeat(2, 1fr);
-    border-top: 1px solid var(--clr-white);
-}
-
-/* DUNGEONS */
-.dungeon {
-    display: grid;
-    grid-template-columns: 75px 120px 1fr 100px 1fr 130px;
-    text-align: center;
-    margin-bottom: 6em;
-}
-
-.dungeon-card {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 75px 120px 1fr 100px 1fr 130px;
-    border-top: 1px solid var(--clr-white);
-}
-
-.dungeon-card .cell:first-child {
-    padding: 0;
-    margin-left: 0;
-    border-left: 0;
 }

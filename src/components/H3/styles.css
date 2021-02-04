@@ -1,0 +1,28 @@
+.header-3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.7px;
+    margin: 0.3em 0 0.3em 0;
+    position: relative;
+}
+
+.header-3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 115%;
+    left: 0;
+    border-bottom: 1px solid black;
+}
+
+.expandCollapse {
+    margin: 0;
+    padding: 0;
+    padding-left: 0.4em;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    font-size: 0.55em;
+}

@@ -1,0 +1,41 @@
+.pageHeader {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-gap: 80px;
+    padding: 0 0.7em;
+}
+
+.quickLinks {
+    background-color: var(--clr-ll-blue-table);
+    padding: 0.3em 1.5em;
+    width: max-content;
+    font-size: 1rem;
+    border: 1px solid black;
+    margin-right: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 1.2em;
+}
+
+.quickLinks p {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0.5em 0;
+    text-decoration: underline;
+}
+
+.quickLinks ol {
+    list-style: none;
+    padding: 0;
+}
+
+.quickLinks li {
+    margin: 0.3em 0;
+}
+
+.number {
+    display: inline-block;
+    width: 1em;
+    text-align: right;
+    margin-right: 0.2em;
+}
