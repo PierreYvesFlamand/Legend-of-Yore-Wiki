@@ -1158,7 +1158,7 @@
                             "min": "120",
                             "max": "250"
                         },
-                        { "name": "Mighty Axe" },
+                        { "name": "Mighty Axe", "chance": "1" },
                         {
                             "name": "Mace",
                             "chance": "1"
@@ -3288,7 +3288,7 @@
                         "type": "Reanimation",
                         "chance": "1"
                     },
-                    { "type": "Frost Skull" }
+                    { "type": "Frost Skull", "chance": "1" }
                 ]
             },
             {

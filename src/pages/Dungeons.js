@@ -43,7 +43,8 @@ export default function Dungeons() {
                     </a>,
                 ]}
             >
-                <p>Here is the list of all the dungeons of the game</p>
+                <p>Here is the list of all the dungeons of the game.</p>
+                <p>When monsters total of spawn rate isn't 100%, the rest of the rate is "no monster"</p>
             </PageHeader>
             {levels
                 ? DungeonsFilters.map((filter, id) => {
