@@ -1,5 +1,5 @@
 var Tal_Nivek_Island = {
-    name: 'Tal_Nivek Island',
+    name: 'Tal Nivek Island',
     setView: [0, 0],
     popup: [
         // Monsters

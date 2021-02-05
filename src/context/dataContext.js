@@ -68,7 +68,8 @@ function DataContextProvider({ children }) {
                 if (Array.isArray(addedFoundIn)) {
                     monster.foundIn.push(...customData.monster[monster.name].foundIn);
                 } else {
-                    monster.foundIn.push(customData.monster[monster.name].foundIn);
+                    if (monster.foundIn[monster.foundIn.length - 1] !== customData.monster[monster.name].foundIn)
+                        monster.foundIn.push(customData.monster[monster.name].foundIn);
                 }
             }
         });

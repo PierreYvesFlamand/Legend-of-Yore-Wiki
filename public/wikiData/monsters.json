@@ -6688,7 +6688,7 @@
             "min": "40",
             "max": "120"
         },
-        "foundIn": ["naleg F1", "naleg F2", "naleg F5"]
+        "foundIn": ["Naleg F1", "Naleg F2", "Naleg F5"]
     },
     {
         "name": "Guardian",
@@ -6714,7 +6714,7 @@
             "min": "30",
             "max": "80"
         },
-        "foundIn": ["naleg F1", "naleg F2", "naleg F3", "naleg F4", "naleg F5"]
+        "foundIn": ["Naleg F1", "Naleg F2", "Naleg F3", "Naleg F4", "Naleg F5"]
     },
     {
         "name": "Hyrogleen",
@@ -6744,7 +6744,7 @@
             "min": "10",
             "max": "50"
         },
-        "foundIn": ["naleg F3", "naleg F4", "naleg F5"]
+        "foundIn": ["Naleg F3", "Naleg F4", "Naleg F5"]
     },
     {
         "name": "Nongan Ninja",
@@ -9543,7 +9543,7 @@
                 "name": "Town Portal"
             }
         ],
-        "foundIn": ["naleg F5"]
+        "foundIn": ["Naleg F5"]
     },
     {
         "name": "Plaguemaster",
