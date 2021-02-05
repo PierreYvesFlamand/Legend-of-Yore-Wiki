@@ -34,7 +34,7 @@ export default function MonsterRow(monsters, isRare = false) {
                         <div className='maxScroll'>
                             <ul>
                                 {monster.foundIn.map((foundIn, id) => {
-                                    if (foundIn.split(' ')[0] === 'Island') {
+                                    if (foundIn.split(' ')[1] === 'Island' || foundIn.split(' ')[2] === 'Island') {
                                         return (
                                             <li key={id}>
                                                 <Link to={`/world_map#${foundIn.split(' ').join('_')}`}>{foundIn}</Link>
@@ -43,7 +43,7 @@ export default function MonsterRow(monsters, isRare = false) {
                                     } else {
                                         return (
                                             <li key={id}>
-                                                <Link to={`/dungeons#${foundIn.split(' ').join('_').replace("'", '_')}`}>{foundIn}</Link>
+                                                <Link to={`/dungeons#${foundIn.split(' ').slice(0, -1).join('_').replace("'", '_')}`}>{foundIn}</Link>
                                             </li>
                                         );
                                     }
@@ -60,13 +60,13 @@ export default function MonsterRow(monsters, isRare = false) {
 }
 
 function GetDrop(monster) {
-    if (!monster.item && !monster.itemChance && !~~monster.maxItems) {
+    if ((!monster.item && !monster.itemChance) || monster.name === 'Devil') {
         return '–';
     } else {
         return (
             <>
                 {monster.item ? <ItemsDrop items={monster.item} /> : null}
-                {monster.itemChance && ~~monster.maxItems ? <ItemChance itemChance={monster.itemChance} monster={monster} /> : null}
+                {monster.itemChance ? <ItemChance itemChance={monster.itemChance} monster={monster} /> : null}
             </>
         );
     }

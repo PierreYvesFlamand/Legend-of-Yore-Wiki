@@ -61,6 +61,19 @@ function DataContextProvider({ children }) {
     //     console.log(JSON.stringify(editMonsters(monsters, levels), ' ', 4));
     // }
 
+    if (monsters && customData) {
+        monsters.forEach((monster) => {
+            if (Object.keys(customData.monster).includes(monster.name)) {
+                const addedFoundIn = customData.monster[monster.name].foundIn;
+                if (Array.isArray(addedFoundIn)) {
+                    monster.foundIn.push(...customData.monster[monster.name].foundIn);
+                } else {
+                    monster.foundIn.push(customData.monster[monster.name].foundIn);
+                }
+            }
+        });
+    }
+
     return <DataContext.Provider value={{ home, items, monsters, levels, customData }}>{children}</DataContext.Provider>;
 }
 

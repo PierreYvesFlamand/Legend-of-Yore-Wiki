@@ -1,20 +1,17 @@
 {
     "done": [
+        "World map Dungeons / Monsters finish",
         "Monsters / Dungeons finish",
-        "Island 1 Map done",
         "Hidden Cove in-depth info",
         "New theme",
-        "Imported all raw Items data",
-        "Imported all raw Monsters data",
-        "Imported all raw Dungeons data (+ static level)"
+        "Imported all raw Dungeons / Monsters / Items"
     ],
     "planned": [
         "Item filter ?",
         "Finish all items description",
         "Finish all items OTHER section",
         "Other game data (quest, set, treasure map, craft, shop, and more...)",
-        "Finish map base work",
         "More Mobile friendly"
     ],
-    "issues": ["Firefox table scroll", "Multiple \"Island _\" text in monsters"]
+    "issues": ["Firefox table scroll"]
 }

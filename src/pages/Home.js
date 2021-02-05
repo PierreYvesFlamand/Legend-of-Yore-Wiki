@@ -39,7 +39,7 @@ export default function Home() {
             <H2>Contributing - Reporting issues</H2>
             <section>
                 <div>
-                    <p>This wiki is manualy edited.</p>
+                    <p>This wiki is edited only by it's owner (Polfy#6924)</p>
                     <p>If you want to contribute or report any issues, feel free to contact me on Discord at Polfy#6924.</p>
                     <p>
                         <a target='_blank' rel='noreferrer' href='https://discord.gg/YKXpRrrunp' title='Legends of Yore Discord'>

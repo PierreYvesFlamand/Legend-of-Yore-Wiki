@@ -14,21 +14,12 @@ import RaresFilter from '../utils/RaresFilter';
 import MonstersNotFound from '../utils/MonstersNotFound';
 
 export default function Monsters() {
-    const { monsters, customData } = useContext(DataContext);
+    const { monsters } = useContext(DataContext);
     const hash = useLocation().hash;
 
     const filtredMonsters = { legends: [], commons: [], rares: [], notFound: [] };
-    if ((monsters, customData)) {
+    if (monsters) {
         monsters.forEach((monster) => {
-            if (Object.keys(customData.monster).includes(monster.name)) {
-                const addedFoundIn = customData.monster[monster.name].foundIn;
-                if (Array.isArray(addedFoundIn)) {
-                    monster.foundIn.push(...customData.monster[monster.name].foundIn);
-                } else {
-                    monster.foundIn.push(customData.monster[monster.name].foundIn);
-                }
-            }
-
             if (LegendsFilter.includes(monster.name)) {
                 filtredMonsters.legends.push(monster);
             } else if (RaresFilter.includes(monster.name)) {
@@ -60,7 +51,7 @@ export default function Monsters() {
                     <a href={`#no_location`}>No location</a>,
                 ]}
             >
-                <p>Here is the list of all the monsters and legend of the game</p>
+                <p>Here is the list of all the monsters of the game</p>
             </PageHeader>
             {filtredMonsters ? (
                 <>

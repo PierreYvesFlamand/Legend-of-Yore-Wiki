@@ -20,12 +20,8 @@ export default function Map() {
 
             <section>
                 <div>
-                    <p className='bold underline'>Work in progress</p>
-                    <ul className='no-list-style'>
-                        <li>❗ Only Island 1 is made</li>
-                        <br />
-                        <li>🟡 If you have any feedback or want to contribute to add markers, contact me on discord</li>
-                    </ul>
+                    <p>🟡 If you have any feedback or want to contribute to add markers, contact me on discord</p>
+
                     <div>
                         <object
                             type='text/html'

@@ -118,7 +118,7 @@
             "foundIn": "Hidden Cove"
         },
         "Frost Skull": {
-            "foundIn": ["Hidden Cove", "Island 2"]
+            "foundIn": ["Hidden Cove", "Cennyn Island"]
         },
         "Undead Dwarf": {
             "foundIn": "Hidden Cove"
@@ -146,119 +146,119 @@
         },
 
         "Water Elemental": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Robber": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Creeper": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Wild Dog": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Thief": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Chicken": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Cow": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Sheep": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Skeleton": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Scorpion": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Dingo": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Bandit": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Bear": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Cyclops": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Rock Troll": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
         "Polar Bear": {
-            "foundIn": "Island 1"
+            "foundIn": "Aria Island"
         },
 
         "Cycarrior": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Rhino": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Lion": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Cannibal": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Wolf Rider": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Tiger": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Zombini": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Zomboid": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Wild Boar": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
         "Enderman": {
-            "foundIn": "Island 2"
+            "foundIn": "Cennyn Island"
         },
 
         "Whitian Ninja": {
-            "foundIn": "Island 3"
+            "foundIn": "Ynys Island"
         },
         "Whitian Ninja Elite": {
-            "foundIn": "Island 3"
+            "foundIn": "Ynys Island"
         },
         "Nongan Ninja": {
-            "foundIn": "Island 3"
+            "foundIn": "Ynys Island"
         },
         "Nongan Ninja Elite": {
-            "foundIn": "Island 3"
+            "foundIn": "Ynys Island"
         },
 
         "Squib": {
-            "foundIn": "Island 4"
+            "foundIn": "Tal Nivek Island"
         },
         "Night Goblin": {
-            "foundIn": "Island 4"
+            "foundIn": "Tal Nivek Island"
         },
         "Imp Witch": {
-            "foundIn": "Island 4"
+            "foundIn": "Tal Nivek Island"
         },
         "Imp Warrior": {
-            "foundIn": "Island 4"
+            "foundIn": "Tal Nivek Island"
         },
 
         "Frost Ifrit": {
-            "foundIn": "Island 5"
+            "foundIn": "Tal Nivek Island"
         },
         "Fire Ifrit": {
-            "foundIn": "Island 5"
+            "foundIn": "Tal Nivek Island"
         },
         "Silver Ifrit": {
-            "foundIn": "Island 5"
+            "foundIn": "Tal Nivek Island"
         }
     }
 }

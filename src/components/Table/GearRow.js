@@ -47,7 +47,9 @@ export default function GearRow(items) {
                                     {item.foundIn.map((foundIn) => {
                                         return (
                                             <li key={foundIn.name}>
-                                                <Link to={`/dungeons#${foundIn.name.split(' ').join('_').replace("'", '_')}`}>{foundIn.name}</Link>{' '}
+                                                <Link to={`/dungeons#${foundIn.name.split(' ').slice(0, -1).join('_').replace("'", '_')}`}>
+                                                    {foundIn.name}
+                                                </Link>{' '}
                                                 {`${foundIn.chance === '100/100' ? '' : ``} ${(
                                                     (~~foundIn.chance.split('/')[0] / ~~foundIn.chance.split('/')[1]) *
                                                     100
