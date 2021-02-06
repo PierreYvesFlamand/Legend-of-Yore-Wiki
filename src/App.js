@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Items from './pages/Items';
 import Monsters from './pages/Monsters';
 import Dungeons from './pages/Dungeons';
+import Quests from './pages/Quests';
 import Map from './pages/Map';
 
 export default function App() {
@@ -28,6 +29,9 @@ export default function App() {
                 </Route>
                 <Route exact path='/dungeons'>
                     <Dungeons />
+                </Route>
+                <Route exact path='/quests'>
+                    <Quests />
                 </Route>
                 <Route exact path='/world_map'>
                     <Map />

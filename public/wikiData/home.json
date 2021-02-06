@@ -1,5 +1,6 @@
 {
     "done": [
+        "All quests added + Add quest reward on items",
         "World map Dungeons / Monsters finish",
         "Monsters / Dungeons finish",
         "Hidden Cove in-depth info",
@@ -7,10 +8,9 @@
         "Imported all raw Dungeons / Monsters / Items"
     ],
     "planned": [
-        "Item filter ?",
-        "Finish all items description",
-        "Finish all items OTHER section",
-        "Other game data (quest, set, treasure map, craft, shop, and more...)",
+        "Remove from items skills and spells",
+        "Finish all items OTHER section (craft / shop)",
+        "Other game data (set, treasure map, craft, shop, and more...)",
         "More Mobile friendly"
     ],
     "issues": ["Firefox table scroll"]

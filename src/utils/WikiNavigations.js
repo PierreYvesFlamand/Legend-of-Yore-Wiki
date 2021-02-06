@@ -3,6 +3,7 @@ const NavigationLinks = [
     'items',
     'monsters',
     'dungeons',
+    'quests',
     'world map'
 ]
 

@@ -8,6 +8,7 @@ function DataContextProvider({ children }) {
     const [items, setItems] = useState(null);
     const [monsters, setMonsters] = useState(null);
     const [levels, setLevels] = useState(null);
+    const [quests, setQuests] = useState(null);
     const [customData, setCustomData] = useState(null);
 
     useEffect(() => {
@@ -43,6 +44,12 @@ function DataContextProvider({ children }) {
                 setLevels(sortedLevels);
             });
 
+        fetch(process.env.PUBLIC_URL + '/wikiData/quests.json')
+            .then((res) => res.json())
+            .then((data) => {
+                setQuests(data);
+            });
+
         fetch(process.env.PUBLIC_URL + '/wikiData/customData.json')
             .then((res) => res.json())
             .then((data) => {
@@ -75,7 +82,7 @@ function DataContextProvider({ children }) {
         });
     }
 
-    return <DataContext.Provider value={{ home, items, monsters, levels, customData }}>{children}</DataContext.Provider>;
+    return <DataContext.Provider value={{ home, items, monsters, levels, quests, customData }}>{children}</DataContext.Provider>;
 }
 
 export { DataContextProvider, DataContext };

@@ -89,3 +89,7 @@ section > div {
     width: 32px;
     height: 32px;
 }
+
+h4 {
+    margin: 0.5em 0;
+}
