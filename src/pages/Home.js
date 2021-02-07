@@ -1,10 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import H2 from '../components/H2';
 
-import { DataContext } from '../context/dataContext';
-
 export default function Home() {
-    const homeData = useContext(DataContext).home;
     window.scrollTo(0, 0);
 
     return (
@@ -26,11 +23,38 @@ export default function Home() {
                         </a>
                     </p>
                     <p className='bold underline'>Already Done :</p>
-                    <ul className='no-list-style'>{homeData ? homeData.done.map((txt, id) => <li key={id}>✅ {txt}</li>) : null}</ul>
+                    <ul className='no-list-style'>
+                        {[
+                            'Added activities (Repairing, Crafting, Fishing, Digging, Finding)',
+                            'All quests added + Add quest reward on items',
+                            'World map Dungeons / Monsters finish',
+                            'Monsters / Dungeons finish',
+                            'Hidden Cove in-depth info',
+                            'New theme',
+                            'Imported all raw Dungeons / Monsters / Items',
+                        ].map((txt, id) => (
+                            <li key={id}>✅ {txt}</li>
+                        ))}
+                    </ul>
                     <p className='bold underline'>Planned :</p>
-                    <ul className='no-list-style'>{homeData ? homeData.planned.map((txt, id) => <li key={id}>⏩ {txt}</li>) : null}</ul>
+                    <ul className='no-list-style'>
+                        {[
+                            'Set',
+                            'Npc click to see on map',
+                            'New top navigation + mobile friendly',
+                            'Finish all items OTHER section (shop, treasure map)',
+                            'Other game data (set, treasure map, shop, and more...)',
+                            'More Mobile friendly',
+                        ].map((txt, id) => (
+                            <li key={id}>⏩ {txt}</li>
+                        ))}
+                    </ul>
                     <p className='bold underline'>Known issues :</p>
-                    <ul className='no-list-style'>{homeData ? homeData.issues.map((txt, id) => <li key={id}>❗ {txt}</li>) : null}</ul>
+                    <ul className='no-list-style'>
+                        {['Medicine Man - The Treaty Quest description', 'Firefox table scroll'].map((txt, id) => (
+                            <li key={id}>❗ {txt}</li>
+                        ))}
+                    </ul>
                     <br />
                     <br />
                 </div>

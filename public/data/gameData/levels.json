@@ -1028,12 +1028,22 @@
                 "ref": "maps/sthelportal.txt",
                 "key": "false",
                 "tileset": "16",
-                "chests": "5",
                 "width": "40",
                 "height": "40",
                 "rooms": "20",
                 "minMonsters": "1",
-                "maxMonsters": "5"
+                "chests": "0",
+                "maxMonsters": "2",
+                "monsterChance": [
+                    {
+                        "type": "Liche",
+                        "chance": "1"
+                    },
+                    {
+                        "type": "Ghoul",
+                        "chance": "1"
+                    }
+                ]
             },
             {
                 "id": "Sthel2",
@@ -1972,13 +1982,24 @@
                 "id": "Drt-8",
                 "ref": "maps/hydralair.txt",
                 "tileset": "16",
-                "chests": "5",
                 "width": "40",
                 "height": "40",
                 "rooms": "20",
                 "minMonsters": "2",
-                "maxMonsters": "5",
-                "crackChance": "30"
+                "crackChance": "30",
+                "chests": "0",
+                "legend": "Hydra",
+                "maxMonsters": "4",
+                "monsterChance": [
+                    {
+                        "type": "Ogre Mage",
+                        "chance": "1"
+                    },
+                    {
+                        "type": "Ogre",
+                        "chance": "1"
+                    }
+                ]
             },
             {
                 "id": "Heim-Dungeons",

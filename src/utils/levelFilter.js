@@ -1,5 +1,5 @@
 // prettier-ignore
-const DungeonsFilters = [
+const levelFilter = [
     {
         codeName: "Aria-Dungeons",
         name: "Aria Town",
@@ -132,7 +132,7 @@ const DungeonsFilters = [
     },
     {
         codeName: "TalMita-Base",
-        name: "Tal Mita Settlment",
+        name: "Tal Mita Settlement",
         floors: [151, 152, 153, 154, 155, 156, 157, 158, 159, 160],
     },
     {
@@ -167,4 +167,4 @@ const DungeonsFilters = [
     },
 ];
 
-export default DungeonsFilters;
+export default levelFilter;

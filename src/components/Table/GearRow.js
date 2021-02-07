@@ -44,10 +44,34 @@ export default function GearRow(items) {
                         item.foundIn.length ? (
                             <div className='maxScroll'>
                                 <ul>
-                                    {item.foundIn.map((foundIn) => {
-                                        if (foundIn.name) {
+                                    {item.foundIn.map((foundIn, id) => {
+                                        if (foundIn === 'Crafting') {
                                             return (
-                                                <li key={foundIn.name}>
+                                                <li key={id}>
+                                                    <Link to={`/activities#crafting`}>Crafting</Link>
+                                                </li>
+                                            );
+                                        } else if (foundIn === 'Finding') {
+                                            return (
+                                                <li key={id}>
+                                                    <Link to={`/activities#finding`}>Finding</Link>
+                                                </li>
+                                            );
+                                        } else if (foundIn === 'Fishing') {
+                                            return (
+                                                <li key={id}>
+                                                    <Link to={`/activities#fishing`}>Fishing</Link>
+                                                </li>
+                                            );
+                                        } else if (foundIn === 'Digging') {
+                                            return (
+                                                <li key={id}>
+                                                    <Link to={`/activities#digging`}>Digging</Link>
+                                                </li>
+                                            );
+                                        } else if (foundIn.name) {
+                                            return (
+                                                <li key={id}>
                                                     <Link to={`/dungeons#${foundIn.name.split(' ').slice(0, -1).join('_').replace("'", '_')}`}>
                                                         {foundIn.name}
                                                     </Link>{' '}
@@ -61,7 +85,7 @@ export default function GearRow(items) {
                                             );
                                         } else {
                                             return (
-                                                <li key={foundIn.quest}>
+                                                <li key={id}>
                                                     Quest{' '}
                                                     <Link to={`/quests#${foundIn.quest.split(' ').join('_').replace("'", '_')}`}>
                                                         {foundIn.quest}

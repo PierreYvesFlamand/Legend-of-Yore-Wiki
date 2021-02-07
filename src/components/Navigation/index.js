@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import NavigationLinks from '../../utils/WikiNavigations';
 
 import './styles.css';
 
@@ -15,7 +14,7 @@ export default function Navigation() {
                         Home
                     </Link>
                 </li>
-                {NavigationLinks.map((link, id) => {
+                {['items', 'monsters', 'dungeons', 'quests', 'activities', 'world map'].map((link, id) => {
                     return (
                         <li key={id}>
                             <Link to={`/${link.split(' ').join('_')}`} className={path === link ? 'active' : ''}>

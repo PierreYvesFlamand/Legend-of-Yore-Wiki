@@ -9,10 +9,9 @@ import GearRow from '../components/Table/GearRow';
 import NonGearRow from '../components/Table/NonGearRow';
 
 import { DataContext } from '../context/dataContext';
-import ItemsFilters from '../utils/ItemsFilters';
 
 export default function Items() {
-    const items = useContext(DataContext).items;
+    const { equipments, items } = useContext(DataContext);
     const hash = useLocation().hash;
 
     useEffect(() => {
@@ -25,52 +24,55 @@ export default function Items() {
 
     return (
         <main className='content'>
-            <H2>Items</H2>
+            <H2>Gears</H2>
             <PageHeader
-                tablaOfContent={ItemsFilters.map((filter, id) => (
-                    <a key={id} href={`#${filter.name}`}>
-                        {filter.name.substring(0, 1).toUpperCase() + filter.name.substring(1)}
-                    </a>
-                ))}
+                tablaOfContent={[
+                    ...Object.keys(equipments).reduce((acc, type) => {
+                        return [...acc, <a href={`#${type}`}>{type.substring(0, 1).toUpperCase() + type.substring(1)}</a>];
+                    }, []),
+                    ...Object.keys(items).reduce((acc, type) => {
+                        return [...acc, <a href={`#${type.split(' ').join('_')}`}>{type.substring(0, 1).toUpperCase() + type.substring(1)}</a>];
+                    }, []),
+                ]}
             >
                 <p className='bold underline'>Work in progress</p>
                 <ul className='no-list-style'>
-                    <li>⏩ Missing others way to get items (shop, quest, craft, treasure map, ...)</li>
-                    <li>⏩ Missing information about non-equipment items</li>
+                    <li>⏩ Missing others way to get items (shop, treasure map)</li>
                 </ul>
-                <p>Here is the list of all the "items" of the game. The value is the sell value</p>
+                <p>Here is the list of all the gears of the game. The value is the sell value</p>
             </PageHeader>
-            {items
-                ? ItemsFilters.map((filter, id) => {
-                      let table = null;
-                      switch (filter.type) {
-                          case 'gear':
-                              table = (
-                                  <Table
-                                      header={['Icon', 'Name', 'Level', 'Class', 'Atk', 'Def', 'Modifier', 'Value', 'Drop by', 'Other']}
-                                      rows={GearRow(items[filter.name])}
-                                  />
-                              );
-                              break;
-
-                          default:
-                              table = (
-                                  <Table
-                                      header={['Icon', 'Name', 'Level', 'Class', 'Value', 'Drop by', 'Other']}
-                                      rows={NonGearRow(items[filter.name])}
-                                  />
-                              );
-                              break;
-                      }
-
-                      return (
-                          <section key={id} id={filter.name} className='anchor-Zone'>
-                              <H3>{filter.name.substring(0, 1).toUpperCase() + filter.name.substring(1)}</H3>
-                              <div>{table}</div>
-                          </section>
-                      );
-                  })
-                : null}
+            {Object.keys(equipments).map((type, id) => {
+                return (
+                    <section key={id} id={type} className='anchor-Zone'>
+                        <H3>{type.substring(0, 1).toUpperCase() + type.substring(1)}</H3>
+                        <div>
+                            <Table
+                                header={['Icon', 'Name', 'Level', 'Class', 'Atk', 'Def', 'Modifier', 'Value', 'Drop by', 'Other']}
+                                rows={GearRow(equipments[type])}
+                            />
+                        </div>
+                    </section>
+                );
+            })}
+            {Object.keys(items).map((type, id) => {
+                return (
+                    <section key={id} id={type.split(' ').join('_')} className='anchor-Zone'>
+                        <H3>{type.substring(0, 1).toUpperCase() + type.substring(1)}</H3>
+                        <div>
+                            {type === 'quest item' ? (
+                                <Table header={['Icon', 'Name']} rows={NonGearRow(items[type], 'quest-item')} />
+                            ) : type === 'consumable' ? (
+                                <Table
+                                    header={['Icon', 'Name', 'Effect', 'Value', 'Drop by', 'Other']}
+                                    rows={NonGearRow(items[type], 'consumable')}
+                                />
+                            ) : (
+                                <Table header={['Icon', 'Name', 'Value', 'Drop by', 'Other']} rows={NonGearRow(items[type])} />
+                            )}
+                        </div>
+                    </section>
+                );
+            })}
         </main>
     );
 }

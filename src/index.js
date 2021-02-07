@@ -9,6 +9,8 @@ import './wikiStyles.css';
 import { DataContextProvider } from './context/dataContext';
 import App from './App';
 
+document.querySelector('body').style.background = `url('${process.env.PUBLIC_URL}/data/bg-m.jpg') repeat-x fixed left bottom var(--clr-l-blue)`;
+
 ReactDOM.render(
     <DataContextProvider>
         <Router basename='/Legends_of_Yore/wiki'>

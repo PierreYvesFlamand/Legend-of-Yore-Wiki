@@ -1,0 +1,74 @@
+import React, { useEffect } from 'react';
+
+import { Link, useLocation } from 'react-router-dom';
+
+import H2 from '../components/H2';
+import H3 from '../components/H3';
+import PageHeader from '../components/PageHeader';
+
+import Crafting from '../components/Crafting.js';
+import Fishing from '../components/Fishing.js';
+import Digging from '../components/Digging.js';
+import Finding from '../components/Finding.js';
+
+export default function Activities() {
+    const hash = useLocation().hash;
+
+    useEffect(() => {
+        if (hash && document.querySelector(hash) && hash !== '#Dungeons') {
+            document.querySelector(hash).scrollIntoView();
+        } else {
+            window.scrollTo(0, 0);
+        }
+    });
+
+    return (
+        <main className='content'>
+            <H2>Activities</H2>
+            <PageHeader
+                tablaOfContent={['repairing', 'crafting', 'fishing', 'digging', 'finding'].reduce((acc, item) => {
+                    return [...acc, <a href={`#${item}`}>{item.substring(0, 1).toUpperCase() + item.substring(1)}</a>];
+                }, [])}
+            >
+                <p className='bold underline'>Work in progress</p>
+                <ul className='no-list-style'>
+                    <li>⏩ Treasure map to add</li>
+                </ul>
+            </PageHeader>
+            <section id='repairing' className='anchor-Zone'>
+                <H3>Repairing</H3>
+                <div>
+                    <p>
+                        You can spend 5000 <Link to='/items#Gold'>Gold</Link> and a <Link to='/items#Rusty_Sword'>Rusty Sword</Link> /{' '}
+                        <Link to='/items#Dirty_Staff'>Dirty Staff</Link> / <Link to='/items#Grimey_Bow'>Grimey Bow</Link> at any gears seller.
+                    </p>
+                    <p>It will produce a random weapon of the same type from level 0 to [your_level * 0.8].</p>
+                </div>
+            </section>
+            <section id='crafting' className='anchor-Zone'>
+                <H3>Crafting</H3>
+                <div>
+                    <Crafting />
+                </div>
+            </section>
+            <section id='fishing' className='anchor-Zone'>
+                <H3>Fishing</H3>
+                <div>
+                    <Fishing />
+                </div>
+            </section>
+            <section id='digging' className='anchor-Zone'>
+                <H3>Digging</H3>
+                <div>
+                    <Digging />
+                </div>
+            </section>
+            <section id='finding' className='anchor-Zone'>
+                <H3>Finding</H3>
+                <div>
+                    <Finding />
+                </div>
+            </section>
+        </main>
+    );
+}

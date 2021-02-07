@@ -9,11 +9,10 @@ import Items from './pages/Items';
 import Monsters from './pages/Monsters';
 import Dungeons from './pages/Dungeons';
 import Quests from './pages/Quests';
+import Activities from './pages/Activities';
 import Map from './pages/Map';
 
 export default function App() {
-    document.querySelector('body').style.background = `url('${process.env.PUBLIC_URL}/data/bg-m.jpg') repeat-x fixed left bottom var(--clr-l-blue)`;
-
     return (
         <>
             <Navigation />
@@ -32,6 +31,9 @@ export default function App() {
                 </Route>
                 <Route exact path='/quests'>
                     <Quests />
+                </Route>
+                <Route exact path='/activities'>
+                    <Activities />
                 </Route>
                 <Route exact path='/world_map'>
                     <Map />

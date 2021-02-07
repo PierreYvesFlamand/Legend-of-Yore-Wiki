@@ -10,7 +10,7 @@ import Sprite from '../components/Sprite';
 import HiddenCoveMonsters from '../components/HiddenCoveMonsters';
 
 import { DataContext } from '../context/dataContext';
-import DungeonsFilters from '../utils/DungeonsFilters';
+import levelFilter from '../utils/levelFilter';
 
 export default function Dungeons() {
     const levels = useContext(DataContext).levels;
@@ -30,7 +30,7 @@ export default function Dungeons() {
             <H2>Dungeons</H2>
             <PageHeader
                 tablaOfContent={[
-                    ...DungeonsFilters.map((filter, id) => (
+                    ...levelFilter.map((filter, id) => (
                         <a key={id} href={`#${filter.name.split(' ').join('_').replace("'", '_')}`}>
                             {filter.name}
                         </a>
@@ -47,7 +47,7 @@ export default function Dungeons() {
                 <p>When monsters total of spawn rate isn't 100%, the rest of the rate is "no monster"</p>
             </PageHeader>
             {levels
-                ? DungeonsFilters.map((filter, id) => {
+                ? levelFilter.map((filter, id) => {
                       return (
                           <section key={id} id={filter.name.split(' ').join('_').replace("'", '_')} className='anchor-Zone'>
                               <H3>{filter.name.substring(0, 1).toUpperCase() + filter.name.substring(1)}</H3>

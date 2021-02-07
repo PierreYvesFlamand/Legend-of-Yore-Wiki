@@ -1,42 +1,35 @@
 import React, { useState, useEffect } from 'react';
 // import ItemsFilters from '../utils/ItemsFilters';
-import DungeonsFilters from '../utils/DungeonsFilters';
+import levelFilter from '../utils/levelFilter';
 const DataContext = React.createContext();
 
 function DataContextProvider({ children }) {
-    const [home, setHome] = useState(null);
+    const [equipments, setEquipments] = useState(null);
     const [items, setItems] = useState(null);
-    const [monsters, setMonsters] = useState(null);
     const [levels, setLevels] = useState(null);
+    const [monsters, setMonsters] = useState(null);
     const [quests, setQuests] = useState(null);
-    const [customData, setCustomData] = useState(null);
+    const [skillsSpell, setSkillsSpell] = useState(null);
 
     useEffect(() => {
-        fetch(process.env.PUBLIC_URL + '/wikiData/home.json')
+        fetch(process.env.PUBLIC_URL + '/data/gameData/equipments.json')
             .then((res) => res.json())
             .then((data) => {
-                setHome(data);
+                setEquipments(data);
             });
 
-        fetch(process.env.PUBLIC_URL + '/wikiData/monsters.json') // ./data/actortypes.json -- ./wikiData/monsters.json
+        fetch(process.env.PUBLIC_URL + '/data/gameData/items.json')
             .then((res) => res.json())
             .then((data) => {
-                setMonsters(data);
-                // setMonsters(data.types.actorType.filter((monster) => monster.hasOwnProperty('exp')));
+                setItems(data);
             });
 
-        fetch(process.env.PUBLIC_URL + '/wikiData/items.json') // ./data/itemtypes.json -- ./wikiData/items.json
-            .then((res) => res.json())
-            .then((data) => {
-                setItems(data); // .types.itemType
-            });
-
-        fetch(process.env.PUBLIC_URL + '/data/levels.json')
+        fetch(process.env.PUBLIC_URL + '/data/gameData/levels.json')
             .then((res) => res.json())
             .then((data) => {
                 const sortedLevels = {};
-                DungeonsFilters.forEach((filter) => {
-                    sortedLevels[filter.name] = data.levels.level.filter((level, id) => filter.floors.includes(id));
+                levelFilter.forEach((filter) => {
+                    sortedLevels[filter.name] = data.levels.level.filter((_, id) => filter.floors.includes(id));
                     if (filter.name === 'Tower Courtyard') {
                         sortedLevels[filter.name] = sortedLevels[filter.name].reverse();
                     }
@@ -44,48 +37,44 @@ function DataContextProvider({ children }) {
                 setLevels(sortedLevels);
             });
 
-        fetch(process.env.PUBLIC_URL + '/wikiData/quests.json')
+        fetch(process.env.PUBLIC_URL + '/data/gameData/monsters.json')
+            .then((res) => res.json())
+            .then((data) => {
+                setMonsters(data);
+            });
+
+        fetch(process.env.PUBLIC_URL + '/data/gameData/quests.json')
             .then((res) => res.json())
             .then((data) => {
                 setQuests(data);
             });
 
-        fetch(process.env.PUBLIC_URL + '/wikiData/customData.json')
+        fetch(process.env.PUBLIC_URL + '/data/gameData/skillsSpell.json')
             .then((res) => res.json())
             .then((data) => {
-                setCustomData(data);
+                setSkillsSpell(data);
             });
     }, []);
 
-    // // PRE SORT PURPOSE
-    // if (items && monsters && levels) {
-    //     console.log(editItems(items, monsters, levels));
-    //     console.log(JSON.stringify(editItems(items, monsters, levels), ' ', 4));
-    // }
-
-    // if (monsters && levels) {
-    //     console.log(editMonsters(monsters, levels));
-    //     console.log(JSON.stringify(editMonsters(monsters, levels), ' ', 4));
-    // }
-
-    if (monsters && customData) {
-        monsters.forEach((monster) => {
-            if (Object.keys(customData.monster).includes(monster.name)) {
-                const addedFoundIn = customData.monster[monster.name].foundIn;
-                if (Array.isArray(addedFoundIn)) {
-                    monster.foundIn.push(...customData.monster[monster.name].foundIn);
-                } else {
-                    if (monster.foundIn[monster.foundIn.length - 1] !== customData.monster[monster.name].foundIn)
-                        monster.foundIn.push(customData.monster[monster.name].foundIn);
-                }
-            }
-        });
-    }
-
-    return <DataContext.Provider value={{ home, items, monsters, levels, quests, customData }}>{children}</DataContext.Provider>;
+    return (
+        <DataContext.Provider value={{ equipments, items, levels, monsters, quests, skillsSpell }}>
+            {equipments && items && levels && monsters && quests && skillsSpell ? children : null}
+        </DataContext.Provider>
+    );
 }
 
 export { DataContextProvider, DataContext };
+
+// // PRE SORT PURPOSE
+// if (items && monsters && levels) {
+//     console.log(editItems(items, monsters, levels));
+//     console.log(JSON.stringify(editItems(items, monsters, levels), ' ', 4));
+// }
+
+// if (monsters && levels) {
+//     console.log(editMonsters(monsters, levels));
+//     console.log(JSON.stringify(editMonsters(monsters, levels), ' ', 4));
+// }
 
 // function Obj2Arr(item) {
 //     return !Array.isArray(item) && item ? [item] : item;

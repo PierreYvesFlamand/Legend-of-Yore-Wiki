@@ -1,0 +1,964 @@
+{
+    "spell": [
+        {
+            "name": "Fireball",
+            "id": "6",
+            "tile": "95",
+            "desc": "Casts a ball of fire towards the opponent",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "0",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "6",
+            "attackMod": "4",
+            "defenceMod": "0",
+            "projectile": "97",
+            "cost": "500",
+            "stacks": "true",
+            "failChance": "6",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Imp",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Ettin Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Vampire",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Dark Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Arch Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Hydra",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Hydron",
+                    "chance": "1/4"
+                },
+                {
+                    "name": "Orc Witchdoctor",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Fire Elemental",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Dragon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Imp Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Mystic",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Dark Fawn",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Fire Beast",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Magic Tower",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Yellow Dragoon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Green Dragoon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Squal Overlord",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Enderman",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Anubian",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Dark Wikka",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Firmir Witch Doctor",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Lizard Shaman",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Banshee",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Golgothra Magician",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Mutant Farseer",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Firmir Cleric",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Snobling Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Lava Lizard",
+                    "chance": "100/100"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Frost Bolt",
+            "id": "23",
+            "tile": "107",
+            "desc": "Casts a bolt of ice towards the opponent",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "7",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "20",
+            "attackMod": "9",
+            "defenceMod": "0",
+            "projectile": "68",
+            "cost": "2200",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "4",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Spectre",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Liche",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Medusette",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Dark Magician",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Ogre Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Ice Elemental",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Frost Giant",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Frostie",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Frost Dragon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Frost Demon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Frost Skull",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Orc Witch",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Goblin Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Skeletal Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Dwarf Zombie",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Ystrad",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Wikka",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Blue Dragoon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Aparasion",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Savagine",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Bogle Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Beastman Shaman",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Deathbringer",
+                    "chance": "100/100"
+                }
+            ],
+            "foundIn": [
+                {
+                    "name": "Aria Town F7",
+                    "chance": "1/11"
+                },
+                {
+                    "name": "Mountains F4",
+                    "chance": "1/34"
+                },
+                {
+                    "name": "Mountains F5",
+                    "chance": "1/34"
+                }
+            ]
+        },
+        {
+            "name": "Explosion",
+            "id": "24",
+            "tile": "109",
+            "desc": "Cast to damage the target and others",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "27",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "50",
+            "attackMod": "18",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "8000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "3",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Faabian",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Medusa",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Cycage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Green Dragon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "White Imp",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Micen Mage",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Horned Ogre Elder",
+                    "chance": "100/100"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Greater Heal",
+            "id": "25",
+            "tile": "103",
+            "desc": "Powerful healing spell",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "15",
+            "classes": "wizard",
+            "charge": "40",
+            "cost": "2500",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "1",
+            "sellType": "magic",
+            "action": {
+                "attribute": "hp",
+                "delta": "200"
+            },
+            "dropedBy": [],
+            "foundIn": [
+                {
+                    "name": "S'Thel Oasis F10",
+                    "chance": "1/52"
+                }
+            ]
+        },
+        {
+            "name": "Freeze",
+            "id": "43",
+            "tile": "122",
+            "desc": "Attempt to freeze an opponent",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "8",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "30",
+            "attackMod": "3",
+            "defenceMod": "0",
+            "projectile": "68",
+            "cost": "3000",
+            "stacks": "true",
+            "failChance": "40",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Arch Mage",
+                    "chance": "1/26"
+                },
+                {
+                    "name": "Rock Troll",
+                    "chance": "1/1"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Teleport",
+            "id": "48",
+            "tile": "105",
+            "desc": "Teleport yourself to another location",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "10",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "35",
+            "cost": "4000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "10",
+            "sellType": "magic",
+            "dropedBy": [],
+            "foundIn": [
+                {
+                    "name": "S'Thel Oasis F9",
+                    "chance": "1/53"
+                }
+            ]
+        },
+        {
+            "name": "Move",
+            "id": "57",
+            "tile": "119",
+            "desc": "Open doors or chests from a distance",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "21",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "35",
+            "cost": "6000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "10",
+            "sellType": "magic",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Magic Missile",
+            "id": "116",
+            "tile": "108",
+            "desc": "Cast to damage the target",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "31",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "45",
+            "attackMod": "30",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "28000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "3",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Slurg Beast",
+                    "chance": "1/5"
+                },
+                {
+                    "name": "Mazor",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Babbeh",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Silver Dragoon",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Necromantic",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Skaven Caster",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Savage Witchdoctor",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Imp Witch",
+                    "chance": "100/100"
+                },
+                {
+                    "name": "Horned Ogre Wizard",
+                    "chance": "100/100"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Fire Fists",
+            "id": "175",
+            "tile": "121",
+            "desc": "Cast a magical fire around the wizards hands (+4 ATK)",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "76",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "60",
+            "cost": "54000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "10",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Golden Golem",
+                    "chance": "1/20"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Steel Skin",
+            "id": "176",
+            "tile": "120",
+            "desc": "Make the wizard's skin as steel (+4 DEF)",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "71",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "80",
+            "cost": "43000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "10",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Giant Scorpion",
+                    "chance": "1/20"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Lightning",
+            "id": "179",
+            "tile": "117",
+            "desc": "Cast to damage the target",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "45",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "70",
+            "attackMod": "40",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "48000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Frost Demon",
+                    "chance": "1/20"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Smite",
+            "id": "180",
+            "tile": "118",
+            "desc": "Cast to damage the target",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "55",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "85",
+            "attackMod": "52",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "68000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Skeletal Mage",
+                    "chance": "1/800"
+                },
+                {
+                    "name": "Enoch",
+                    "chance": "100/100"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Invisibility",
+            "id": "181",
+            "tile": "102",
+            "desc": "Turn the caster invisible for 10 turns",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "28",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "40",
+            "cost": "54000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "10",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Orc Witch",
+                    "chance": "1/30"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Protect",
+            "id": "194",
+            "tile": "123",
+            "desc": "Protect wizard from attack (+2 DEF)",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "2",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "20",
+            "cost": "2000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Skeleton",
+                    "chance": "1/50"
+                },
+                {
+                    "name": "Golden Skeleton",
+                    "chance": "1/50"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Flashbang",
+            "id": "195",
+            "tile": "99",
+            "desc": "Bright flash used to stun monsters in melee",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "4",
+            "slot": "spell",
+            "ranged": "false",
+            "classes": "wizard",
+            "charge": "10",
+            "attackMod": "1",
+            "defenceMod": "0",
+            "projectile": "511",
+            "cost": "2000",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Spider",
+                    "chance": "1/30"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Weaken",
+            "id": "257",
+            "tile": "312",
+            "desc": "Reduce an opponents attack",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "8",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "30",
+            "attackMod": "3",
+            "defenceMod": "0",
+            "projectile": "68",
+            "cost": "3000",
+            "stacks": "true",
+            "failChance": "20",
+            "sellType": "magic",
+            "dropedBy": [
+                {
+                    "name": "Dark Fawn",
+                    "chance": "1/10"
+                }
+            ],
+            "foundIn": []
+        },
+        {
+            "name": "Drain",
+            "id": "258",
+            "tile": "313",
+            "desc": "Drain a magic users charge",
+            "use": "false",
+            "destroy": "true",
+            "equip": "true",
+            "level": "21",
+            "slot": "spell",
+            "ranged": "true",
+            "classes": "wizard",
+            "charge": "35",
+            "projectile": "68",
+            "cost": "6000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "10",
+            "sellType": "magic",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Focus",
+            "id": "259",
+            "tile": "314",
+            "desc": "Magically increase Zen through focus",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "65",
+            "classes": "wizard",
+            "charge": "70",
+            "attackMod": "0",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "48000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Anger",
+            "id": "260",
+            "tile": "315",
+            "desc": "Magically increase rage",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "68",
+            "classes": "wizard",
+            "charge": "85",
+            "attackMod": "0",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "68000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Cure",
+            "id": "262",
+            "tile": "316",
+            "desc": "Cure a poisoned player",
+            "use": "true",
+            "destroy": "true",
+            "equip": "false",
+            "level": "22",
+            "classes": "wizard",
+            "charge": "20",
+            "attackMod": "0",
+            "defenceMod": "0",
+            "projectile": "70",
+            "cost": "12000",
+            "save": "true",
+            "stacks": "true",
+            "failChance": "5",
+            "sellType": "magic",
+            "dropedBy": [],
+            "foundIn": []
+        }
+    ],
+    "skills": [
+        {
+            "name": "Stealth",
+            "id": "184",
+            "tile": "248",
+            "desc": "Hide yourself and sneak around",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "19",
+            "charge": "36",
+            "cost": "2",
+            "save": "true",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "First Aid",
+            "id": "185",
+            "tile": "249",
+            "desc": "Heal yourself",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "17",
+            "charge": "60",
+            "save": "true",
+            "failChance": "2",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Distraction",
+            "id": "186",
+            "tile": "250",
+            "desc": "Distract your opponents for a short time",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "41",
+            "charge": "85",
+            "cost": "5",
+            "save": "true",
+            "failChance": "5",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Push",
+            "id": "196",
+            "tile": "251",
+            "desc": "Push an opponent away 2 spaces",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "9",
+            "charge": "28",
+            "cost": "2",
+            "save": "true",
+            "failChance": "10",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Stun",
+            "id": "197",
+            "tile": "252",
+            "desc": "Stun an opponent",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "17",
+            "charge": "60",
+            "cost": "2",
+            "save": "true",
+            "failChance": "10",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Field Dressing",
+            "id": "198",
+            "tile": "253",
+            "desc": "Minor healing ",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "34",
+            "charge": "70",
+            "cost": "2",
+            "save": "true",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Bezerk",
+            "id": "199",
+            "tile": "254",
+            "desc": "Crazed attack hitting those around you",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "25",
+            "charge": "100",
+            "cost": "2",
+            "save": "true",
+            "failChance": "10",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Shield Bash",
+            "id": "209",
+            "tile": "179",
+            "desc": "Push a monster back with your shield",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "14",
+            "charge": "35",
+            "cost": "2",
+            "save": "true",
+            "failChance": "15",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Double Shot",
+            "id": "210",
+            "tile": "223",
+            "desc": "Shoot two arrows at once (need special arrows)",
+            "use": "false",
+            "destroy": "false",
+            "equip": "true",
+            "level": "40",
+            "slot": "skill",
+            "charge": "20",
+            "cost": "2",
+            "save": "true",
+            "failChance": "0",
+            "dropedBy": [],
+            "foundIn": []
+        },
+        {
+            "name": "Charge",
+            "id": "211",
+            "tile": "63",
+            "desc": "Run full speed into an area",
+            "use": "true",
+            "destroy": "false",
+            "equip": "false",
+            "level": "40",
+            "slot": "skill",
+            "charge": "0",
+            "cost": "2",
+            "save": "true",
+            "failChance": "0",
+            "dropedBy": [],
+            "foundIn": []
+        }
+    ]
+}
