@@ -42,7 +42,7 @@ export default function Monsters() {
                             <section key={id} id={quest.town.split(' ').join('_').replace("'", '_')} className='anchor-Zone'>
                                 <H3>{quest.town}</H3>
                                 <div>
-                                    <h4 className='questGiver'>
+                                    <h4>
                                         Quest giver :{' '}
                                         <Link
                                             to={`/world_map#i=${ncpLocation[quest.npc].map}&x=${ncpLocation[quest.npc].x}&y=${

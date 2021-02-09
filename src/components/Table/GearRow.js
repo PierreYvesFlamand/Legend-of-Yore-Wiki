@@ -3,6 +3,23 @@ import { Link } from 'react-router-dom';
 
 import Sprite from '../Sprite';
 
+const sets = {
+    1: 'Crusader set',
+    2: 'Elven set',
+    3: 'Magic set',
+    4: 'Merlin set',
+    5: 'Viking set',
+    6: 'Bandit set',
+    7: 'Ninja set',
+    8: 'Jester set',
+    9: 'Witch doctor set',
+    10: 'Death set',
+    11: 'Spectral set',
+    12: 'Pirate set',
+    13: 'Zombie set',
+    14: 'Shaman set',
+};
+
 export default function GearRow(items) {
     return items
         .sort((a, b) => ~~a.level - ~~b.level)
@@ -146,9 +163,9 @@ function ItemModifier({ modifiers }) {
 
             case 'set':
                 return (
-                    <p key={id} className='gear-info'>
-                        {modif.type} N°{modif.value}
-                    </p>
+                    <a key={id} className='gear-info' href={`#${sets[modif.value].split(' ').join('_')}`}>
+                        {sets[modif.value]}
+                    </a>
                 );
 
             default:

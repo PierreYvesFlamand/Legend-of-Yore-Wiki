@@ -39,7 +39,7 @@ export default function Home() {
                     </ul>
                     <p className='bold underline'>Planned :</p>
                     <ul className='no-list-style'>
-                        {['Pet', 'guide section', 'classes section', 'Set', 'New top navigation + mobile friendly', 'More Mobile friendly'].map(
+                        {['Pet', 'guide section', 'classes section', 'New top navigation + mobile friendly', 'More Mobile friendly'].map(
                             (txt, id) => (
                                 <li key={id}>⏩ {txt}</li>
                             )
@@ -47,7 +47,7 @@ export default function Home() {
                     </ul>
                     <p className='bold underline'>Known issues :</p>
                     <ul className='no-list-style'>
-                        {['Medicine Man - The Treaty Quest description', 'Magic Shops Spell link', 'Firefox table scroll'].map((txt, id) => (
+                        {['Firefox table scroll'].map((txt, id) => (
                             <li key={id}>❗ {txt}</li>
                         ))}
                     </ul>
