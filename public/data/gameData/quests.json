@@ -161,7 +161,7 @@
                 "title": "Lost Child",
                 "summary": "Rescue the Lost Child",
                 "questItem": "Baby",
-                "target": [{ "type": "Dungeon", "name": "Mountains", "monster": "Goblin", "rdm": "20" }],
+                "target": [{ "type": "Dungeon", "name": "Mountains", "monster": "Goblin", "rdm": "5" }],
                 "rewards": [
                     {
                         "name": "exp",
@@ -563,7 +563,7 @@
                 "title": "Nasty Sting",
                 "summary": "Retrieve the Stinger for the King",
                 "questItem": "Giant Stinger",
-                "target": [{ "type": "Dungeon", "name": "Dondheim City", "monster": "Giant Scorpion" }],
+                "target": [{ "type": "Dungeon", "name": "Hidden Cove", "monster": "Giant Scorpion" }],
                 "rewards": [
                     {
                         "name": "exp",
@@ -645,6 +645,144 @@
         ]
     },
     {
+        "town": "Paititi Village",
+        "npc": "Ken",
+        "quests": [
+            {
+                "level": "48",
+                "title": "Newt Replacement",
+                "summary": "Get the Frog's Eye for the Tribe",
+                "questItem": "Eye of Frog",
+                "target": [{ "type": "Dungeon", "name": "Outback", "monster": "Giant Frog" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Shadow Boots"
+                    }
+                ]
+            },
+            {
+                "level": "61",
+                "title": "Slithering Evil",
+                "summary": "Kill 15 Pythons",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Outback", "monster": "Python" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "8000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Troll Club"
+                    }
+                ]
+            },
+            {
+                "level": "72",
+                "title": "Blood of the Elders",
+                "summary": "Find the Blood of the Elders",
+                "questItem": "Blood of Elders",
+                "target": [{ "type": "Map", "name": "Cennyn Island", "monster": "Cannibal", "rdm": "5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Book of Majesty"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Thule",
+        "npc": "Samil",
+        "quests": [
+            {
+                "level": "62",
+                "title": "The Labyrinth",
+                "summary": "Slay Babbeh and Recover the Crystal Ball",
+                "questItem": "Crystal Ball",
+                "target": [{ "type": "Dungeon", "name": "Frozen Wastes", "monster": "Babbeh" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "15000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Clawed Gloves"
+                    }
+                ]
+            },
+            {
+                "level": "68",
+                "title": "Cull the Magic",
+                "summary": "Kill 20 Wikka",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Frozen Wastes", "monster": "Wikka" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "12000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Magicians Tunic"
+                    }
+                ]
+            },
+            {
+                "level": "76",
+                "title": "Portrait of Purity",
+                "summary": "Find the stolen Portrait",
+                "questItem": "Portrait",
+                "target": [{ "type": "Dungeon", "name": "The Vale", "monster": "Black Imp", "rdm": "3.33" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "7800"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Chaos Spear"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "town": "Cennyn City",
         "npc": "Lord Cennyn",
         "quests": [
@@ -653,7 +791,7 @@
                 "title": "Dark side of Magic",
                 "summary": "Recover the Elven Horn",
                 "questItem": "Elven Horn",
-                "target": [{ "type": "Dungeon", "name": "Cennyn City", "monster": "Necromantic", "rdm": "50" }],
+                "target": [{ "type": "Dungeon", "name": "Cennyn City", "monster": "Necromantic", "rdm": "2" }],
                 "rewards": [
                     {
                         "name": "exp",
@@ -735,75 +873,6 @@
         ]
     },
     {
-        "town": "Paititi Village",
-        "npc": "Ken",
-        "quests": [
-            {
-                "level": "48",
-                "title": "Newt Replacement",
-                "summary": "Get the Frog's Eye for the Tribe",
-                "questItem": "Eye of Frog",
-                "target": [{ "type": "Dungeon", "name": "Outback", "monster": "Giant Frog" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "4000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "10000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Shadow Boots"
-                    }
-                ]
-            },
-            {
-                "level": "61",
-                "title": "Slithering Evil",
-                "summary": "Kill 15 Pythons",
-                "questItem": "",
-                "target": [{ "type": "Dungeon", "name": "Outback", "monster": "Python" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "8000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "10000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Troll Club"
-                    }
-                ]
-            },
-            {
-                "level": "72",
-                "title": "Blood of the Elders",
-                "summary": "Find the Blood of the Elders",
-                "questItem": "Blood of Elders",
-                "target": [{ "type": "Map", "name": "Cennyn Island", "monster": "Cannibal", "rdm": "20" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "10000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "5000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Book of Majesty"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "town": "Naleg",
         "npc": "Par Tak",
         "quests": [
@@ -812,7 +881,7 @@
                 "title": "Parot Passion",
                 "summary": "Take the love sick parot to Tal Mita",
                 "questItem": "Marty",
-                "target": [{ "type": "Npc", "name": "Tal Mita Settlement", "monster": "Goodman Durnik" }],
+                "target": [{ "type": "Npc", "name": "Tal Mita Settlement", "npc": "Goodman Durnik" }],
                 "rewards": [
                     {
                         "name": "exp",
@@ -833,7 +902,7 @@
                 "title": "Boat Bother",
                 "summary": "Recover the toy boat from Evok",
                 "questItem": "Toy Boat",
-                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Evok", "rdm": "40" }],
+                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Evok", "rdm": "2.5" }],
                 "rewards": [
                     {
                         "name": "exp",
@@ -867,6 +936,75 @@
                     {
                         "name": "item",
                         "value": "Cutlass"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Tal Mita Settlment",
+        "npc": "Chief Komba",
+        "quests": [
+            {
+                "level": "134",
+                "title": "Giant Problems",
+                "summary": "Slay the Giant",
+                "questItem": "Ancient Scrolls",
+                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Giant Guard" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Dual Swords"
+                    }
+                ]
+            },
+            {
+                "level": "146",
+                "title": "Lost Crown",
+                "summary": "Recover the Lost Crown",
+                "questItem": "King's Crown",
+                "target": [{ "type": "Dungeon", "name": "Kor", "monster": "Skaven Lord", "rdm": "5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Creeper Armor"
+                    }
+                ]
+            },
+            {
+                "level": "150",
+                "title": "Emplings Empathy",
+                "summary": "Slay 15 Emplings",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Skaven Empling" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Centurion Helm"
                     }
                 ]
             }
@@ -915,144 +1053,6 @@
                     {
                         "name": "item",
                         "value": "Blade of Virtue"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "town": "Tal Mita Settlment",
-        "npc": "Chief Komba",
-        "quests": [
-            {
-                "level": "134",
-                "title": "Giant Problems",
-                "summary": "Slay the Giant",
-                "questItem": "Ancient Scrolls",
-                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Giant Guard" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "4000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "3000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Dual Swords"
-                    }
-                ]
-            },
-            {
-                "level": "146",
-                "title": "Lost Crown",
-                "summary": "Recover the Lost Crown",
-                "questItem": "King's Crown",
-                "target": [{ "type": "Dungeon", "name": "Kor", "monster": "Skaven Lord", "rdm": "20" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "3000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "5000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Creeper Armor"
-                    }
-                ]
-            },
-            {
-                "level": "150",
-                "title": "Emplings Empathy",
-                "summary": "Slay 15 Emplings",
-                "questItem": "",
-                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Skaven Empling" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "4000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "1000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Centurion Helm"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "town": "Thule",
-        "npc": "Samil",
-        "quests": [
-            {
-                "level": "62",
-                "title": "The Labyrinth",
-                "summary": "Slay Babbeh and Recover the Crystal Ball",
-                "questItem": "Crystal Ball",
-                "target": [{ "type": "Dungeon", "name": "Frozen Wastes", "monster": "Babbeh" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "10000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "15000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Clawed Gloves"
-                    }
-                ]
-            },
-            {
-                "level": "68",
-                "title": "Cull the Magic",
-                "summary": "Kill 20 Wikka",
-                "questItem": "",
-                "target": [{ "type": "Dungeon", "name": "Frozen Wastes", "monster": "Wikka" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "10000"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "12000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Magicians Tunic"
-                    }
-                ]
-            },
-            {
-                "level": "76",
-                "title": "Portrait of Purity",
-                "summary": "Find the stolen Portrait",
-                "questItem": "Portrait",
-                "target": [{ "type": "Dungeon", "name": "The Vale", "monster": "Black Imp", "rdm": "30" }],
-                "rewards": [
-                    {
-                        "name": "exp",
-                        "value": "7800"
-                    },
-                    {
-                        "name": "gold",
-                        "value": "10000"
-                    },
-                    {
-                        "name": "item",
-                        "value": "Chaos Spear"
                     }
                 ]
             }
@@ -1149,6 +1149,25 @@
         ]
     },
     {
+        "town": "Notch",
+        "npc": "Notch",
+        "quests": [
+            {
+                "level": "1",
+                "title": "Notch's Hat",
+                "summary": "Find Notch's Hat",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "The Island", "monster": "Dark Balrog" }],
+                "rewards": [
+                    {
+                        "name": "gold",
+                        "value": "20000"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "town": "Airlon",
         "npc": "Ponzar",
         "quests": [
@@ -1178,7 +1197,7 @@
                 "title": "Find the Compass",
                 "summary": "Retrieve the Compass from the Urgon",
                 "questItem": "Compass",
-                "target": [{ "type": "Dungeon", "name": "Airlon Settlement", "monster": "Urgon Warrior", "rdm": "20" }],
+                "target": [{ "type": "Dungeon", "name": "Airlon Settlement", "monster": "Urgon Warrior", "rdm": "5" }],
                 "rewards": [
                     {
                         "name": "exp",

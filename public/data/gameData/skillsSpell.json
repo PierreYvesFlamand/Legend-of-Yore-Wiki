@@ -267,7 +267,8 @@
                 {
                     "name": "Mountains F5",
                     "chance": "1/34"
-                }
+                },
+                "Shops"
             ]
         },
         {
@@ -321,7 +322,7 @@
                     "chance": "100/100"
                 }
             ],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Greater Heal",
@@ -348,7 +349,8 @@
                 {
                     "name": "S'Thel Oasis F10",
                     "chance": "1/52"
-                }
+                },
+                "Shops"
             ]
         },
         {
@@ -381,7 +383,7 @@
                     "chance": "1/1"
                 }
             ],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Teleport",
@@ -405,7 +407,8 @@
                 {
                     "name": "S'Thel Oasis F9",
                     "chance": "1/53"
-                }
+                },
+                "Shops"
             ]
         },
         {
@@ -426,7 +429,7 @@
             "failChance": "10",
             "sellType": "magic",
             "dropedBy": [],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Magic Missile",
@@ -487,7 +490,7 @@
                     "chance": "100/100"
                 }
             ],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Fire Fists",
@@ -653,7 +656,7 @@
                     "chance": "1/50"
                 }
             ],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Flashbang",
@@ -681,7 +684,7 @@
                     "chance": "1/30"
                 }
             ],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Weaken",
@@ -731,7 +734,7 @@
             "failChance": "10",
             "sellType": "magic",
             "dropedBy": [],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Focus",
@@ -775,7 +778,7 @@
             "failChance": "5",
             "sellType": "magic",
             "dropedBy": [],
-            "foundIn": []
+            "foundIn": ["Shops"]
         },
         {
             "name": "Cure",
@@ -797,7 +800,7 @@
             "failChance": "5",
             "sellType": "magic",
             "dropedBy": [],
-            "foundIn": []
+            "foundIn": ["Shops"]
         }
     ],
     "skills": [

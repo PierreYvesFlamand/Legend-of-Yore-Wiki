@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+import ncpLocation from '../../utils/npcLocation';
+
 export default function QuestRow(quests) {
     return quests.reduce((acc, quest) => {
         let target;
@@ -34,7 +36,23 @@ export default function QuestRow(quests) {
                 case 'Npc':
                     target = (
                         <>
-                            Talk to {quest.target[0].npc} at {quest.target[0].name}
+                            Talk to{' '}
+                            {Array.isArray(quest.target[0].npc) ? (
+                                quest.target[0].npc.map((npc, id) => (
+                                    <Link key={id} to={`/world_map#i=${ncpLocation[npc].map}&x=${ncpLocation[npc].x}&y=${ncpLocation[npc].y}`}>
+                                        {npc}{' '}
+                                    </Link>
+                                ))
+                            ) : (
+                                <Link
+                                    to={`/world_map#i=${ncpLocation[quest.target[0].npc].map}&x=${ncpLocation[quest.target[0].npc].x}&y=${
+                                        ncpLocation[quest.target[0].npc].y
+                                    }`}
+                                >
+                                    {quest.target[0].npc}
+                                </Link>
+                            )}{' '}
+                            at {quest.target[0].name}
                         </>
                     );
                     break;
@@ -63,12 +81,15 @@ export default function QuestRow(quests) {
                     quest.title,
                     quest.summary,
                     Array.isArray(quest.questItem) ? (
-                        quest.questItem.map((item, id) => (
-                            <span key={id}>
-                                <Link to={`/items#${item.split(' ').join('_').replace("'", '_')}`}>{item}</Link>
-                                <br />
-                            </span>
-                        ))
+                        <div className='maxScroll'>
+                            <ul>
+                                {quest.questItem.map((item, id) => (
+                                    <li key={id}>
+                                        <Link to={`/items#${item.split(' ').join('_').replace("'", '_')}`}>{item}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     ) : quest.questItem ? (
                         <Link to={`/items#${quest.questItem.split(' ').join('_').replace("'", '_')}`}>{quest.questItem}</Link>
                     ) : (

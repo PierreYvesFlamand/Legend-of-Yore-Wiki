@@ -10,6 +10,7 @@ import Monsters from './pages/Monsters';
 import Dungeons from './pages/Dungeons';
 import Quests from './pages/Quests';
 import Activities from './pages/Activities';
+import Shops from './pages/Shops';
 import Map from './pages/Map';
 
 export default function App() {
@@ -34,6 +35,9 @@ export default function App() {
                 </Route>
                 <Route exact path='/activities'>
                     <Activities />
+                </Route>
+                <Route exact path='/shops'>
+                    <Shops />
                 </Route>
                 <Route exact path='/world_map'>
                     <Map />

@@ -52,7 +52,7 @@ var Ynys_Island = {
             popupBody: '► F5 Legend : <b>Slime Ghost</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Port_Ynys'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -62,7 +62,18 @@ var Ynys_Island = {
             popupBody: '► F5 Legend : <b>Giant Lizard</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Airlon_Settlement'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
+        },
+        // TP
+        {
+            NumberOfCoord: 1,
+            coord: [[-83.194896, -28.476562]],
+            icon: './data/asset/Main/iconDungeon.png',
+            popupTitle: '<b>Ship</b>',
+            popupBody: 'Sail to Cennyn Island',
+            popupLinkText: 'Click to teleport',
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            layerGroup: 'portals',
         },
     ],
 };

@@ -34,7 +34,10 @@ export default function MonsterRow(monsters, isRare = false) {
                         <div className='maxScroll'>
                             <ul>
                                 {monster.foundIn.map((foundIn, id) => {
-                                    if (foundIn.split(' ')[1] === 'Island' || foundIn.split(' ')[2] === 'Island') {
+                                    if (
+                                        foundIn.split(' ')[0] !== 'The' &&
+                                        (foundIn.split(' ')[1] === 'Island' || foundIn.split(' ')[2] === 'Island')
+                                    ) {
                                         return (
                                             <li key={id}>
                                                 <Link to={`/world_map#${foundIn.split(' ').join('_')}`}>{foundIn}</Link>
@@ -82,7 +85,7 @@ function ItemsDrop({ items }) {
             {items.map((item, id) => {
                 return (
                     <li key={id}>
-                        <Link to={`/items#${item.name.split(' ').join('_')}`}>{item.name}</Link>{' '}
+                        <Link to={`/items#${item.name.split(' ').join('_').replace("'", '_')}`}>{item.name}</Link>{' '}
                         {item.onein ? `${((1 / ~~item.onein) * 100).toFixed(2).replace(/\.0+$/, '')}%` : '100%'}
                     </li>
                 );
@@ -102,7 +105,7 @@ function ItemChance({ itemChance }) {
             {itemChance.map((item, id) => {
                 return item.chance && item.name && item.name !== 'null' ? (
                     <li key={id}>
-                        <Link to={`/items#${item.name.split(' ').join('_')}`}>{item.name}</Link>{' '}
+                        <Link to={`/items#${item.name.split(' ').join('_').replace("'", '_')}`}>{item.name}</Link>{' '}
                         {`${((item.chance / maxChance) * 100).toFixed(2).replace(/\.0+$/, '')}%`}
                     </li>
                 ) : null;

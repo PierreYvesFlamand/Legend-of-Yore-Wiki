@@ -86,6 +86,11 @@ const levelFilter = [
         floors: [81, 82, 83, 84, 85, 86],
     },
     {
+        codeName: "Frozen-base",
+        name: "Frozen Wastes",
+        floors: [95, 96, 97, 98, 99, 100, 101, 102],
+    },
+    {
         codeName: "Cennyn-base",
         name: "Cennyn City",
         floors: [114, 115, 116, 117, 118, 119, 120],
@@ -101,11 +106,6 @@ const levelFilter = [
         floors: [124, 125, 126],
     },
     {
-        codeName: "Frozen-base",
-        name: "Frozen Wastes",
-        floors: [95, 96, 97, 98, 99, 100, 101, 102],
-    },
-    {
         codeName: "Plains-Base",
         name: "Milain Plains",
         floors: [127, 128, 129, 130, 131],
@@ -114,6 +114,16 @@ const levelFilter = [
         codeName: "Peaks-Base",
         name: "The Mighty Peaks",
         floors: [132, 133, 134, 135, 136, 137],
+    },
+    {
+        codeName: "TalMita-Base",
+        name: "Tal Mita Settlement",
+        floors: [151, 152, 153, 154, 155, 156, 157, 158, 159, 160],
+    },
+    {
+        codeName: "Kor-Base",
+        name: "Kor",
+        floors: [146, 147, 148, 149, 150],
     },
     {
         codeName: "Naleg-Base",
@@ -126,29 +136,19 @@ const levelFilter = [
         floors: [143, 144, 145],
     },
     {
-        codeName: "Kor-Base",
-        name: "Kor",
-        floors: [146, 147, 148, 149, 150],
-    },
-    {
-        codeName: "TalMita-Base",
-        name: "Tal Mita Settlement",
-        floors: [151, 152, 153, 154, 155, 156, 157, 158, 159, 160],
-    },
-    {
         codeName: "Ynys-Base",
         name: "Port Ynys",
         floors: [161, 162, 163, 164, 165],
     },
     {
-        codeName: "Nivek-Base",
-        name: "Tal Nivek",
-        floors: [166, 167, 168, 169, 170, 171],
-    },
-    {
         codeName: "Airlon-Base",
         name: "Airlon Settlement",
         floors: [172, 173, 174, 175, 176],
+    },
+    {
+        codeName: "Nivek-Base",
+        name: "Tal Nivek",
+        floors: [166, 167, 168, 169, 170, 171],
     },
     {
         codeName: "Thicket-Base",

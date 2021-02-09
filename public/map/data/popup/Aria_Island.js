@@ -176,7 +176,7 @@ var Aria_Island = {
             popupBody: '► F5 Legend : <b>Cyclops</b><br>► F7 Legend : <b>Golem</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Aria_Town'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -186,7 +186,7 @@ var Aria_Island = {
             popupBody: '► F3 Legend : <b>Spectre</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Graveyard'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -196,7 +196,7 @@ var Aria_Island = {
             popupBody: '► F6 Legend : <b>Fire Beast</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Caws_Mawr'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -206,7 +206,7 @@ var Aria_Island = {
             popupBody: '► F5 Legend : <b>Slurg Beast</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Wilderness'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -216,7 +216,7 @@ var Aria_Island = {
             popupBody: '► F5 Legend : <b>Medusa</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Valley'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -227,7 +227,7 @@ var Aria_Island = {
                 '► F2 : Crack on the wall to find lvl 50 subclass learner<br>► F3 Legend : <b>Cyclops</b><br>► F3 Legend : <b>Beholder</b><br>► F10 Legend : <b>Chaos Knight</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#S_Thel_Oasis'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -237,7 +237,7 @@ var Aria_Island = {
             popupBody: '► F8 Legend : <b>Treent</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Shrine'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -247,7 +247,7 @@ var Aria_Island = {
             popupBody: '► F5 Legend : <b>Rock Troll</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Mountains'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -257,7 +257,7 @@ var Aria_Island = {
             popupBody: '► F3 Legend : <b>Centaur</b><br>► F6 Legend : <b>Minotaur</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Dondheim_City'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -267,7 +267,7 @@ var Aria_Island = {
             popupBody: '► F5 Legend : <b>Faabian</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Tower_Courtyard'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -277,7 +277,7 @@ var Aria_Island = {
             popupBody: '► F3 Legend : <b>Skeleton King</b><br>► F6 Legend : <b>Genie</b><br>► F8 Legend : <b>Hydra</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Cyclops_Valley'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -287,7 +287,7 @@ var Aria_Island = {
             popupBody: '► F6 Legend : <b>Frost Dragon</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Nordolk_Settlement'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -297,7 +297,7 @@ var Aria_Island = {
             popupBody: '► F7 Legend : <b>Black Knight</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Hidden_Forest'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
@@ -307,17 +307,48 @@ var Aria_Island = {
             popupBody: 'Push the table and the bookcase<br>► F2 Legend : <b>Minotaur</b><br>► F3 Legend : <b>Green Dragon</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Gombard_Town'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
         },
         {
             NumberOfCoord: 1,
             coord: [[-39.909736, 161.191406]],
             icon: './data/asset/Main/iconObj.png',
             popupTitle: '<b>Passageway</b>',
-            popupBody: '► F1 Crack on the wall Legend : <b>Dark Lord</b>',
+            popupBody: 'Passage to Cennyn Island<br>► F1 Crack on the wall Legend : <b>Dark Lord</b>',
             popupLinkText: 'Click to view all floors data',
             popupLink: ['_blank', 'https://www.flapy.be/Legends_of_Yore/wiki/dungeons#Passageway'],
-            layerGroup: 'map',
+            layerGroup: 'dungeons',
+        },
+        // TP
+        {
+            NumberOfCoord: 1,
+            coord: [[0.35156, -170.507813]],
+            icon: './data/asset/Main/iconDungeon.png',
+            popupTitle: '<b>Teleport portal</b>',
+            popupBody: 'Teleport you to the west of Cennyn Island<br>► Must take portal in Cennyn Island first',
+            popupLinkText: 'Click to teleport',
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            layerGroup: 'portals',
+        },
+        {
+            NumberOfCoord: 1,
+            coord: [[-12.897489, -170.859375]],
+            icon: './data/asset/Main/iconDungeon.png',
+            popupTitle: '<b>Teleport portal</b>',
+            popupBody: 'Teleport you to the south of Tal Nivek<br>► Must take portal in Tal Nivek first',
+            popupLinkText: 'Click to teleport',
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Tal_Nivek_Island'],
+            layerGroup: 'portals',
+        },
+        {
+            NumberOfCoord: 1,
+            coord: [[-20.632784, 137.8125]],
+            icon: './data/asset/Main/iconDungeon.png',
+            popupTitle: '<b>Ship</b>',
+            popupBody: 'Sail to the Cennyn Island<br>► Cost 100000 gold the first time',
+            popupLinkText: 'Click to teleport',
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            layerGroup: 'portals',
         },
     ],
 };

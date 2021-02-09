@@ -10,6 +10,7 @@ import Crafting from '../components/Crafting.js';
 import Fishing from '../components/Fishing.js';
 import Digging from '../components/Digging.js';
 import Finding from '../components/Finding.js';
+import TMaps from '../components/TMaps.js';
 
 export default function Activities() {
     const hash = useLocation().hash;
@@ -26,15 +27,10 @@ export default function Activities() {
         <main className='content'>
             <H2>Activities</H2>
             <PageHeader
-                tablaOfContent={['repairing', 'crafting', 'fishing', 'digging', 'finding'].reduce((acc, item) => {
-                    return [...acc, <a href={`#${item}`}>{item.substring(0, 1).toUpperCase() + item.substring(1)}</a>];
+                tablaOfContent={['repairing', 'crafting', 'treasure maps', 'digging', 'fishing', 'finding'].reduce((acc, item) => {
+                    return [...acc, <a href={`#${item.split(' ').join('_')}`}>{item.substring(0, 1).toUpperCase() + item.substring(1)}</a>];
                 }, [])}
-            >
-                <p className='bold underline'>Work in progress</p>
-                <ul className='no-list-style'>
-                    <li>⏩ Treasure map to add</li>
-                </ul>
-            </PageHeader>
+            ></PageHeader>
             <section id='repairing' className='anchor-Zone'>
                 <H3>Repairing</H3>
                 <div>
@@ -51,16 +47,22 @@ export default function Activities() {
                     <Crafting />
                 </div>
             </section>
-            <section id='fishing' className='anchor-Zone'>
-                <H3>Fishing</H3>
+            <section id='treasure_maps' className='anchor-Zone'>
+                <H3>Treasure maps</H3>
                 <div>
-                    <Fishing />
+                    <TMaps />
                 </div>
             </section>
             <section id='digging' className='anchor-Zone'>
                 <H3>Digging</H3>
                 <div>
                     <Digging />
+                </div>
+            </section>
+            <section id='fishing' className='anchor-Zone'>
+                <H3>Fishing</H3>
+                <div>
+                    <Fishing />
                 </div>
             </section>
             <section id='finding' className='anchor-Zone'>

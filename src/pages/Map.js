@@ -12,6 +12,8 @@ export default function Map() {
         window.addEventListener('resize', () => {
             setMapHeight(window.innerHeight * 0.8);
         });
+
+        window.scrollTo(0, 0);
     }, []);
 
     return (
@@ -20,20 +22,16 @@ export default function Map() {
 
             <section>
                 <div>
-                    <p>🟡 If you have any feedback or want to contribute to add markers, contact me on discord</p>
-
-                    <div>
-                        <object
-                            type='text/html'
-                            data={process.env.PUBLIC_URL + '/map' + hash}
-                            width='100%'
-                            height={`${mapHeight}px`}
-                            style={{ overflow: 'auto', border: '2px solid lightblue' }}
-                            aria-label='If you see this message contact me on Dicord : Polfy#6924'
-                            inner-text='If you see this message contact me on Dicord : Polfy#6924'
-                            aria-labelledby='If you see this message contact me on Dicord : Polfy#6924'
-                        ></object>
-                    </div>
+                    <object
+                        type='text/html'
+                        data={process.env.PUBLIC_URL + '/map' + hash}
+                        width='100%'
+                        height={`${mapHeight}px`}
+                        style={{ overflow: 'auto', border: '2px solid lightblue' }}
+                        aria-label='If you see this message contact me on Dicord : Polfy#6924'
+                        inner-text='If you see this message contact me on Dicord : Polfy#6924'
+                        aria-labelledby='If you see this message contact me on Dicord : Polfy#6924'
+                    ></object>
                 </div>
             </section>
         </main>

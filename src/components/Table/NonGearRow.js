@@ -21,16 +21,23 @@ export default function NonGearRow(items, type) {
                             ? [
                                   <Sprite tile={item.tile} spriteSheet='tiles' className='sprite' title={item.name} alt={item.name} />,
                                   <Link to={`/items#${item.name.split(' ').join('_')}`}>{item.name}</Link>,
-                                  item.action
-                                      ? Array.isArray(item.action)
-                                          ? item.action.map((action, id) => (
-                                                <span key={id}>
-                                                    +{action.delta} {action.attribute}
-                                                    <br></br>
-                                                </span>
-                                            ))
-                                          : `+${item.action.delta} ${item.action.attribute}`
-                                      : item.desc,
+                                  item.action ? (
+                                      Array.isArray(item.action) ? (
+                                          <div className='maxScroll'>
+                                              <ul>
+                                                  {item.action.map((action, id) => (
+                                                      <li key={id}>
+                                                          +{action.delta} {action.attribute}
+                                                      </li>
+                                                  ))}
+                                              </ul>
+                                          </div>
+                                      ) : (
+                                          `+${item.action.delta} ${item.action.attribute}`
+                                      )
+                                  ) : (
+                                      item.desc
+                                  ),
                                   ~~(item.cost * 0.05) + 1,
                                   item.dropedBy.length ? (
                                       <div className='maxScroll'>
@@ -57,7 +64,19 @@ export default function NonGearRow(items, type) {
                                       <div className='maxScroll'>
                                           <ul>
                                               {item.foundIn.map((foundIn, id) => {
-                                                  if (foundIn === 'Crafting') {
+                                                  if (foundIn === 'Shops') {
+                                                      return (
+                                                          <li key={id}>
+                                                              <Link to={`/shops#${item.name.split(' ').join('_').replace("'", '_')}`}>Shops</Link>
+                                                          </li>
+                                                      );
+                                                  } else if (foundIn === 'Treasure Map') {
+                                                      return (
+                                                          <li key={id}>
+                                                              <Link to={`/activities#treasure_maps`}>Treasure Map</Link>
+                                                          </li>
+                                                      );
+                                                  } else if (foundIn === 'Crafting') {
                                                       return (
                                                           <li key={id}>
                                                               <Link to={`/activities#crafting`}>Crafting</Link>
@@ -143,7 +162,19 @@ export default function NonGearRow(items, type) {
                                       <div className='maxScroll'>
                                           <ul>
                                               {item.foundIn.map((foundIn, id) => {
-                                                  if (foundIn === 'Crafting') {
+                                                  if (foundIn === 'Shops') {
+                                                      return (
+                                                          <li key={id}>
+                                                              <Link to={`/shops#${item.name.split(' ').join('_').replace("'", '_')}`}>Shops</Link>
+                                                          </li>
+                                                      );
+                                                  } else if (foundIn === 'Treasure Map') {
+                                                      return (
+                                                          <li key={id}>
+                                                              <Link to={`/activities#treasure_maps`}>Treasure Map</Link>
+                                                          </li>
+                                                      );
+                                                  } else if (foundIn === 'Crafting') {
                                                       return (
                                                           <li key={id}>
                                                               <Link to={`/activities#crafting`}>Crafting</Link>

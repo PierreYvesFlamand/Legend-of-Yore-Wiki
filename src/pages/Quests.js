@@ -1,13 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 
 import { DataContext } from '../context/dataContext';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import H2 from '../components/H2';
 import H3 from '../components/H3';
 import PageHeader from '../components/PageHeader';
 import Table from '../components/Table';
 import QuestRow from '../components/Table/QuestRow';
+
+import ncpLocation from '../utils/npcLocation';
 
 export default function Monsters() {
     const { quests } = useContext(DataContext);
@@ -40,7 +42,16 @@ export default function Monsters() {
                             <section key={id} id={quest.town.split(' ').join('_').replace("'", '_')} className='anchor-Zone'>
                                 <H3>{quest.town}</H3>
                                 <div>
-                                    <h4 className='questGiver'>Quest giver : {quest.npc}</h4>
+                                    <h4 className='questGiver'>
+                                        Quest giver :{' '}
+                                        <Link
+                                            to={`/world_map#i=${ncpLocation[quest.npc].map}&x=${ncpLocation[quest.npc].x}&y=${
+                                                ncpLocation[quest.npc].y
+                                            }`}
+                                        >
+                                            {quest.npc}
+                                        </Link>
+                                    </h4>
                                     <Table
                                         header={['Level', 'Name', 'Summary', 'Quest item', 'Description', 'Reward']}
                                         rows={QuestRow(quest.quests)}

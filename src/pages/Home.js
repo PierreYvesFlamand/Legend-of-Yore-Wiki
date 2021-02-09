@@ -25,7 +25,8 @@ export default function Home() {
                     <p className='bold underline'>Already Done :</p>
                     <ul className='no-list-style'>
                         {[
-                            'Added activities (Repairing, Crafting, Fishing, Digging, Finding)',
+                            'Added Shops',
+                            'Added activities (Repairing, Crafting, TMaps, Digging, Fishing, Finding)',
                             'All quests added + Add quest reward on items',
                             'World map Dungeons / Monsters finish',
                             'Monsters / Dungeons finish',
@@ -38,20 +39,15 @@ export default function Home() {
                     </ul>
                     <p className='bold underline'>Planned :</p>
                     <ul className='no-list-style'>
-                        {[
-                            'Set',
-                            'Npc click to see on map',
-                            'New top navigation + mobile friendly',
-                            'Finish all items OTHER section (shop, treasure map)',
-                            'Other game data (set, treasure map, shop, and more...)',
-                            'More Mobile friendly',
-                        ].map((txt, id) => (
-                            <li key={id}>⏩ {txt}</li>
-                        ))}
+                        {['Pet', 'guide section', 'classes section', 'Set', 'New top navigation + mobile friendly', 'More Mobile friendly'].map(
+                            (txt, id) => (
+                                <li key={id}>⏩ {txt}</li>
+                            )
+                        )}
                     </ul>
                     <p className='bold underline'>Known issues :</p>
                     <ul className='no-list-style'>
-                        {['Medicine Man - The Treaty Quest description', 'Firefox table scroll'].map((txt, id) => (
+                        {['Medicine Man - The Treaty Quest description', 'Magic Shops Spell link', 'Firefox table scroll'].map((txt, id) => (
                             <li key={id}>❗ {txt}</li>
                         ))}
                     </ul>

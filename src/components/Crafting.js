@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Table from './Table';
 import Sprite from './Sprite';
 
+import ncpLocation from '../utils/npcLocation';
+
 const craftingData = [
     {
         item: { name: 'Cloak', tile: '129' },
@@ -184,30 +186,32 @@ export default function Crafting() {
                             <Sprite tile={craft.item.tile} spriteSheet='tiles' className='sprite' title={craft.item.name} alt={craft.item.name} />,
                             <Link to={`/items#${craft.item.name.split(' ').join('_')}`}>{craft.item.name}</Link>,
 
-                            craft.material.reduce((acc, mat, id) => {
-                                return [
-                                    ...acc,
-                                    <span key={id}>
-                                        {mat.value}{' '}
-                                        {mat.type ? (
-                                            <Link to={`/items#${mat.item.split(' ').join('_')}`}>{mat.item}</Link>
-                                        ) : (
-                                            <Link to={`/items#${mat.item.split(' ').join('_')}`}>{mat.item}</Link>
-                                        )}
-                                        <br></br>
-                                    </span>,
-                                ];
-                            }, []),
+                            <div className='maxScroll'>
+                                <ul>
+                                    {craft.material.map((mat, id) => (
+                                        <li key={id}>
+                                            {mat.value}{' '}
+                                            {mat.type ? (
+                                                <Link to={`/items#${mat.item.split(' ').join('_')}`}>{mat.item}</Link>
+                                            ) : (
+                                                <Link to={`/items#${mat.item.split(' ').join('_')}`}>{mat.item}</Link>
+                                            )}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>,
 
-                            craft.npc.reduce((acc, npc, id) => {
-                                return [
-                                    ...acc,
-                                    <span key={id}>
-                                        {npc}
-                                        <br></br>
-                                    </span>,
-                                ];
-                            }, []),
+                            <div className='maxScroll'>
+                                <ul>
+                                    {craft.npc.map((npc, id) => (
+                                        <li key={id}>
+                                            <Link to={`/world_map#i=${ncpLocation[npc].map}&x=${ncpLocation[npc].x}&y=${ncpLocation[npc].y}`}>
+                                                {npc}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>,
                         ],
                     },
                 ];

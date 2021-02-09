@@ -14,7 +14,7 @@ export default function Navigation() {
                         Home
                     </Link>
                 </li>
-                {['items', 'monsters', 'dungeons', 'quests', 'activities', 'world map'].map((link, id) => {
+                {['items', 'monsters', 'dungeons', 'quests', 'activities', 'shops', 'world map'].map((link, id) => {
                     return (
                         <li key={id}>
                             <Link to={`/${link.split(' ').join('_')}`} className={path === link ? 'active' : ''}>

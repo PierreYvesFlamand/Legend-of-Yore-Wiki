@@ -10,10 +10,10 @@ export default function GearRow(items) {
             return [
                 ...acc,
                 {
-                    id: item.name.split(' ').join('_'),
+                    id: item.name.split(' ').join('_').replace("'", '_'),
                     data: [
                         <Sprite tile={item.tile} spriteSheet='tiles' className='sprite' title={item.name} alt={item.name} />,
-                        <Link to={`/items#${item.name.split(' ').join('_')}`}>{item.name}</Link>,
+                        <Link to={`/items#${item.name.split(' ').join('_').replace("'", '_')}`}>{item.name}</Link>,
                         item.level,
                         item.classes ? item.classes.split(',').map((clas, id) => <p key={id}>{clas}</p>) : 'All',
                         item.attackMod ? item.attackMod : '0',
@@ -26,7 +26,7 @@ export default function GearRow(items) {
                                     {item.dropedBy.map((dropedBy) => {
                                         return (
                                             <li key={dropedBy.name}>
-                                                <Link to={`/monsters#${dropedBy.name.split(' ').join('_')}`}>{dropedBy.name}</Link>{' '}
+                                                <Link to={`/monsters#${dropedBy.name.split(' ').join('_').replace("'", '_')}`}>{dropedBy.name}</Link>{' '}
                                                 {`${dropedBy.chance === '100/100' ? '' : ``} ${(
                                                     (~~dropedBy.chance.split('/')[0] / ~~dropedBy.chance.split('/')[1]) *
                                                     100
@@ -45,7 +45,19 @@ export default function GearRow(items) {
                             <div className='maxScroll'>
                                 <ul>
                                     {item.foundIn.map((foundIn, id) => {
-                                        if (foundIn === 'Crafting') {
+                                        if (foundIn === 'Shops') {
+                                            return (
+                                                <li key={id}>
+                                                    <Link to={`/shops#${item.name.split(' ').join('_').replace("'", '_')}`}>Shops</Link>
+                                                </li>
+                                            );
+                                        } else if (foundIn === 'Treasure Map') {
+                                            return (
+                                                <li key={id}>
+                                                    <Link to={`/activities#treasure_maps`}>Treasure Map</Link>
+                                                </li>
+                                            );
+                                        } else if (foundIn === 'Crafting') {
                                             return (
                                                 <li key={id}>
                                                     <Link to={`/activities#crafting`}>Crafting</Link>

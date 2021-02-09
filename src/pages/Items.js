@@ -35,10 +35,6 @@ export default function Items() {
                     }, []),
                 ]}
             >
-                <p className='bold underline'>Work in progress</p>
-                <ul className='no-list-style'>
-                    <li>⏩ Missing others way to get items (shop, treasure map)</li>
-                </ul>
                 <p>Here is the list of all the gears of the game. The value is the sell value</p>
             </PageHeader>
             {Object.keys(equipments).map((type, id) => {
@@ -47,7 +43,7 @@ export default function Items() {
                         <H3>{type.substring(0, 1).toUpperCase() + type.substring(1)}</H3>
                         <div>
                             <Table
-                                header={['Icon', 'Name', 'Level', 'Class', 'Atk', 'Def', 'Modifier', 'Value', 'Drop by', 'Other']}
+                                header={['Icon', 'Name', 'Level', 'Class', 'Atk', 'Def', 'Modifier', 'Sell Value', 'Drop by', 'Other']}
                                 rows={GearRow(equipments[type])}
                             />
                         </div>
@@ -63,11 +59,11 @@ export default function Items() {
                                 <Table header={['Icon', 'Name']} rows={NonGearRow(items[type], 'quest-item')} />
                             ) : type === 'consumable' ? (
                                 <Table
-                                    header={['Icon', 'Name', 'Effect', 'Value', 'Drop by', 'Other']}
+                                    header={['Icon', 'Name', 'Effect', 'Sell Value', 'Drop by', 'Other']}
                                     rows={NonGearRow(items[type], 'consumable')}
                                 />
                             ) : (
-                                <Table header={['Icon', 'Name', 'Value', 'Drop by', 'Other']} rows={NonGearRow(items[type])} />
+                                <Table header={['Icon', 'Name', 'Sell Value', 'Drop by', 'Other']} rows={NonGearRow(items[type])} />
                             )}
                         </div>
                     </section>

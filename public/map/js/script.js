@@ -114,6 +114,11 @@ function buildMap(mapToLoad) {
             content: 'Dungeons',
             layerGroup: L.layerGroup(),
         }),
+        (Portals = {
+            id: 'portalsButton',
+            content: 'Fast travel',
+            layerGroup: L.layerGroup(),
+        }),
     ];
 
     mapToLoad.popup.forEach((mapData) => {
@@ -140,12 +145,21 @@ function buildMap(mapToLoad) {
                         mapData.popupLinkText +
                         '</a></font></i></b></center>'
                 )
-                .addTo(mapData.layerGroup == 'monsters' ? buttonData[0].layerGroup : buttonData[1].layerGroup);
+                .addTo(
+                    mapData.layerGroup === 'monsters'
+                        ? buttonData[0].layerGroup
+                        : mapData.layerGroup === 'dungeons'
+                        ? buttonData[1].layerGroup
+                        : buttonData[2].layerGroup
+                );
     });
 
     // Enable Monsters/Dungeons Markers by default
-    buttonData[0].layerGroup.addTo(map);
-    buttonData[1].layerGroup.addTo(map);
+    if (!(pointer.x && pointer.y)) {
+        buttonData[0].layerGroup.addTo(map);
+        buttonData[1].layerGroup.addTo(map);
+        buttonData[2].layerGroup.addTo(map);
+    }
 
     // Menu
     const okBox = '<img class="menuImg" src="./data/asset/Main/okBox.png">';
@@ -155,7 +169,7 @@ function buildMap(mapToLoad) {
     document.querySelector('.zones').textContent = 'Maps';
 
     for (let i = 0; i < buttonData.length; i++) {
-        document.querySelector(`#${buttonData[i].id}`).innerHTML = okBox + buttonData[i].content;
+        document.querySelector(`#${buttonData[i].id}`).innerHTML = (pointer.x && pointer.y ? emptyBox : okBox) + buttonData[i].content;
     }
 
     let i = 0;
@@ -164,6 +178,9 @@ function buildMap(mapToLoad) {
     };
     document.getElementById(buttonData[i++].id).onclick = function () {
         toggleButton(buttonData[1]);
+    };
+    document.getElementById(buttonData[i++].id).onclick = function () {
+        toggleButton(buttonData[2]);
     };
 
     function toggleButton(buttonData) {
@@ -210,24 +227,24 @@ function buildMap(mapToLoad) {
         const HERE = L.marker([pointer.x, pointer.y], {}).addTo(map);
     }
 
-    // let devTool = L.marker([0, 0], {
-    //     draggable: true,
-    // }).addTo(map);
-    // devTool.bindPopup(
-    //     '<span style="color: #48edff; font-family: none; font-size: 16px; user-select: initial;"><center>Move me to know a position<br>Dev Tool</center></span>'
-    // );
-    // devTool.on('dragend', function (e) {
-    //     devTool
-    //         .getPopup()
-    //         .setContent(
-    //             '<span style="font-family: none; font-size: 16px;"><center>Clicked ' +
-    //                 devTool.getLatLng().toString() +
-    //                 '<br>' +
-    //                 'Pixels ' +
-    //                 map.project(devTool.getLatLng(), map.getMaxZoom().toString()) +
-    //                 '<br><br>' +
-    //                 '<font color="#48edff">Move me to know a position<br>Dev Tool</font></center></span>'
-    //         )
-    //         .openOn(map);
-    // });
+    let devTool = L.marker([0, 0], {
+        draggable: true,
+    }).addTo(map);
+    devTool.bindPopup(
+        '<span style="color: #48edff; font-family: none; font-size: 16px; user-select: initial;"><center>Move me to know a position<br>Dev Tool</center></span>'
+    );
+    devTool.on('dragend', function (e) {
+        devTool
+            .getPopup()
+            .setContent(
+                '<span style="font-family: none; font-size: 16px;"><center>Clicked ' +
+                    devTool.getLatLng().toString() +
+                    '<br>' +
+                    'Pixels ' +
+                    map.project(devTool.getLatLng(), map.getMaxZoom().toString()) +
+                    '<br><br>' +
+                    '<font color="#48edff">Move me to know a position<br>Dev Tool</font></center></span>'
+            )
+            .openOn(map);
+    });
 }
