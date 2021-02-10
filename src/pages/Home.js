@@ -25,6 +25,7 @@ export default function Home() {
                     <p className='bold underline'>Already Done :</p>
                     <ul className='no-list-style'>
                         {[
+                            'Player section',
                             'Added Shops',
                             'Added activities (Repairing, Crafting, TMaps, Digging, Fishing, Finding)',
                             'All quests added + Add quest reward on items',
@@ -39,11 +40,9 @@ export default function Home() {
                     </ul>
                     <p className='bold underline'>Planned :</p>
                     <ul className='no-list-style'>
-                        {['Pet', 'guide section', 'classes section', 'New top navigation + mobile friendly', 'More Mobile friendly'].map(
-                            (txt, id) => (
-                                <li key={id}>⏩ {txt}</li>
-                            )
-                        )}
+                        {['guide section', 'New top navigation + mobile friendly', 'More Mobile friendly'].map((txt, id) => (
+                            <li key={id}>⏩ {txt}</li>
+                        ))}
                     </ul>
                     <p className='bold underline'>Known issues :</p>
                     <ul className='no-list-style'>
@@ -60,7 +59,7 @@ export default function Home() {
             <section>
                 <div>
                     <p>This wiki is edited only by it's owner (Polfy#6924)</p>
-                    <p>If you want to contribute or report any issues, feel free to contact me on Discord at Polfy#6924.</p>
+                    <p>If you want to contribute (text, image) or report any issues, feel free to contact me on Discord at Polfy#6924.</p>
                     <p>
                         <a target='_blank' rel='noreferrer' href='https://discord.gg/YKXpRrrunp' title='Legends of Yore Discord'>
                             Legends of Yore Discord

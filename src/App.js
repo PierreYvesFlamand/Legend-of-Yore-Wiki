@@ -5,6 +5,7 @@ import Navigation from './components/Navigation/';
 import Footer from './components/Footer/';
 
 import Home from './pages/Home';
+import Player from './pages/Player';
 import Items from './pages/Items';
 import Monsters from './pages/Monsters';
 import Dungeons from './pages/Dungeons';
@@ -20,6 +21,9 @@ export default function App() {
             <Switch>
                 <Route exact path='/'>
                     <Home />
+                </Route>
+                <Route exact path='/player'>
+                    <Player />
                 </Route>
                 <Route exact path='/items'>
                     <Items />

@@ -8,7 +8,7 @@ export default function Table({ header, rows, ...restProps }) {
             <thead>
                 <tr>
                     {header.map((head, id) => (
-                        <th key={id}>{head.toUpperCase()}</th>
+                        <th key={id}>{typeof head === 'string' ? head.toUpperCase() : head}</th>
                     ))}
                 </tr>
             </thead>
