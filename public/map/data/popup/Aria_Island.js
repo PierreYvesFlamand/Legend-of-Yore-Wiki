@@ -327,7 +327,7 @@ var Aria_Island = {
             popupTitle: '<b>Teleport portal</b>',
             popupBody: 'Teleport you to the west of Cennyn Island<br>► Must take portal in Cennyn Island first',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Cennyn_Island'],
             layerGroup: 'portals',
         },
         {
@@ -337,7 +337,7 @@ var Aria_Island = {
             popupTitle: '<b>Teleport portal</b>',
             popupBody: 'Teleport you to the south of Tal Nivek<br>► Must take portal in Tal Nivek first',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Tal_Nivek_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Tal_Nivek_Island'],
             layerGroup: 'portals',
         },
         {
@@ -347,7 +347,7 @@ var Aria_Island = {
             popupTitle: '<b>Ship</b>',
             popupBody: 'Sail to the Cennyn Island<br>► Cost 100000 gold the first time',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Cennyn_Island'],
             layerGroup: 'portals',
         },
     ],

@@ -72,7 +72,7 @@ var Ynys_Island = {
             popupTitle: '<b>Ship</b>',
             popupBody: 'Sail to Cennyn Island',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Cennyn_Island'],
             layerGroup: 'portals',
         },
     ],

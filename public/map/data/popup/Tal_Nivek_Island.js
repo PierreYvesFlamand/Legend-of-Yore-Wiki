@@ -112,7 +112,7 @@ var Tal_Nivek_Island = {
             popupTitle: '<b>Ship</b>',
             popupBody: 'Sail to Cennyn Island',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Cennyn_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Cennyn_Island'],
             layerGroup: 'portals',
         },
         {
@@ -122,7 +122,7 @@ var Tal_Nivek_Island = {
             popupTitle: '<b>Teleport portal</b>',
             popupBody: "Teleport you to S'thel Oasis",
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Aria_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Aria_Island'],
             layerGroup: 'portals',
         },
         {
@@ -132,7 +132,7 @@ var Tal_Nivek_Island = {
             popupTitle: '<b>Teleport portal</b>',
             popupBody: 'Teleport you to the Ifrit Island',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Tal_Nivek_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Tal_Nivek_Island'],
             layerGroup: 'portals',
         },
         {
@@ -142,7 +142,7 @@ var Tal_Nivek_Island = {
             popupTitle: '<b>Teleport portal</b>',
             popupBody: 'Teleport you to Tal Nivek Island',
             popupLinkText: 'Click to teleport',
-            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/world_map#Tal_Nivek_Island'],
+            popupLink: ['_self', 'https://www.flapy.be/Legends_of_Yore/wiki/map#Tal_Nivek_Island'],
             layerGroup: 'portals',
         },
     ],
