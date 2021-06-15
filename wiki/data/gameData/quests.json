@@ -1,0 +1,1308 @@
+[
+    {
+        "town": "Aria Town",
+        "npc": "Elder",
+        "quests": [
+            {
+                "level": "1",
+                "title": "Them Bones",
+                "summary": "Kill 20 Skeletons and return to the Elder in Aria",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Aria Town", "monster": "Skeleton" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "300"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "500"
+                    },
+                    {
+                        "name": "item",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "level": "1",
+                "title": "Deliver the Goods",
+                "summary": "Deliver the package to Yoregot and then return to the Elder in Aria",
+                "questItem": "",
+                "target": [{ "type": "Npc", "name": "Aria Town", "npc": "Yoregot" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "400"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "500"
+                    },
+                    {
+                        "name": "item",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "level": "8",
+                "title": "The Evil Beneath",
+                "summary": "Vanquish the Fire Beast",
+                "questItem": "Fire Beast Wing",
+                "target": [{ "type": "Dungeon", "name": "Caws Mawr", "monster": "Fire Beast" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "500"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Head Dress"
+                    }
+                ]
+            },
+            {
+                "level": "11",
+                "title": "Pelting Them",
+                "summary": "Gather 10 pelts to create a reward",
+                "questItem": "",
+                "target": [{ "type": "Map", "name": "Aria Island", "monster": "Wild Dog" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": ""
+                    },
+                    {
+                        "name": "item",
+                        "value": "Pelt Cloak"
+                    }
+                ]
+            },
+            {
+                "level": "34",
+                "title": "Snakes Alive",
+                "summary": "Slay Medusa",
+                "questItem": "Medusa Hair",
+                "target": [{ "type": "Dungeon", "name": "Valley", "monster": "Medusa" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "8000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Cowled Robes"
+                    }
+                ]
+            },
+            {
+                "level": "175",
+                "title": "Vanquish Evil",
+                "summary": "Slay Deathbringer and bring peace to Yore",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Gates of Hell", "monster": "Deathbringer" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "30000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": ""
+                    },
+                    {
+                        "name": "item",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "S'thel Oasis",
+        "npc": "K'atel",
+        "quests": [
+            {
+                "level": "12",
+                "title": "Tooth Ache",
+                "summary": "Gather 8 teeth to create a reward",
+                "questItem": "",
+                "target": [{ "type": "Map", "name": "Aria Island", "monster": "Bear" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": ""
+                    },
+                    {
+                        "name": "item",
+                        "value": "Tooth Dagger"
+                    }
+                ]
+            },
+            {
+                "level": "13",
+                "title": "Lost Child",
+                "summary": "Rescue the Lost Child",
+                "questItem": "Baby",
+                "target": [{ "type": "Dungeon", "name": "Mountains", "monster": "Goblin", "rdm": "5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1200"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Goif Gloves"
+                    }
+                ]
+            },
+            {
+                "level": "15",
+                "title": "Behold!",
+                "summary": "Kill a Beholder and return with its tentacle",
+                "questItem": "Beholder Tentacle",
+                "target": [{ "type": "Dungeon", "name": "S'Thel Oasis", "monster": "Beholder" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Sandals of Hoff"
+                    }
+                ]
+            },
+            {
+                "level": "17",
+                "title": "Ghoul Hunt",
+                "summary": "Kill 15 Ghouls",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "S'Thel Oasis", "monster": "Ghoul" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "500"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Flinger"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Dondheim City",
+        "npc": "Odin",
+        "quests": [
+            {
+                "level": "7",
+                "title": "Fish Pie",
+                "summary": "Catch 10 fish",
+                "questItem": "",
+                "target": [{ "type": "Map", "name": "Aria Island", "monster": "Fish" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "500"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "2000"
+                    },
+                    {
+                        "name": "item",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "level": "15",
+                "title": "It Stings!",
+                "summary": "Gather 12 stingers to create a reward",
+                "questItem": "",
+                "target": [{ "type": "Map", "name": "Aria Island", "monster": "Scorpion" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": ""
+                    },
+                    {
+                        "name": "item",
+                        "value": "Stinger Sword"
+                    }
+                ]
+            },
+            {
+                "level": "17",
+                "title": "Loves Young Dream",
+                "summary": "Deliver Loki's love note",
+                "questItem": "Love Letter",
+                "target": [{ "type": "Npc", "name": "S'Thel Oasis", "npc": "Polini" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "800"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1500"
+                    },
+                    {
+                        "name": "item",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "level": "26",
+                "title": "Chaos Mages Unite",
+                "summary": "Kill 10 Dark Mages",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "S'Thel Oasis", "monster": "Dark Mage" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "2000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Spiked Club"
+                    }
+                ]
+            },
+            {
+                "level": "27",
+                "title": "3 wishes",
+                "summary": "Kill the Genie and retrieve his lamp",
+                "questItem": "Genie Lamp",
+                "target": [{ "type": "Dungeon", "name": "Cyclops Valley", "monster": "Genie" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "2223"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Lined Cap"
+                    }
+                ]
+            },
+            {
+                "level": "35",
+                "title": "Medicine Man",
+                "summary": "Get the ingredients for Odin's medicine",
+                "questItem": ["Wisp", "Berries", "Chicken Feather"],
+                "target": [{ "type": "Map", "name": "Aria Island", "monster": ["Ghoul", "Chicken", "Creeper"] }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "12000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "12000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Lava Bow"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Gombard Town",
+        "npc": "Zeng",
+        "quests": [
+            {
+                "level": "22",
+                "title": "Seedy Business",
+                "summary": "Take the bag of seeds to the farm",
+                "questItem": "Sack of Seed",
+                "target": [{ "type": "Npc", "name": "Aria Town", "npc": "Dafydd" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "800"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Swamp Gloves"
+                    }
+                ]
+            },
+            {
+                "level": "28",
+                "title": "The Treaty",
+                "summary": "Unite the towns under one banner",
+                "questItem": "Treaty",
+                "target": [{ "type": "Npc", "name": ["Aria Town", "S'thel Oasis", "Dondheim City"], "npc": ["Elder", "K'atel", "Odin"] }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "8700"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": ["Crusader Shield", "Elven Boots", "Band of Odin"]
+                    }
+                ]
+            },
+            {
+                "level": "30",
+                "title": "Dragon Bashing",
+                "summary": "Kill the Green Dragon",
+                "questItem": "Dragon Egg",
+                "target": [{ "type": "Dungeon", "name": "Gombard Town", "monster": "Green Dragon" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Lava Rod"
+                    }
+                ]
+            },
+            {
+                "level": "32",
+                "title": "Creepers Peepers",
+                "summary": "Kill 20 Creepers",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Gombard Town", "monster": "Creeper" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1500"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1500"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Mustard Tome"
+                    }
+                ]
+            },
+            {
+                "level": "42",
+                "title": "Hyrda Claw",
+                "summary": "Retrieve the Hydra Claw",
+                "questItem": "Hydra Claw",
+                "target": [{ "type": "Dungeon", "name": "Cyclops Valley", "monster": "Hydra" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Lion Shield"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Nordolk Settlement",
+        "npc": "Eski",
+        "quests": [
+            {
+                "level": "21",
+                "title": "Dragons Egg Delivery",
+                "summary": "Deliver the Dragon Egg to Tyan",
+                "questItem": "Dragon Egg",
+                "target": [{ "type": "Npc", "name": "Gombard Town", "npc": "Tyan" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "2000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Prong Tome"
+                    }
+                ]
+            },
+            {
+                "level": "30",
+                "title": "The Mighty Horn",
+                "summary": "Slay the Minotaur and return the horn to Nordolk",
+                "questItem": "Mintoaur Horn",
+                "target": [{ "type": "Dungeon", "name": "Dondheim City", "monster": "Minotaur" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "8000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Lined Boots"
+                    }
+                ]
+            },
+            {
+                "level": "41",
+                "title": "Smashing Ice Cubes",
+                "summary": "Kill 12 Frosties",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Nordolk Settlement", "monster": "Frostie" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "2500"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3200"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Diamond Knife"
+                    }
+                ]
+            },
+            {
+                "level": "50",
+                "title": "Medcinial Hope",
+                "summary": "Take the potions to Morin",
+                "questItem": "Medicines",
+                "target": [{ "type": "Npc", "name": "Aria Town", "npc": "Morin" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1200"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Red Stone Sceptre"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Badlands Gate",
+        "npc": "King",
+        "quests": [
+            {
+                "level": "45",
+                "title": "Nasty Sting",
+                "summary": "Retrieve the Stinger for the King",
+                "questItem": "Giant Stinger",
+                "target": [{ "type": "Dungeon", "name": "Hidden Cove", "monster": "Giant Scorpion" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "6000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Curved Sword"
+                    }
+                ]
+            },
+            {
+                "level": "48",
+                "title": "Jar of Wisps",
+                "summary": "Deliver the magic wisps to Ken",
+                "questItem": "Wisp Jar",
+                "target": [{ "type": "Npc", "name": "Paititi Village", "npc": "Ken" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "2400"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Juganaught Plate"
+                    }
+                ]
+            },
+            {
+                "level": "51",
+                "title": "Making a Stand",
+                "summary": "Kill 25 Orc Witches",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Badlands Gate", "monster": "Orc Witch" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "6000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "7000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Conical Helmet"
+                    }
+                ]
+            },
+            {
+                "level": "51",
+                "title": "Light the Way",
+                "summary": "Take the lantern to Wang",
+                "questItem": "Lantern",
+                "target": [{ "type": "Npc", "name": "Gombard Town", "npc": "Wang" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "2400"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Tiger Cloak"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Paititi Village",
+        "npc": "Ken",
+        "quests": [
+            {
+                "level": "48",
+                "title": "Newt Replacement",
+                "summary": "Get the Frog's Eye for the Tribe",
+                "questItem": "Eye of Frog",
+                "target": [{ "type": "Dungeon", "name": "Outback", "monster": "Giant Frog" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Shadow Boots"
+                    }
+                ]
+            },
+            {
+                "level": "61",
+                "title": "Slithering Evil",
+                "summary": "Kill 15 Pythons",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Outback", "monster": "Python" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "8000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Troll Club"
+                    }
+                ]
+            },
+            {
+                "level": "72",
+                "title": "Blood of the Elders",
+                "summary": "Find the Blood of the Elders",
+                "questItem": "Blood of Elders",
+                "target": [{ "type": "Map", "name": "Cennyn Island", "monster": "Cannibal", "rdm": "5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Book of Majesty"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Thule",
+        "npc": "Samil",
+        "quests": [
+            {
+                "level": "62",
+                "title": "The Labyrinth",
+                "summary": "Slay Babbeh and Recover the Crystal Ball",
+                "questItem": "Crystal Ball",
+                "target": [{ "type": "Dungeon", "name": "Frozen Wastes", "monster": "Babbeh" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "15000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Clawed Gloves"
+                    }
+                ]
+            },
+            {
+                "level": "68",
+                "title": "Cull the Magic",
+                "summary": "Kill 20 Wikka",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Frozen Wastes", "monster": "Wikka" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "12000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Magicians Tunic"
+                    }
+                ]
+            },
+            {
+                "level": "76",
+                "title": "Portrait of Purity",
+                "summary": "Find the stolen Portrait",
+                "questItem": "Portrait",
+                "target": [{ "type": "Dungeon", "name": "The Vale", "monster": "Black Imp", "rdm": "3.33" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "7800"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Chaos Spear"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Cennyn City",
+        "npc": "Lord Cennyn",
+        "quests": [
+            {
+                "level": "101",
+                "title": "Dark side of Magic",
+                "summary": "Recover the Elven Horn",
+                "questItem": "Elven Horn",
+                "target": [{ "type": "Dungeon", "name": "Cennyn City", "monster": "Necromantic", "rdm": "2" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Corlion"
+                    }
+                ]
+            },
+            {
+                "level": "120",
+                "title": "Appauling Aparasions",
+                "summary": "Kill 20 Aparasions",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Cennyn City Hidden 2", "monster": "Aparasion" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Titanic Cloak"
+                    }
+                ]
+            },
+            {
+                "level": "130",
+                "title": "Mighty Mashing",
+                "summary": "Kill the Mighty Dragon",
+                "questItem": "Ashes Urn",
+                "target": [{ "type": "Dungeon", "name": "Cennyn City Hidden 1", "monster": "Mighty Dragon" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Spectral Hood"
+                    }
+                ]
+            },
+            {
+                "level": "132",
+                "title": "Squash Squeerg",
+                "summary": "Kill the mighty Squeerg Beast",
+                "questItem": "Leaf",
+                "target": [{ "type": "Dungeon", "name": "Cennyn City", "monster": "Squeeerg" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "6000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Tube Boots"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Naleg",
+        "npc": "Par Tak",
+        "quests": [
+            {
+                "level": "120",
+                "title": "Parot Passion",
+                "summary": "Take the love sick parot to Tal Mita",
+                "questItem": "Marty",
+                "target": [{ "type": "Npc", "name": "Tal Mita Settlement", "npc": "Goodman Durnik" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "2000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Moonstone"
+                    }
+                ]
+            },
+            {
+                "level": "125",
+                "title": "Boat Bother",
+                "summary": "Recover the toy boat from Evok",
+                "questItem": "Toy Boat",
+                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Evok", "rdm": "2.5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Finel Ring"
+                    }
+                ]
+            },
+            {
+                "level": "140",
+                "title": "Snake Slaughter",
+                "summary": "Slay the King Cobra",
+                "questItem": "Ocarina",
+                "target": [{ "type": "Dungeon", "name": "Naleg", "monster": "King Cobra" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1300"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Cutlass"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Tal Mita Settlment",
+        "npc": "Chief Komba",
+        "quests": [
+            {
+                "level": "134",
+                "title": "Giant Problems",
+                "summary": "Slay the Giant",
+                "questItem": "Ancient Scrolls",
+                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Giant Guard" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Dual Swords"
+                    }
+                ]
+            },
+            {
+                "level": "146",
+                "title": "Lost Crown",
+                "summary": "Recover the Lost Crown",
+                "questItem": "King's Crown",
+                "target": [{ "type": "Dungeon", "name": "Kor", "monster": "Skaven Lord", "rdm": "5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Creeper Armor"
+                    }
+                ]
+            },
+            {
+                "level": "150",
+                "title": "Emplings Empathy",
+                "summary": "Slay 15 Emplings",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Tal Mita Settlment", "monster": "Skaven Empling" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Centurion Helm"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Kor",
+        "npc": "Bal Die",
+        "quests": [
+            {
+                "level": "140",
+                "title": "End the Endermen",
+                "summary": "Kill 5 Endermen",
+                "questItem": "",
+                "target": [{ "type": "Map", "name": "Cennyn City", "monster": "Enderman" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Magical Gauntlets"
+                    }
+                ]
+            },
+            {
+                "level": "145",
+                "title": "Deadly Disease",
+                "summary": "Kill the Plaguemaster",
+                "questItem": "Mandrake Root",
+                "target": [{ "type": "Dungeon", "name": "Kor", "monster": "Plaguemaster" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "2000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Blade of Virtue"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Ynys",
+        "npc": "Gasdan",
+        "quests": [
+            {
+                "level": "122",
+                "title": "Harold's Happyness",
+                "summary": "Take the Parrot to Flow",
+                "questItem": "Harold",
+                "target": [{ "type": "Npc", "name": "Naleg Town", "npc": "Flow" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "2000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "3000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Medal"
+                    }
+                ]
+            },
+            {
+                "level": "131",
+                "title": "Magical Music Box",
+                "summary": "Recover the magical music box",
+                "questItem": "Music Box",
+                "target": [{ "type": "Map", "name": "Ynys Island", "monster": "Nongan Ninja Elite", "rdm": "10" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "1000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "4000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Zombie Disguise"
+                    }
+                ]
+            },
+            {
+                "level": "142",
+                "title": "Slaughter Slimer",
+                "summary": "Find the slime ghost and finish him",
+                "questItem": "Birthday Cake",
+                "target": [{ "type": "Dungeon", "name": "Port Ynys", "monster": "Slime Ghost" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "8000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Armor of Virtue"
+                    }
+                ]
+            },
+            {
+                "level": "156",
+                "title": "Resist the Raiseling",
+                "summary": "Slay the Raiseling",
+                "questItem": "Tankard",
+                "target": [{ "type": "Dungeon", "name": "The Island", "monster": "Raiseling" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Horned Guard"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Notch",
+        "npc": "Notch",
+        "quests": [
+            {
+                "level": "1",
+                "title": "Notch's Hat",
+                "summary": "Find Notch's Hat",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "The Island", "monster": "Dark Balrog" }],
+                "rewards": [
+                    {
+                        "name": "gold",
+                        "value": "20000"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Airlon",
+        "npc": "Ponzar",
+        "quests": [
+            {
+                "level": "156",
+                "title": "Whittle the Whittian",
+                "summary": "Cut down 10 of the Whittian Ninjas",
+                "questItem": "",
+                "target": [{ "type": "Map", "name": "Ynys Island", "monster": "Whitian Ninja" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Stone Eye"
+                    }
+                ]
+            },
+            {
+                "level": "164",
+                "title": "Find the Compass",
+                "summary": "Retrieve the Compass from the Urgon",
+                "questItem": "Compass",
+                "target": [{ "type": "Dungeon", "name": "Airlon Settlement", "monster": "Urgon Warrior", "rdm": "5" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "12000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "7000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Blade of Justice"
+                    }
+                ]
+            },
+            {
+                "level": "173",
+                "title": "Hunt the Lizard",
+                "summary": "Slay the Giant Lizard beneath Airlon",
+                "questItem": "Frogs Legs",
+                "target": [{ "type": "Dungeon", "name": "Airlon Settlement", "monster": "Giant Lizard" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "12000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "9000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Mechanical Bow"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "town": "Tal Nivek",
+        "npc": "Arwyn",
+        "quests": [
+            {
+                "level": "167",
+                "title": "Cut down the Cowl",
+                "summary": "Slay the Cowled Lizard",
+                "questItem": "Queen's Crown",
+                "target": [{ "type": "Dungeon", "name": "Thicket", "monster": "Cowled Lizard" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "8000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Titan's Trident"
+                    }
+                ]
+            },
+            {
+                "level": "178",
+                "title": "Disappearing Domino",
+                "summary": "Recover the missing piece",
+                "questItem": "Domino",
+                "target": [{ "type": "Dungeon", "name": "Tal Nivek", "monster": "Oily Blob", "rmd": "20" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "5000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Sword of Nivek"
+                    }
+                ]
+            },
+            {
+                "level": "181",
+                "title": "Silver Slaying",
+                "summary": "Kill 50 Dragoons",
+                "questItem": "",
+                "target": [{ "type": "Dungeon", "name": "Tal Nivek", "monster": "Silver Dragoon" }],
+                "rewards": [
+                    {
+                        "name": "exp",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "gold",
+                        "value": "13000"
+                    },
+                    {
+                        "name": "item",
+                        "value": "Ronia Stone"
+                    }
+                ]
+            }
+        ]
+    }
+]
