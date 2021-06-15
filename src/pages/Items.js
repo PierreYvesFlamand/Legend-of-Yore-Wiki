@@ -19,7 +19,13 @@ const setsBonus = [
     {
         name: 'Crusader set',
         bonus: '6% exp',
-        items: ['Crusader Helm', 'Crusader Armor', 'Crusader Gloves', 'Crusader Sword', 'Crusader Shield'],
+        items: [
+            'Crusader Helm',
+            'Crusader Armor',
+            'Crusader Gloves',
+            'Crusader Sword',
+            'Crusader Shield',
+        ],
     },
     {
         name: 'Ninja set',
@@ -44,27 +50,59 @@ const setsBonus = [
     {
         name: 'Magic set',
         bonus: '4 charge / turn',
-        items: ['Wizard Hat', 'Magicians Robes', 'Pointy Boots', 'Warlock Staff', 'Ring of Tra'],
+        items: [
+            'Wizard Hat',
+            'Magicians Robes',
+            'Pointy Boots',
+            'Warlock Staff',
+            'Ring of Tra',
+        ],
     },
     {
         name: 'Witch doctor set',
         bonus: '5 magic',
-        items: ['Tribal Mask', 'Grass Skirt', 'Pygmy Staff', 'Amulet of the Sun', 'Bone Ring'],
+        items: [
+            'Tribal Mask',
+            'Grass Skirt',
+            'Pygmy Staff',
+            'Amulet of the Sun',
+            'Bone Ring',
+        ],
     },
     {
         name: 'Spectral set',
         bonus: '10 magic',
-        items: ['Spectral Hood', 'Spectral Boots', 'Spectral Blade', 'Spectral Shield', 'Spectral Cloak', 'Spectral Ring'],
+        items: [
+            'Spectral Hood',
+            'Spectral Boots',
+            'Spectral Blade',
+            'Spectral Shield',
+            'Spectral Cloak',
+            'Spectral Ring',
+        ],
     },
     {
         name: 'Elven set',
         bonus: '2 zen / turn',
-        items: ['Elven Coif', 'Elven Chainmail', 'Elven Boots', 'Elven Bow', 'Elven Cloak'],
+        items: [
+            'Elven Coif',
+            'Elven Chainmail',
+            'Elven Boots',
+            'Elven Bow',
+            'Elven Cloak',
+        ],
     },
     {
         name: 'Jester set',
         bonus: '8 zen / turn',
-        items: ['Jester Hat', 'Jester Robes', 'Jingly Gloves', 'Curly Clogs', 'Jesters Shaker', 'Juggling Balls'],
+        items: [
+            'Jester Hat',
+            'Jester Robes',
+            'Jingly Gloves',
+            'Curly Clogs',
+            'Jesters Shaker',
+            'Juggling Balls',
+        ],
     },
     {
         name: 'Shaman set',
@@ -74,12 +112,24 @@ const setsBonus = [
     {
         name: 'Pirate set',
         bonus: '12 rage / turn',
-        items: ['Pirate Hat', 'Eye Patch', 'Pirate Hook', 'Pirate Boots', 'Cutlass'],
+        items: [
+            'Pirate Hat',
+            'Eye Patch',
+            'Pirate Hook',
+            'Pirate Boots',
+            'Cutlass',
+        ],
     },
     {
         name: 'Death set',
         bonus: 'poison',
-        items: ['Skull Mask', 'Black Robes', 'Bone Gloves', 'Scythe', 'Blood Ring'],
+        items: [
+            'Skull Mask',
+            'Black Robes',
+            'Bone Gloves',
+            'Scythe',
+            'Blood Ring',
+        ],
     },
 ];
 
@@ -105,24 +155,57 @@ export default function Items() {
             <PageHeader
                 tablaOfContent={[
                     ...Object.keys(equipments).reduce((acc, type) => {
-                        return [...acc, <a href={`#${type}`}>{type.substring(0, 1).toUpperCase() + type.substring(1)}</a>];
+                        return [
+                            ...acc,
+                            <a href={`${global.githubUrl}/item#${type}`}>
+                                {type.substring(0, 1).toUpperCase() +
+                                    type.substring(1)}
+                            </a>,
+                        ];
                     }, []),
-                    <a href={`#Spells`}>Spells</a>,
-                    <a href={`#Sets`}>Sets</a>,
+                    <a href={`${global.githubUrl}/item#Spells`}>Spells</a>,
+                    <a href={`${global.githubUrl}/item#Sets`}>Sets</a>,
                     ...Object.keys(items).reduce((acc, type) => {
-                        return [...acc, <a href={`#${type.split(' ').join('_')}`}>{type.substring(0, 1).toUpperCase() + type.substring(1)}</a>];
+                        return [
+                            ...acc,
+                            <a
+                                href={`${global.githubUrl}/item#${type
+                                    .split(' ')
+                                    .join('_')}`}
+                            >
+                                {type.substring(0, 1).toUpperCase() +
+                                    type.substring(1)}
+                            </a>,
+                        ];
                     }, []),
                 ]}
             >
-                <p>Here is the list of all the gears of the game. The value is the sell value</p>
+                <p>
+                    Here is the list of all the gears of the game. The value is
+                    the sell value
+                </p>
             </PageHeader>
             {Object.keys(equipments).map((type, id) => {
                 return (
                     <section key={id} id={type} className='anchor-Zone'>
-                        <H3>{type.substring(0, 1).toUpperCase() + type.substring(1)}</H3>
+                        <H3>
+                            {type.substring(0, 1).toUpperCase() +
+                                type.substring(1)}
+                        </H3>
                         <div>
                             <Table
-                                header={['Icon', 'Name', 'Level', 'Class', 'Atk', 'Def', 'Modifier', 'Sell Value', 'Drop by', 'Other']}
+                                header={[
+                                    'Icon',
+                                    'Name',
+                                    'Level',
+                                    'Class',
+                                    'Atk',
+                                    'Def',
+                                    'Modifier',
+                                    'Sell Value',
+                                    'Drop by',
+                                    'Other',
+                                ]}
                                 rows={GearRow(equipments[type])}
                             />
                         </div>
@@ -132,26 +215,49 @@ export default function Items() {
             <section id='Spells' className='anchor-Zone'>
                 <H3>Spells</H3>
                 <div>
-                    <Table header={['Icon', 'Name', 'level', 'Effect', 'Sell Value', 'Drop by', 'Other']} rows={NonGearRow(spell, 'spell')} />
+                    <Table
+                        header={[
+                            'Icon',
+                            'Name',
+                            'level',
+                            'Effect',
+                            'Sell Value',
+                            'Drop by',
+                            'Other',
+                        ]}
+                        rows={NonGearRow(spell, 'spell')}
+                    />
                 </div>
             </section>
             <section id='Sets' className='anchor-Zone'>
                 <H3>Sets</H3>
                 <div>
-                    <p>By equiping a full set, you'll have a unique stats boost.</p>
+                    <p>
+                        By equiping a full set, you'll have a unique stats
+                        boost.
+                    </p>
                     <p>List of sets :</p>
 
                     {setsBonus.map((set, id) => {
                         return (
                             <div key={id}>
-                                <h4 id={set.name.split(' ').join('_')} className='anchor-Zone'>
+                                <h4
+                                    id={set.name.split(' ').join('_')}
+                                    className='anchor-Zone'
+                                >
                                     {set.name} (Bonus : {set.bonus})
                                 </h4>
                                 <ul className='no-list-style'>
                                     {set.items.map((item, id) => {
                                         return (
                                             <li key={id}>
-                                                <Link to={`/items#${item.split(' ').join('_')}`}>{item}</Link>
+                                                <Link
+                                                    to={`/items#${item
+                                                        .split(' ')
+                                                        .join('_')}`}
+                                                >
+                                                    {item}
+                                                </Link>
                                             </li>
                                         );
                                     })}
@@ -163,18 +269,44 @@ export default function Items() {
             </section>
             {Object.keys(items).map((type, id) => {
                 return (
-                    <section key={id} id={type.split(' ').join('_')} className='anchor-Zone'>
-                        <H3>{type.substring(0, 1).toUpperCase() + type.substring(1)}</H3>
+                    <section
+                        key={id}
+                        id={type.split(' ').join('_')}
+                        className='anchor-Zone'
+                    >
+                        <H3>
+                            {type.substring(0, 1).toUpperCase() +
+                                type.substring(1)}
+                        </H3>
                         <div>
                             {type === 'quest item' ? (
-                                <Table header={['Icon', 'Name']} rows={NonGearRow(items[type], 'quest-item')} />
+                                <Table
+                                    header={['Icon', 'Name']}
+                                    rows={NonGearRow(items[type], 'quest-item')}
+                                />
                             ) : type === 'consumable' ? (
                                 <Table
-                                    header={['Icon', 'Name', 'Effect', 'Sell Value', 'Drop by', 'Other']}
+                                    header={[
+                                        'Icon',
+                                        'Name',
+                                        'Effect',
+                                        'Sell Value',
+                                        'Drop by',
+                                        'Other',
+                                    ]}
                                     rows={NonGearRow(items[type], 'consumable')}
                                 />
                             ) : (
-                                <Table header={['Icon', 'Name', 'Sell Value', 'Drop by', 'Other']} rows={NonGearRow(items[type])} />
+                                <Table
+                                    header={[
+                                        'Icon',
+                                        'Name',
+                                        'Sell Value',
+                                        'Drop by',
+                                        'Other',
+                                    ]}
+                                    rows={NonGearRow(items[type])}
+                                />
                             )}
                         </div>
                     </section>

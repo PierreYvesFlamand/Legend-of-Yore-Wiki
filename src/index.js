@@ -13,6 +13,9 @@ document.querySelector(
     'body'
 ).style.background = `url('${process.env.PUBLIC_URL}/data/bg-m.jpg') repeat-x fixed left bottom var(--clr-l-blue)`;
 
+global.githubUrl =
+    'https://pierreyvesflamand.github.io/Legends-of-Yore-Wiki/build/#';
+
 ReactDOM.render(
     <DataContextProvider>
         <Router>
