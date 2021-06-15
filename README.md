@@ -2,6 +2,12 @@
 
 [Working build](https://pierreyvesflamand.github.io/Legends-of-Yore-Wiki/build)
 
+This is an in-depth wiki about the [Legends of Yore](https://www.legendsofyore.com/).
+
+[Legends of Yore Discord](https://discord.com/invite/YKXpRrrunp)
+
+**Polfy#6924**
+
 <hr>
 
 # Getting Started with Create React App
