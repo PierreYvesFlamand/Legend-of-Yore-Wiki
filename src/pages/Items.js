@@ -157,19 +157,19 @@ export default function Items() {
                     ...Object.keys(equipments).reduce((acc, type) => {
                         return [
                             ...acc,
-                            <a href={`${global.githubUrl}/item#${type}`}>
+                            <a href={`${global.githubUrl}/items#${type}`}>
                                 {type.substring(0, 1).toUpperCase() +
                                     type.substring(1)}
                             </a>,
                         ];
                     }, []),
-                    <a href={`${global.githubUrl}/item#Spells`}>Spells</a>,
-                    <a href={`${global.githubUrl}/item#Sets`}>Sets</a>,
+                    <a href={`${global.githubUrl}/items#Spells`}>Spells</a>,
+                    <a href={`${global.githubUrl}/items#Sets`}>Sets</a>,
                     ...Object.keys(items).reduce((acc, type) => {
                         return [
                             ...acc,
                             <a
-                                href={`${global.githubUrl}/item#${type
+                                href={`${global.githubUrl}/items#${type
                                     .split(' ')
                                     .join('_')}`}
                             >
