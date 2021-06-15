@@ -11,7 +11,7 @@ export default function Home() {
             <section>
                 <div>
                     <p>
-                        This is a work in progress in-depth wiki about the{' '}
+                        This is an in-depth wiki about the{' '}
                         <a target='_blank' rel='noreferrer' href='https://www.legendsofyore.com/' title='Legends of Yore website'>
                             Legends of Yore
                         </a>
@@ -40,7 +40,7 @@ export default function Home() {
                     </ul>
                     <p className='bold underline'>Planned :</p>
                     <ul className='no-list-style'>
-                        {['guide section', 'New top navigation + mobile friendly', 'More Mobile friendly'].map((txt, id) => (
+                        {['Guide section', 'New top navigation + mobile friendly', 'More Mobile friendly'].map((txt, id) => (
                             <li key={id}>⏩ {txt}</li>
                         ))}
                     </ul>

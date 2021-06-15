@@ -31,14 +31,14 @@ export default function Dungeons() {
             <PageHeader
                 tablaOfContent={[
                     ...levelFilter.map((filter, id) => (
-                        <a key={id} href={`#${filter.name.split(' ').join('_').replace("'", '_')}`}>
+                        <a key={id} href={`${global.githubUrl}/dungeons#${filter.name.split(' ').join('_').replace("'", '_')}`}>
                             {filter.name}
                         </a>
                     )),
-                    <a key='hc999' href='#Passageway'>
+                    <a key='hc999' href={`${global.githubUrl}/dungeons#Passageway`}>
                         Passageway
                     </a>,
-                    <a key='hc99' href='#Hidden_Cove'>
+                    <a key='hc99' href={`${global.githubUrl}/dungeons#Hidden_Cove`}>
                         Hidden Cove
                     </a>,
                 ]}
@@ -107,7 +107,13 @@ export default function Dungeons() {
                             {
                                 id: 'hclegend1',
                                 data: [
-                                    <Sprite tile='237' spriteSheet='chars' className='sprite' title='Giant Scorpion' alt='Giant Scorpion' />,
+                                    <Sprite
+                                        tile='237'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Giant Scorpion'
+                                        alt='Giant Scorpion'
+                                    />,
                                     <Link to={`/monsters#Giant_Scorpion`}>Giant Scorpion</Link>,
                                     '20%',
                                 ],

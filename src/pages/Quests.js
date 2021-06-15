@@ -30,7 +30,7 @@ export default function Monsters() {
                     <H2>Quests</H2>
                     <PageHeader
                         tablaOfContent={quests.map(({ town }, id) => (
-                            <a key={id} href={`#${town.split(' ').join('_').replace("'", '_')}`}>
+                            <a key={id} href={`${global.githubUrl}/quests#${town.split(' ').join('_').replace("'", '_')}`}>
                                 {town}
                             </a>
                         ))}

@@ -1,6 +1,6 @@
 # Work in progress - Legends of Yore Wiki
 
-[Working version](https://www.flapy.be/Legends_of_Yore/wiki/)
+[Working version](https://pierreyvesflamand.github.io/Legends-of-Yore-Wiki/build)
 
 # Getting Started with Create React App
 

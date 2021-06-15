@@ -26,7 +26,12 @@ export default function Activities() {
             <H2>Shops</H2>
             <PageHeader
                 tablaOfContent={['gears shops', 'magic shops', 'inn shops'].reduce((acc, item) => {
-                    return [...acc, <a href={`#${item.split(' ').join('_')}`}>{item.substring(0, 1).toUpperCase() + item.substring(1)}</a>];
+                    return [
+                        ...acc,
+                        <a href={`${global.githubUrl}/shops#${item.split(' ').join('_')}`}>
+                            {item.substring(0, 1).toUpperCase() + item.substring(1)}
+                        </a>,
+                    ];
                 }, [])}
             ></PageHeader>
             <section id='gears_shops' className='anchor-Zone'>

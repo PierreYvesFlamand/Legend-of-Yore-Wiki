@@ -28,7 +28,12 @@ export default function Activities() {
             <H2>Activities</H2>
             <PageHeader
                 tablaOfContent={['repairing', 'crafting', 'treasure maps', 'digging', 'fishing', 'finding'].reduce((acc, item) => {
-                    return [...acc, <a href={`#${item.split(' ').join('_')}`}>{item.substring(0, 1).toUpperCase() + item.substring(1)}</a>];
+                    return [
+                        ...acc,
+                        <a href={`${global.githubUrl}/activities#${item.split(' ').join('_')}`}>
+                            {item.substring(0, 1).toUpperCase() + item.substring(1)}
+                        </a>,
+                    ];
                 }, [])}
             ></PageHeader>
             <section id='repairing' className='anchor-Zone'>
@@ -36,7 +41,8 @@ export default function Activities() {
                 <div>
                     <p>
                         You can spend 5000 <Link to='/items#Gold'>Gold</Link> and a <Link to='/items#Rusty_Sword'>Rusty Sword</Link> /{' '}
-                        <Link to='/items#Dirty_Staff'>Dirty Staff</Link> / <Link to='/items#Grimey_Bow'>Grimey Bow</Link> at any gears seller.
+                        <Link to='/items#Dirty_Staff'>Dirty Staff</Link> / <Link to='/items#Grimey_Bow'>Grimey Bow</Link> at any gears
+                        seller.
                     </p>
                     <p>It will produce a random weapon of the same type from level 0 to [your_level * 0.8].</p>
                 </div>

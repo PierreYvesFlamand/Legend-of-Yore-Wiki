@@ -26,7 +26,10 @@ export default function Monsters() {
             <H2>Monsters</H2>
             <PageHeader
                 tablaOfContent={Object.keys(monsters).reduce((acc, key) => {
-                    return [...acc, <a href={`#${key}`}>{key.substring(0, 1).toUpperCase() + key.substring(1)}</a>];
+                    return [
+                        ...acc,
+                        <a href={`${global.githubUrl}/monsters#${key}`}>{key.substring(0, 1).toUpperCase() + key.substring(1)}</a>,
+                    ];
                 }, [])}
             >
                 <p>Here is the list of all the monsters of the game</p>

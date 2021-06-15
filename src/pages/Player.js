@@ -26,7 +26,14 @@ const pets = [
         defGain: 0.5,
         baseCharge: 0,
         chargeGain: 1,
-        names: ['Arnold', 'Cluckles', 'Kentucy', 'Fluffy', 'Boris', 'Drumstick'],
+        names: [
+            'Arnold',
+            'Cluckles',
+            'Kentucy',
+            'Fluffy',
+            'Boris',
+            'Drumstick',
+        ],
         abilities: [
             { level: 10, name: 'Fire Breathing' },
             { level: 25, name: 'Poison Peck' },
@@ -159,12 +166,37 @@ const pets = [
     },
 ];
 
-const warSprite = <Sprite tile='16' spriteSheet='chars' className='sprite' title='Warrior' alt='Warrior' />;
-const archSprite = <Sprite tile='18' spriteSheet='chars' className='sprite' title='Archer' alt='Archer' />;
-const wizSprite = <Sprite tile='17' spriteSheet='chars' className='sprite' title='Wizard' alt='Wizard' />;
+const warSprite = (
+    <Sprite
+        tile='16'
+        spriteSheet='chars'
+        className='sprite'
+        title='Warrior'
+        alt='Warrior'
+    />
+);
+const archSprite = (
+    <Sprite
+        tile='18'
+        spriteSheet='chars'
+        className='sprite'
+        title='Archer'
+        alt='Archer'
+    />
+);
+const wizSprite = (
+    <Sprite
+        tile='17'
+        spriteSheet='chars'
+        className='sprite'
+        title='Wizard'
+        alt='Wizard'
+    />
+);
 
 export default function Dungeons() {
-    const { war_skills, arch_skills, spell } = useContext(DataContext).skillsSpell;
+    const { war_skills, arch_skills, spell } =
+        useContext(DataContext).skillsSpell;
     const hash = useLocation().hash;
 
     const [statLevel, setStatLevel] = useState(61);
@@ -181,8 +213,19 @@ export default function Dungeons() {
         <main className='content'>
             <H2>Player</H2>
             <PageHeader
-                tablaOfContent={['Warrior', 'Archer', 'Wizard', 'Subclass', 'Experience', 'Stats', 'Pets'].reduce(
-                    (acc, key) => [...acc, <a href={`#${key}`}>{key}</a>],
+                tablaOfContent={[
+                    'Warrior',
+                    'Archer',
+                    'Wizard',
+                    'Subclass',
+                    'Experience',
+                    'Stats',
+                    'Pets',
+                ].reduce(
+                    (acc, key) => [
+                        ...acc,
+                        <a href={`${global.githubUrl}/player#${key}`}>{key}</a>,
+                    ],
                     []
                 )}
             ></PageHeader>
@@ -190,13 +233,24 @@ export default function Dungeons() {
                 <H3>Warrior</H3>
                 <div>
                     <div style={{ width: '40px' }}>{warSprite}</div>
-                    <p>Warrior use melee weapon, shield and the rage ability.</p>
                     <p>
-                        Unlike the other classes, rage only increases when damage is taken, and decreases when damage is not taken. Rage allows for
-                        higher hits. The more close your are to max rage, the higher the chance is to deal a critical hit.
+                        Warrior use melee weapon, shield and the rage ability.
                     </p>
                     <p>
-                        List of skills learned by <Link to={`/world_map#i=Aria_Island&x=-48.922499&y=-51.679688`}>Ryu</Link> :
+                        Unlike the other classes, rage only increases when
+                        damage is taken, and decreases when damage is not taken.
+                        Rage allows for higher hits. The more close your are to
+                        max rage, the higher the chance is to deal a critical
+                        hit.
+                    </p>
+                    <p>
+                        List of skills learned by{' '}
+                        <Link
+                            to={`/world_map#i=Aria_Island&x=-48.922499&y=-51.679688`}
+                        >
+                            Ryu
+                        </Link>{' '}
+                        :
                     </p>
                     <Table
                         header={['Icon', 'Name', 'Level', 'description']}
@@ -206,7 +260,13 @@ export default function Dungeons() {
                                 {
                                     id: '',
                                     data: [
-                                        <Sprite tile={skill.tile} spriteSheet='tiles' className='sprite' title={skill.name} alt={skill.name} />,
+                                        <Sprite
+                                            tile={skill.tile}
+                                            spriteSheet='tiles'
+                                            className='sprite'
+                                            title={skill.name}
+                                            alt={skill.name}
+                                        />,
                                         skill.name,
                                         skill.level,
                                         skill.desc,
@@ -225,11 +285,19 @@ export default function Dungeons() {
                     <div style={{ width: '40px' }}>{archSprite}</div>
                     <p>Archer use ranged weapon, arrows and the zen ability.</p>
                     <p>
-                        Zen increases by skipping turns and decreases when damage is taken. Zen allows for higher hits. The more close your are to max
-                        zen, the higher the chance is to deal a critical hit.
+                        Zen increases by skipping turns and decreases when
+                        damage is taken. Zen allows for higher hits. The more
+                        close your are to max zen, the higher the chance is to
+                        deal a critical hit.
                     </p>
                     <p>
-                        List of skills learned by <Link to={`/world_map#i=Aria_Island&x=-48.922499&y=-51.679688`}>Ryu</Link> :
+                        List of skills learned by{' '}
+                        <Link
+                            to={`/world_map#i=Aria_Island&x=-48.922499&y=-51.679688`}
+                        >
+                            Ryu
+                        </Link>{' '}
+                        :
                     </p>
                     <Table
                         header={['Icon', 'Name', 'Level', 'description']}
@@ -239,7 +307,13 @@ export default function Dungeons() {
                                 {
                                     id: '',
                                     data: [
-                                        <Sprite tile={skill.tile} spriteSheet='tiles' className='sprite' title={skill.name} alt={skill.name} />,
+                                        <Sprite
+                                            tile={skill.tile}
+                                            spriteSheet='tiles'
+                                            className='sprite'
+                                            title={skill.name}
+                                            alt={skill.name}
+                                        />,
                                         skill.name,
                                         skill.level,
                                         skill.desc,
@@ -257,17 +331,32 @@ export default function Dungeons() {
                 <div>
                     <div style={{ width: '40px' }}>{wizSprite}</div>
                     <p>Wizard use staff, books and the charge ability.</p>
-                    <p>Charge increases by skipping turns. Charge allows you to cast your spells.</p>
+                    <p>
+                        Charge increases by skipping turns. Charge allows you to
+                        cast your spells.
+                    </p>
                     <p>List of spells you can learn :</p>
                     <Table
-                        header={['Icon', 'Name', 'Level', 'charge cost', 'description']}
+                        header={[
+                            'Icon',
+                            'Name',
+                            'Level',
+                            'charge cost',
+                            'description',
+                        ]}
                         rows={spell.reduce(
                             (acc, skill) => [
                                 ...acc,
                                 {
                                     id: '',
                                     data: [
-                                        <Sprite tile={skill.tile} spriteSheet='tiles' className='sprite' title={skill.name} alt={skill.name} />,
+                                        <Sprite
+                                            tile={skill.tile}
+                                            spriteSheet='tiles'
+                                            className='sprite'
+                                            title={skill.name}
+                                            alt={skill.name}
+                                        />,
                                         skill.name,
                                         skill.level,
                                         skill.charge,
@@ -285,12 +374,20 @@ export default function Dungeons() {
                 <H3>Subclass</H3>
                 <div>
                     <p>
-                        At level 50 you can talk to Kayla in <Link to={`/dungeons#S_Thel_Oasis`}>S'Thel Oasis F2</Link> behind the crack.
+                        At level 50 you can talk to Kayla in{' '}
+                        <Link to={`/dungeons#S_Thel_Oasis`}>
+                            S'Thel Oasis F2
+                        </Link>{' '}
+                        behind the crack.
                     </p>
-                    <p>She will let you choose a subclass (one of the two others classes).</p>
                     <p>
-                        This new class will have 50 less levels than your character base level and you will be able to wear items and use
-                        skills/spells from this class.
+                        She will let you choose a subclass (one of the two
+                        others classes).
+                    </p>
+                    <p>
+                        This new class will have 50 less levels than your
+                        character base level and you will be able to wear items
+                        and use skills/spells from this class.
                     </p>
                     <Table
                         header={['Your class', 'Subclass', 'Result', 'Name']}
@@ -300,7 +397,13 @@ export default function Dungeons() {
                                 data: [
                                     warSprite,
                                     archSprite,
-                                    <Sprite tile='240' spriteSheet='chars' className='sprite' title='Barbarian' alt='Barbarian' />,
+                                    <Sprite
+                                        tile='240'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Barbarian'
+                                        alt='Barbarian'
+                                    />,
                                     'Barbarian',
                                 ],
                             },
@@ -309,7 +412,13 @@ export default function Dungeons() {
                                 data: [
                                     warSprite,
                                     wizSprite,
-                                    <Sprite tile='241' spriteSheet='chars' className='sprite' title='Paladin' alt='Paladin' />,
+                                    <Sprite
+                                        tile='241'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Paladin'
+                                        alt='Paladin'
+                                    />,
                                     'Paladin',
                                 ],
                             },
@@ -318,7 +427,13 @@ export default function Dungeons() {
                                 data: [
                                     archSprite,
                                     warSprite,
-                                    <Sprite tile='244' spriteSheet='chars' className='sprite' title='Rogue' alt='Rogue' />,
+                                    <Sprite
+                                        tile='244'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Rogue'
+                                        alt='Rogue'
+                                    />,
                                     'Rogue',
                                 ],
                             },
@@ -327,7 +442,13 @@ export default function Dungeons() {
                                 data: [
                                     archSprite,
                                     wizSprite,
-                                    <Sprite tile='245' spriteSheet='chars' className='sprite' title='Monk' alt='Monk' />,
+                                    <Sprite
+                                        tile='245'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Monk'
+                                        alt='Monk'
+                                    />,
                                     'Monk',
                                 ],
                             },
@@ -336,7 +457,13 @@ export default function Dungeons() {
                                 data: [
                                     wizSprite,
                                     warSprite,
-                                    <Sprite tile='243' spriteSheet='chars' className='sprite' title='Warlock' alt='Warlock' />,
+                                    <Sprite
+                                        tile='243'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Warlock'
+                                        alt='Warlock'
+                                    />,
                                     'Warlock',
                                 ],
                             },
@@ -345,7 +472,13 @@ export default function Dungeons() {
                                 data: [
                                     wizSprite,
                                     archSprite,
-                                    <Sprite tile='242' spriteSheet='chars' className='sprite' title='Archmage' alt='Archmage' />,
+                                    <Sprite
+                                        tile='242'
+                                        spriteSheet='chars'
+                                        className='sprite'
+                                        title='Archmage'
+                                        alt='Archmage'
+                                    />,
                                     'Archmage',
                                 ],
                             },
@@ -357,10 +490,17 @@ export default function Dungeons() {
             <section id='Experience' className='anchor-Zone'>
                 <H3>Experience</H3>
                 <div>
-                    <p>Every time you or your pet kill an ennemy, you'll earn experience.</p>
                     <p>
-                        The experience required to hit a <code>[level]</code> from 0 is{' '}
-                        <code>(1000 + ([level] - 1) * ([level] - 1) * 1500 + [level] * 250)</code>
+                        Every time you or your pet kill an ennemy, you'll earn
+                        experience.
+                    </p>
+                    <p>
+                        The experience required to hit a <code>[level]</code>{' '}
+                        from 0 is{' '}
+                        <code>
+                            (1000 + ([level] - 1) * ([level] - 1) * 1500 +
+                            [level] * 250)
+                        </code>
                     </p>
                     <Table
                         header={[
@@ -383,15 +523,18 @@ export default function Dungeons() {
                                     id: '',
                                     data: [
                                         i + 1,
-                                        getExpToLevel(i + 1) - (i === 0 ? 0 : getExpToLevel(i)),
+                                        getExpToLevel(i + 1) -
+                                            (i === 0 ? 0 : getExpToLevel(i)),
                                         i === 0 ? 0 : getExpToLevel(i),
                                         '',
                                         i + 1 + 20,
-                                        getExpToLevel(i + 1 + 20) - getExpToLevel(i + 20),
+                                        getExpToLevel(i + 1 + 20) -
+                                            getExpToLevel(i + 20),
                                         getExpToLevel(i + 20),
                                         '',
                                         i + 1 + 40,
-                                        getExpToLevel(i + 1 + 40) - getExpToLevel(i + 40),
+                                        getExpToLevel(i + 1 + 40) -
+                                            getExpToLevel(i + 40),
                                         getExpToLevel(i + 40),
                                     ],
                                 });
@@ -406,15 +549,22 @@ export default function Dungeons() {
             <section id='Stats' className='anchor-Zone'>
                 <H3>Stats</H3>
                 <div>
-                    <p>Stat gain follow these formulas (always rounded down) :</p>
                     <p>
-                        Hp / Rage / Zen / Charge (below level 10) : <code>[currentStat] * 1.1</code>
+                        Stat gain follow these formulas (always rounded down) :
                     </p>
                     <p>
-                        Hp / Rage / Zen / Charge (level 10 +) : <code>[currentStat] + ([currentLevel] / 3)</code>
+                        Hp / Rage / Zen / Charge (below level 10) :{' '}
+                        <code>[currentStat] * 1.1</code>
                     </p>
                     <p>
-                        Rage / Zen / Charge (From subclass) : <code>[currentStat] + (([currentLevel] / 3) * 3 - 40) / 5</code>
+                        Hp / Rage / Zen / Charge (level 10 +) :{' '}
+                        <code>[currentStat] + ([currentLevel] / 3)</code>
+                    </p>
+                    <p>
+                        Rage / Zen / Charge (From subclass) :{' '}
+                        <code>
+                            [currentStat] + (([currentLevel] / 3) * 3 - 40) / 5
+                        </code>
                     </p>
                     <Table
                         header={[
@@ -449,7 +599,15 @@ export default function Dungeons() {
                             for (let i = 1; i <= 20; i++) {
                                 acc.push({
                                     id: '',
-                                    data: [i, getStat(i, 50), getStat(i, 40), getStat(i, 30), getStat(i, 10), getStat(i, 10), getStat(i, 40)],
+                                    data: [
+                                        i,
+                                        getStat(i, 50),
+                                        getStat(i, 40),
+                                        getStat(i, 30),
+                                        getStat(i, 10),
+                                        getStat(i, 10),
+                                        getStat(i, 40),
+                                    ],
                                 });
                             }
                             return acc;
@@ -459,48 +617,156 @@ export default function Dungeons() {
                         header={[
                             'Level',
                             <div>
-                                <Sprite tile='240' spriteSheet='chars' className='sprite' title='Barbarian' alt='Barbarian' />
-                                <Sprite tile='241' spriteSheet='chars' className='sprite' title='Paladin' alt='Paladin' />
+                                <Sprite
+                                    tile='240'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Barbarian'
+                                    alt='Barbarian'
+                                />
+                                <Sprite
+                                    tile='241'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Paladin'
+                                    alt='Paladin'
+                                />
                                 <span>HP</span>
                             </div>,
                             <div>
-                                <Sprite tile='244' spriteSheet='chars' className='sprite' title='Rogue' alt='Rogue' />
-                                <Sprite tile='245' spriteSheet='chars' className='sprite' title='Monk' alt='Monk' />
+                                <Sprite
+                                    tile='244'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Rogue'
+                                    alt='Rogue'
+                                />
+                                <Sprite
+                                    tile='245'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Monk'
+                                    alt='Monk'
+                                />
                                 <span>HP</span>
                             </div>,
                             <div>
-                                <Sprite tile='243' spriteSheet='chars' className='sprite' title='Warlock' alt='Warlock' />
-                                <Sprite tile='242' spriteSheet='chars' className='sprite' title='Archmage' alt='Archmage' />
+                                <Sprite
+                                    tile='243'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Warlock'
+                                    alt='Warlock'
+                                />
+                                <Sprite
+                                    tile='242'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Archmage'
+                                    alt='Archmage'
+                                />
                                 <span>HP</span>
                             </div>,
                             <div>
-                                <Sprite tile='240' spriteSheet='chars' className='sprite' title='Barbarian' alt='Barbarian' />
-                                <Sprite tile='241' spriteSheet='chars' className='sprite' title='Paladin' alt='Paladin' />
+                                <Sprite
+                                    tile='240'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Barbarian'
+                                    alt='Barbarian'
+                                />
+                                <Sprite
+                                    tile='241'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Paladin'
+                                    alt='Paladin'
+                                />
                                 <span>Rage</span>
                             </div>,
                             <div>
-                                <Sprite tile='244' spriteSheet='chars' className='sprite' title='Rogue' alt='Rogue' />
-                                <Sprite tile='245' spriteSheet='chars' className='sprite' title='Monk' alt='Monk' />
+                                <Sprite
+                                    tile='244'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Rogue'
+                                    alt='Rogue'
+                                />
+                                <Sprite
+                                    tile='245'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Monk'
+                                    alt='Monk'
+                                />
                                 <span>Zen</span>
                             </div>,
                             <div>
-                                <Sprite tile='243' spriteSheet='chars' className='sprite' title='Warlock' alt='Warlock' />
-                                <Sprite tile='242' spriteSheet='chars' className='sprite' title='Archmage' alt='Archmage' />
+                                <Sprite
+                                    tile='243'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Warlock'
+                                    alt='Warlock'
+                                />
+                                <Sprite
+                                    tile='242'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Archmage'
+                                    alt='Archmage'
+                                />
                                 <span>Charge</span>
                             </div>,
                             <div>
-                                <Sprite tile='244' spriteSheet='chars' className='sprite' title='Rogue' alt='Rogue' />
-                                <Sprite tile='243' spriteSheet='chars' className='sprite' title='Warlock' alt='Warlock' />
+                                <Sprite
+                                    tile='244'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Rogue'
+                                    alt='Rogue'
+                                />
+                                <Sprite
+                                    tile='243'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Warlock'
+                                    alt='Warlock'
+                                />
                                 <span>Rage</span>
                             </div>,
                             <div>
-                                <Sprite tile='240' spriteSheet='chars' className='sprite' title='Barbarian' alt='Barbarian' />
-                                <Sprite tile='242' spriteSheet='chars' className='sprite' title='Archmage' alt='Archmage' />
+                                <Sprite
+                                    tile='240'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Barbarian'
+                                    alt='Barbarian'
+                                />
+                                <Sprite
+                                    tile='242'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Archmage'
+                                    alt='Archmage'
+                                />
                                 <span>Zen</span>
                             </div>,
                             <div>
-                                <Sprite tile='241' spriteSheet='chars' className='sprite' title='Paladin' alt='Paladin' />
-                                <Sprite tile='245' spriteSheet='chars' className='sprite' title='Monk' alt='Monk' />
+                                <Sprite
+                                    tile='241'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Paladin'
+                                    alt='Paladin'
+                                />
+                                <Sprite
+                                    tile='245'
+                                    spriteSheet='chars'
+                                    className='sprite'
+                                    title='Monk'
+                                    alt='Monk'
+                                />
                                 <span>Charge</span>
                             </div>,
                         ]}
@@ -556,12 +822,28 @@ export default function Dungeons() {
                 <H3>Pets</H3>
                 <div>
                     <p>
-                        Pets are monsters you can buy to severals shops in the world.{' '}
-                        <Link to={`/world_map#i=Aria_Island&x=-54.572062&y=10.546875`}>Mobion</Link> will probably be the first one you encounter.
+                        Pets are monsters you can buy to severals shops in the
+                        world.{' '}
+                        <Link
+                            to={`/world_map#i=Aria_Island&x=-54.572062&y=10.546875`}
+                        >
+                            Mobion
+                        </Link>{' '}
+                        will probably be the first one you encounter.
                     </p>
-                    <p>Pets wins experiences when dealing the final hits on an ennemy (They earn the same amout of experience than you + 1000).</p>
-                    <p>Once they reach their max level, they will stop earning experiences.</p>
-                    <p>List of all the pets (Stats are at the max level of the pet).</p>
+                    <p>
+                        Pets wins experiences when dealing the final hits on an
+                        ennemy (They earn the same amout of experience than you
+                        + 1000).
+                    </p>
+                    <p>
+                        Once they reach their max level, they will stop earning
+                        experiences.
+                    </p>
+                    <p>
+                        List of all the pets (Stats are at the max level of the
+                        pet).
+                    </p>
                     <Table
                         header={[
                             'Icon',
@@ -583,15 +865,24 @@ export default function Dungeons() {
                                 {
                                     id: '',
                                     data: [
-                                        <Sprite tile={pet.tile} spriteSheet='chars' className='sprite' title={pet.name} alt={pet.name} />,
+                                        <Sprite
+                                            tile={pet.tile}
+                                            spriteSheet='chars'
+                                            className='sprite'
+                                            title={pet.name}
+                                            alt={pet.name}
+                                        />,
                                         pet.name,
                                         pet.level,
                                         pet.cost,
                                         pet.maxLevel,
                                         pet.baseHp + pet.hpGain * pet.maxLevel,
-                                        pet.baseAtk + pet.atkGain * pet.maxLevel,
-                                        pet.baseDef + pet.defGain * pet.maxLevel,
-                                        pet.baseCharge + pet.chargeGain * pet.maxLevel,
+                                        pet.baseAtk +
+                                            pet.atkGain * pet.maxLevel,
+                                        pet.baseDef +
+                                            pet.defGain * pet.maxLevel,
+                                        pet.baseCharge +
+                                            pet.chargeGain * pet.maxLevel,
                                         <div className='maxScroll'>
                                             <ul>
                                                 {pet.names.map((name, id) => (
@@ -602,11 +893,14 @@ export default function Dungeons() {
                                         pet.abilities.length ? (
                                             <div className='maxScroll'>
                                                 <ul>
-                                                    {pet.abilities.map((abi, id) => (
-                                                        <li key={id}>
-                                                            ({abi.level}) {abi.name}
-                                                        </li>
-                                                    ))}
+                                                    {pet.abilities.map(
+                                                        (abi, id) => (
+                                                            <li key={id}>
+                                                                ({abi.level}){' '}
+                                                                {abi.name}
+                                                            </li>
+                                                        )
+                                                    )}
                                                 </ul>
                                             </div>
                                         ) : (
@@ -614,7 +908,8 @@ export default function Dungeons() {
                                         ),
                                         pet.evolve ? (
                                             <>
-                                                ({pet.evolve.level}) {pet.evolve.name}
+                                                ({pet.evolve.level}){' '}
+                                                {pet.evolve.name}
                                                 <Sprite
                                                     tile={pet.evolve.tile}
                                                     spriteSheet='chars'
