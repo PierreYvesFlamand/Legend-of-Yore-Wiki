@@ -15,7 +15,7 @@ document.querySelector(
 
 ReactDOM.render(
     <DataContextProvider>
-        <Router basename='/Legends_of_Yore_Wiki/build'>
+        <Router>
             <App />
         </Router>
     </DataContextProvider>,
