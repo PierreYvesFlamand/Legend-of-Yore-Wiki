@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import './normalize.css';
 import './styles.css';
@@ -9,11 +9,13 @@ import './wikiStyles.css';
 import { DataContextProvider } from './context/dataContext';
 import App from './App';
 
-document.querySelector('body').style.background = `url('${process.env.PUBLIC_URL}/data/bg-m.jpg') repeat-x fixed left bottom var(--clr-l-blue)`;
+document.querySelector(
+    'body'
+).style.background = `url('${process.env.PUBLIC_URL}/data/bg-m.jpg') repeat-x fixed left bottom var(--clr-l-blue)`;
 
 ReactDOM.render(
     <DataContextProvider>
-        <Router basename='/Legends_of_Yore/wiki'>
+        <Router basename='/Legends_of_Yore_Wiki/build'>
             <App />
         </Router>
     </DataContextProvider>,
